@@ -1,46 +1,29 @@
 {
   "_metadata": {
-    "description": "中医方剂数据库 - TCM Formula Database",
-    "source": "LingdanLLM (北京交通大学 + 中国中医科学院广安门医院)",
-    "source_url": "https://github.com/TCMAI-BJTU/LingdanLLM",
-    "license": "开源可用，遵循原项目许可",
-    "last_updated": "2026-03-09",
-    "total_formulas": 10,
-    "ai_collaboration_note": {
-      "purpose": "此数据用于方剂智能查询、AI辅助辨证分析等功能",
-      "structure": "每个方剂包含 name(名称)、composition(组成)、indications(主治)、source(来源) 四个核心字段",
-      "usage": "通过方剂名称或功效关键词检索，返回完整的方剂信息"
-    }
+    "version": "1.0.0",
+    "created_at": "2026-03-10",
+    "updated_at": "2026-03-10",
+    "source": "中国药典（2020版）、《伤寒论》、《太平惠民和剂局方》",
+    "total_formulas": 15,
+    "description": "中医经典方剂数据集，包含方剂组成、功效、主治等信息"
   },
   "formulas": [
     {
       "id": "f001",
-      "name": "安宫降压丸",
-      "pinyin": "angong jiangya wan",
+      "name": "麻黄汤",
+      "pinyin": "mahuang tang",
       "composition": [
-        {"herb": "郁金", "dosage": "适量"},
-        {"herb": "黄连", "dosage": "适量"},
-        {"herb": "栀子", "dosage": "适量"},
-        {"herb": "黄芩", "dosage": "适量"},
-        {"herb": "天麻", "dosage": "适量"},
-        {"herb": "珍珠母", "dosage": "适量"},
-        {"herb": "黄芪", "dosage": "适量"},
-        {"herb": "白芍", "dosage": "适量"},
-        {"herb": "党参", "dosage": "适量"},
-        {"herb": "麦冬", "dosage": "适量"},
-        {"herb": "五味子(炙)", "dosage": "适量"},
-        {"herb": "川芎", "dosage": "适量"},
-        {"herb": "人工牛黄", "dosage": "适量"},
-        {"herb": "水牛角浓缩粉", "dosage": "适量"},
-        {"herb": "冰片", "dosage": "适量"}
+        {"herb": "麻黄", "dosage": "9g"},
+        {"herb": "桂枝", "dosage": "6g"},
+        {"herb": "杏仁", "dosage": "9g"},
+        {"herb": "甘草", "dosage": "3g"}
       ],
-      "efficacy": "清热化痰、平肝降逆",
-      "indications": "胸中郁热、肝阳上亢的高血压病症，症见头痛、头晕、失眠等",
-      "contraindications": "尚不明确，建议在医生指导下使用",
-      "usage": "口服，每次1-2丸，每日两次",
-      "specification": "每丸重3g",
-      "is_prescription": true,
-      "source": "中国药典/药品说明书"
+      "efficacy": "发汗解表，宣肺平喘",
+      "indications": "外感风寒表实证，症见恶寒发热，头身疼痛，无汗而喘，舌苔薄白，脉浮紧",
+      "contraindications": "表虚自汗、阴虚血少者忌用",
+      "usage": "水煎服，温覆取微汗",
+      "source": "《伤寒论》",
+      "category": "解表剂-辛温解表"
     },
     {
       "id": "f002",
@@ -49,89 +32,113 @@
       "composition": [
         {"herb": "桂枝", "dosage": "9g"},
         {"herb": "芍药", "dosage": "9g"},
+        {"herb": "甘草", "dosage": "6g"},
         {"herb": "生姜", "dosage": "9g"},
-        {"herb": "大枣", "dosage": "3枚"},
-        {"herb": "甘草(炙)", "dosage": "6g"}
+        {"herb": "大枣", "dosage": "12枚"}
       ],
       "efficacy": "解肌发表，调和营卫",
-      "indications": "外感风寒表虚证。头痛发热，汗出恶风，鼻鸣干呕，苔白不渴，脉浮缓或浮弱",
-      "contraindications": "表实无汗，或表寒里热，不汗出而烦躁者不宜使用",
-      "usage": "水煎服，服后须臾啜热稀粥，温覆取微汗",
+      "indications": "外感风寒表虚证，症见头痛发热，汗出恶风，鼻鸣干呕，苔白不渴，脉浮缓或浮弱",
+      "contraindications": "表实无汗者忌用",
+      "usage": "水煎服，温覆取微汗",
       "source": "《伤寒论》",
       "category": "解表剂-辛温解表"
     },
     {
       "id": "f003",
-      "name": "麻黄汤",
-      "pinyin": "mahuang tang",
+      "name": "银翘散",
+      "pinyin": "yinqiao san",
       "composition": [
-        {"herb": "麻黄", "dosage": "9g"},
-        {"herb": "桂枝", "dosage": "6g"},
-        {"herb": "杏仁", "dosage": "6g"},
-        {"herb": "甘草(炙)", "dosage": "3g"}
+        {"herb": "金银花", "dosage": "15g"},
+        {"herb": "连翘", "dosage": "15g"},
+        {"herb": "桔梗", "dosage": "9g"},
+        {"herb": "薄荷", "dosage": "6g"},
+        {"herb": "竹叶", "dosage": "4g"},
+        {"herb": "甘草", "dosage": "5g"},
+        {"herb": "荆芥穗", "dosage": "4g"},
+        {"herb": "淡豆豉", "dosage": "5g"},
+        {"herb": "牛蒡子", "dosage": "9g"}
       ],
-      "efficacy": "发汗解表，宣肺平喘",
-      "indications": "外感风寒表实证。恶寒发热，头身疼痛，无汗而喘，舌苔薄白，脉浮紧",
-      "contraindications": "凡体虚外感、疮家、淋家、衄家、亡血家等均慎用",
-      "usage": "水煎服，覆取微汗",
-      "source": "《伤寒论》",
-      "category": "解表剂-辛温解表"
+      "efficacy": "辛凉透表，清热解毒",
+      "indications": "温病初起，发热无汗，或有汗不畅，微恶风寒，头痛口渴，咳嗽咽痛，舌尖红，苔薄白或微黄，脉浮数",
+      "usage": "水煎服，或作散剂冲服",
+      "source": "《温病条辨》",
+      "category": "解表剂-辛凉解表"
     },
     {
       "id": "f004",
-      "name": "四物汤",
-      "pinyin": "siwu tang",
-      "composition": [
-        {"herb": "熟地黄", "dosage": "12g"},
-        {"herb": "当归", "dosage": "9g"},
-        {"herb": "白芍", "dosage": "9g"},
-        {"herb": "川芎", "dosage": "6g"}
-      ],
-      "efficacy": "补血调血",
-      "indications": "营血虚滞证。头晕目眩，心悸失眠，面色无华，妇人月经不调，量少或经闭，脐腹作痛，舌淡，脉细涩",
-      "contraindications": "阴虚发热及血崩气脱者不宜使用",
-      "usage": "水煎服",
-      "source": "《仙授理伤续断秘方》",
-      "category": "补益剂-补血"
-    },
-    {
-      "id": "f005",
       "name": "四君子汤",
       "pinyin": "sijunzi tang",
       "composition": [
         {"herb": "人参", "dosage": "9g"},
         {"herb": "白术", "dosage": "9g"},
         {"herb": "茯苓", "dosage": "9g"},
-        {"herb": "甘草(炙)", "dosage": "6g"}
+        {"herb": "甘草", "dosage": "6g"}
       ],
       "efficacy": "益气健脾",
-      "indications": "脾胃气虚证。面色萎白，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱",
-      "contraindications": "阴虚火旺者慎用",
+      "indications": "脾胃气虚证，症见面色萎白，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
       "category": "补益剂-补气"
     },
     {
-      "id": "f006",
+      "id": "f005",
       "name": "六味地黄丸",
-      "pinyin": "liuwei dihuang wan",
+      "pinyin": "liuweidihuang wan",
       "composition": [
         {"herb": "熟地黄", "dosage": "24g"},
         {"herb": "山茱萸", "dosage": "12g"},
         {"herb": "山药", "dosage": "12g"},
         {"herb": "泽泻", "dosage": "9g"},
-        {"herb": "茯苓", "dosage": "9g"},
-        {"herb": "牡丹皮", "dosage": "9g"}
+        {"herb": "牡丹皮", "dosage": "9g"},
+        {"herb": "茯苓", "dosage": "9g"}
       ],
       "efficacy": "滋阴补肾",
-      "indications": "肾阴虚证。头晕耳鸣，腰膝酸软，骨蒸潮热，盗汗遗精，消渴，手足心热，舌燥咽痛，牙齿动摇，足跟作痛，小便淋沥，舌红少苔，脉沉细数",
-      "contraindications": "脾虚泄泻者慎用",
-      "usage": "蜜丸，每服9g，日2-3次；或水煎服",
+      "indications": "肾阴虚证，症见腰膝酸软，头晕目眩，耳鸣耳聋，盗汗，遗精，消渴，骨蒸潮热，手足心热，舌燥咽痛，牙齿动摇，足跟作痛，小便淋沥，以及小儿囟门不合，舌红少苔，脉沉细数",
+      "usage": "水煎服，或作丸剂服用",
       "source": "《小儿药证直诀》",
       "category": "补益剂-补阴"
     },
     {
+      "id": "f006",
+      "name": "小柴胡汤",
+      "pinyin": "xiaochaihu tang",
+      "composition": [
+        {"herb": "柴胡", "dosage": "12g"},
+        {"herb": "黄芩", "dosage": "9g"},
+        {"herb": "人参", "dosage": "6g"},
+        {"herb": "半夏", "dosage": "9g"},
+        {"herb": "甘草", "dosage": "5g"},
+        {"herb": "生姜", "dosage": "9g"},
+        {"herb": "大枣", "dosage": "4枚"}
+      ],
+      "efficacy": "和解少阳",
+      "indications": "伤寒少阳证，症见往来寒热，胸胁苦满，默默不欲饮食，心烦喜呕，口苦，咽干，目眩，舌苔薄白，脉弦；妇人伤寒，热入血室，以及疟疾、黄疸等病而见少阳证者",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "和解剂-和解少阳"
+    },
+    {
       "id": "f007",
+      "name": "补中益气汤",
+      "pinyin": "buzhongyiqi tang",
+      "composition": [
+        {"herb": "黄芪", "dosage": "18g"},
+        {"herb": "甘草", "dosage": "9g"},
+        {"herb": "人参", "dosage": "6g"},
+        {"herb": "当归", "dosage": "3g"},
+        {"herb": "橘皮", "dosage": "6g"},
+        {"herb": "升麻", "dosage": "6g"},
+        {"herb": "柴胡", "dosage": "6g"},
+        {"herb": "白术", "dosage": "9g"}
+      ],
+      "efficacy": "补中益气，升阳举陷",
+      "indications": "脾胃气虚证，症见饮食减少，体倦肢软，少气懒言，面色萎黄，大便稀溏，脉虚软；气虚下陷证，症见脱肛，子宫脱垂，久泻，久痢，崩漏等，气短乏力，舌淡，脉虚者",
+      "usage": "水煎服",
+      "source": "《脾胃论》",
+      "category": "补益剂-补气"
+    },
+    {
+      "id": "f008",
       "name": "逍遥散",
       "pinyin": "xiaoyao san",
       "composition": [
@@ -140,78 +147,54 @@
         {"herb": "白芍", "dosage": "9g"},
         {"herb": "白术", "dosage": "9g"},
         {"herb": "茯苓", "dosage": "9g"},
-        {"herb": "甘草(炙)", "dosage": "4.5g"},
-        {"herb": "薄荷", "dosage": "少许"},
-        {"herb": "生姜", "dosage": "少许"}
+        {"herb": "甘草", "dosage": "5g"},
+        {"herb": "生姜", "dosage": "3g"},
+        {"herb": "薄荷", "dosage": "3g"}
       ],
-      "efficacy": "疏肝解郁，养血健脾",
-      "indications": "肝郁血虚脾弱证。两胁作痛，头痛目眩，口燥咽干，神疲食少，或月经不调，乳房胀痛，脉弦而虚",
-      "contraindications": "肝胆实火或湿热下注者不宜使用",
-      "usage": "水煎服，薄荷后下",
+      "efficacy": "疏肝解郁，健脾和营",
+      "indications": "肝郁血虚脾弱证，症见两胁作痛，头痛目眩，口燥咽干，神疲食少，或月经不调，乳房胀痛，脉弦而虚者",
+      "usage": "水煎服，或作散剂冲服",
       "source": "《太平惠民和剂局方》",
       "category": "和解剂-调和肝脾"
     },
     {
-      "id": "f008",
-      "name": "补中益气汤",
-      "pinyin": "buzhong yiqi tang",
-      "composition": [
-        {"herb": "黄芪", "dosage": "18g"},
-        {"herb": "人参", "dosage": "9g"},
-        {"herb": "白术", "dosage": "9g"},
-        {"herb": "甘草(炙)", "dosage": "9g"},
-        {"herb": "当归", "dosage": "3g"},
-        {"herb": "陈皮", "dosage": "6g"},
-        {"herb": "升麻", "dosage": "6g"},
-        {"herb": "柴胡", "dosage": "6g"}
-      ],
-      "efficacy": "补中益气，升阳举陷",
-      "indications": "脾胃气虚证、气虚下陷证、气虚发热证。体倦乏力，少气懒言，面色萎黄，纳差便溏，或久泻脱肛，子宫脱垂，崩漏等",
-      "contraindications": "阴虚发热及实热证者忌用",
-      "usage": "水煎服",
-      "source": "《脾胃论》",
-      "category": "补益剂-补气"
-    },
-    {
       "id": "f009",
-      "name": "归脾汤",
-      "pinyin": "guipi tang",
+      "name": "血府逐瘀汤",
+      "pinyin": "xuefuzhuyu tang",
       "composition": [
-        {"herb": "人参", "dosage": "6g"},
-        {"herb": "黄芪", "dosage": "12g"},
-        {"herb": "白术", "dosage": "6g"},
-        {"herb": "茯苓", "dosage": "6g"},
-        {"herb": "龙眼肉", "dosage": "6g"},
-        {"herb": "当归", "dosage": "6g"},
-        {"herb": "酸枣仁", "dosage": "6g"},
-        {"herb": "远志", "dosage": "6g"},
-        {"herb": "木香", "dosage": "3g"},
-        {"herb": "甘草(炙)", "dosage": "3g"}
+        {"herb": "桃仁", "dosage": "12g"},
+        {"herb": "红花", "dosage": "9g"},
+        {"herb": "当归", "dosage": "9g"},
+        {"herb": "生地黄", "dosage": "9g"},
+        {"herb": "川芎", "dosage": "5g"},
+        {"herb": "赤芍", "dosage": "6g"},
+        {"herb": "牛膝", "dosage": "9g"},
+        {"herb": "桔梗", "dosage": "5g"},
+        {"herb": "柴胡", "dosage": "3g"},
+        {"herb": "枳壳", "dosage": "6g"},
+        {"herb": "甘草", "dosage": "3g"}
       ],
-      "efficacy": "益气补血，健脾养心",
-      "indications": "心脾气血两虚证、脾不统血证。心悸怔忡，健忘失眠，盗汗虚热，体倦食少，面色萎黄，或便血、崩漏等",
-      "contraindications": "实热证或阴虚火旺者不宜使用",
-      "usage": "水煎服，生姜、大枣为引",
-      "source": "《正体类要》",
-      "category": "补益剂-气血双补"
+      "efficacy": "活血祛瘀，行气止痛",
+      "indications": "胸中血瘀证，症见胸痛，头痛日久，痛如针刺而有定处，或呃逆日久不止，或内热烦闷，或心悸失眠，急躁易怒，入暮潮热，唇暗或两目暗黑，舌质暗红，或舌有瘀斑、瘀点，脉涩或弦紧",
+      "usage": "水煎服",
+      "source": "《医林改错》",
+      "category": "理血剂-活血祛瘀"
     },
     {
       "id": "f010",
-      "name": "一捻金",
-      "pinyin": "yinianjin",
+      "name": "二陈汤",
+      "pinyin": "erchen tang",
       "composition": [
-        {"herb": "大黄", "dosage": "100g"},
-        {"herb": "炒牵牛子", "dosage": "200g"},
-        {"herb": "槟榔", "dosage": "100g"},
-        {"herb": "人参", "dosage": "100g"},
-        {"herb": "朱砂", "dosage": "30g"}
+        {"herb": "半夏", "dosage": "15g"},
+        {"herb": "橘红", "dosage": "15g"},
+        {"herb": "茯苓", "dosage": "9g"},
+        {"herb": "甘草", "dosage": "5g"}
       ],
-      "efficacy": "消食导滞，祛痰通便",
-      "indications": "食滞证。用于脾胃不和、痰食阻滞所致的积滞，症见胃胀、便秘、食欲不振、痰多喘咳",
-      "contraindications": "脾胃虚弱者慎用",
-      "usage": "口服，剂量遵医嘱",
-      "is_patent_medicine": true,
-      "source": "中国药典"
+      "efficacy": "燥湿化痰，理气和中",
+      "indications": "湿痰证，症见咳嗽痰多，色白易咯，恶心呕吐，胸膈痞闷，肢体困重，或头眩心悸，舌苔白滑或腻，脉滑",
+      "usage": "加生姜7片，乌梅1个，水煎服",
+      "source": "《太平惠民和剂局方》",
+      "category": "祛痰剂-燥湿化痰"
     }
   ]
 }

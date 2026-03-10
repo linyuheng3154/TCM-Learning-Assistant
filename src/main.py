@@ -15,7 +15,7 @@ API文档：
 技术栈：
 - FastAPI: 现代高性能Python Web框架
 - Pydantic: 数据验证和序列化
-- OpenAI API: AI能力集成（规划中）
+- AI技术: 自然语言处理能力集成（规划中）
 
 AI协作说明：
 - 本文件是应用入口，负责初始化FastAPI应用和注册路由

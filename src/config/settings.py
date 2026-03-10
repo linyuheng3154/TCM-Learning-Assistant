@@ -16,9 +16,9 @@ class Settings(BaseSettings):
     host: str = "0.0.0.0"
     port: int = 8000
     
-    # OpenAI配置
-    openai_api_key: str = ""
-    openai_base_url: str = "https://api.openai.com/v1"
+    # AI服务配置
+    ai_api_key: str = ""
+    ai_base_url: str = ""
     
     # 数据配置
     data_dir: str = "data"

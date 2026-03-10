@@ -6,14 +6,21 @@
 2. 数据库存储结构的映射
 3. 前端展示数据的格式化
 
-数据来源：中国药典、经典医籍（如《伤寒论》《太平惠民和剂局方》等）
+数据来源：中国药典、经典医籍（如《伤寒论》《金匮要略》《太平惠民和剂局方》等）
 
 AI协作说明：
 - FormulaModel: 完整的方剂信息模型，包含所有字段
+- ExpandedHerbComposition: 扩展的药材组成模型，包含配伍角色
 - FormulaBriefModel: 简要信息模型，用于列表展示
 - FormulaSearchResult: 搜索结果模型，包含匹配度评分
+- ExpandedFormulaModel: 扩展的方剂模型，支持现代研究和医案
 
 字段命名遵循中医传统术语，同时提供英文别名以便国际化。
+
+重要更新说明：
+- 2026-03-10: 扩展数据模型支持50首经典方剂数据库
+- 新增字段：alias, modern_research, clinical_cases
+- 扩展组成字段：role, note (配伍角色和炮制说明)
 """
 
 from typing import Optional, List
@@ -24,6 +31,10 @@ class HerbComposition(BaseModel):
     """
     方剂组成中的单味药材
     
+    AI协作说明：
+    - 这是基础的药材组成模型，包含必要的信息
+    - 用于简单的方剂数据，保持向后兼容
+    
     Attributes:
         herb: 药材名称（中文）
         dosage: 用量（如 "9g"、"适量"、"3枚"）
@@ -32,6 +43,28 @@ class HerbComposition(BaseModel):
     herb: str = Field(..., description="药材名称")
     dosage: str = Field(..., description="用量")
     note: Optional[str] = Field(None, description="备注说明")
+
+
+class ExpandedHerbComposition(HerbComposition):
+    """
+    扩展的药材组成模型 - 包含配伍角色信息
+    
+    AI协作说明：
+    - 这是扩展模型，用于50首经典方剂数据库
+    - 包含配伍角色（君/臣/佐/使），便于AI理解方剂结构
+    - 保持与基础模型的兼容性，可以混合使用
+    
+    使用场景：
+    - 经典方剂的详细分析
+    - 配伍规律研究
+    - 教学和学术用途
+    
+    Attributes:
+        role: 配伍角色（君药/臣药/佐药/使药）
+        note: 扩展的备注信息（炮制、特殊用法等）
+    """
+    role: Optional[str] = Field(None, description="配伍角色：君/臣/佐/使")
+    # note字段从父类继承，这里可以扩展更多说明
 
 
 class FormulaModel(BaseModel):
@@ -114,3 +147,65 @@ class FormulaSearchResult(BaseModel):
     formula: FormulaBriefModel
     score: float = Field(..., ge=0, le=1, description="匹配度评分")
     matched_fields: List[str] = Field(default_factory=list, description="匹配字段")
+
+
+class ExpandedFormulaModel(FormulaModel):
+    """
+    扩展的方剂完整信息模型 - 支持50首经典方剂数据库
+    
+    AI协作说明：
+    - 这是FormulaModel的扩展版本，用于经典方剂的详细数据
+    - 新增字段支持现代研究和临床应用信息
+    - 保持与基础模型的兼容性，可以平滑升级
+    
+    扩展字段说明：
+    - alias: 方剂别名，便于多名称搜索
+    - modern_research: 现代药理研究摘要，便于AI理解科学依据
+    - clinical_cases: 典型医案引用，提供临床应用参考
+    
+    使用场景：
+    - 经典方剂的学术研究
+    - 临床应用的参考
+    - 教学和科普展示
+    """
+    alias: List[str] = Field(
+        default_factory=list,
+        description="方剂别名列表，便于多名称搜索"
+    )
+    modern_research: Optional[str] = Field(
+        None,
+        description="现代药理研究摘要，包含主要成分和作用机制"
+    )
+    clinical_cases: List[str] = Field(
+        default_factory=list,
+        description="典型医案引用，提供临床应用参考"
+    )
+    
+    # 使用扩展的药材组成模型
+    # composition字段从父类继承，可以包含ExpandedHerbComposition对象
+    
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "id": "f002",
+                "name": "桂枝汤",
+                "pinyin": "guizhi tang",
+                "alias": ["阳旦汤"],
+                "composition": [
+                    {"herb": "桂枝", "dosage": "9g", "role": "君", "note": "去皮"},
+                    {"herb": "芍药", "dosage": "9g", "role": "臣"},
+                    {"herb": "甘草", "dosage": "6g", "role": "佐"},
+                    {"herb": "生姜", "dosage": "9g", "role": "佐"},
+                    {"herb": "大枣", "dosage": "12枚", "role": "使"}
+                ],
+                "efficacy": "解肌发表，调和营卫",
+                "indications": "外感风寒表虚证",
+                "source": "《伤寒论》",
+                "category": "解表剂-辛温解表",
+                "modern_research": "桂枝汤具有解热、抗炎、免疫调节等作用...",
+                "clinical_cases": [
+                    "《伤寒论》原文：太阳中风，阳浮而阴弱...",
+                    "现代应用：用于感冒、流感、产后发热等"
+                ]
+            }
+        }

@@ -1,0 +1,116 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/linyuheng3154/TCM-Learning-Assistant/schemas/formula-schema.json",
+  "title": "中医方剂数据规范",
+  "description": "50首经典方剂数据库的JSON Schema验证规范\n\nAI协作说明：\n- 此Schema用于验证方剂数据的完整性和规范性\n- 支持基础模型和扩展模型的数据验证\n- 确保AI处理的数据结构一致可靠",
+  "type": "object",
+  "required": ["id", "name", "composition", "efficacy", "indications", "source"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^f\\d{3}$",
+      "description": "方剂唯一标识符，格式为'f' + 三位数字"
+    },
+    "name": {
+      "type": "string", 
+      "minLength": 1,
+      "description": "方剂中文正名"
+    },
+    "pinyin": {
+      "type": "string",
+      "description": "拼音名称，便于搜索"
+    },
+    "alias": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "方剂别名列表"
+    },
+    "composition": {
+      "type": "array",
+      "minItems": 1,
+      "description": "组成药材列表，必须至少包含一味药材",
+      "items": {
+        "type": "object",
+        "required": ["herb", "dosage"],
+        "properties": {
+          "herb": {
+            "type": "string",
+            "description": "药材名称（中文）"
+          },
+          "dosage": {
+            "type": "string", 
+            "description": "用量规格（如'9g'、'适量'、'3枚'）"
+          },
+          "role": {
+            "type": "string",
+            "enum": ["君", "臣", "佐", "使"],
+            "description": "配伍角色：君药/臣药/佐药/使药"
+          },
+          "note": {
+            "type": "string",
+            "description": "特殊说明（如炮制方法、特殊用法）"
+          }
+        }
+      }
+    },
+    "efficacy": {
+      "type": "string",
+      "minLength": 1,
+      "description": "主要功效描述"
+    },
+    "indications": {
+      "type": "string", 
+      "minLength": 1,
+      "description": "主治病症详细描述"
+    },
+    "contraindications": {
+      "type": "string",
+      "description": "禁忌症和注意事项"
+    },
+    "usage": {
+      "type": "string",
+      "description": "用法用量说明"
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "description": "来源典籍（如'《伤寒论》'、'《金匮要略》'）"
+    },
+    "category": {
+      "type": "string",
+      "description": "方剂分类（如'解表剂-辛温解表'）"
+    },
+    "modern_research": {
+      "type": "string",
+      "description": "现代药理研究摘要"
+    },
+    "clinical_cases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "典型医案引用列表"
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "id": "f001",
+      "name": "麻黄汤",
+      "pinyin": "mahuang tang",
+      "alias": ["麻黄解表汤"],
+      "composition": [
+        {"herb": "麻黄", "dosage": "9g", "role": "君", "note": "去节"},
+        {"herb": "桂枝", "dosage": "6g", "role": "臣"},
+        {"herb": "杏仁", "dosage": "9g", "role": "佐"},
+        {"herb": "甘草", "dosage": "3g", "role": "使"}
+      ],
+      "efficacy": "发汗解表，宣肺平喘",
+      "indications": "外感风寒表实证",
+      "source": "《伤寒论》",
+      "category": "解表剂-辛温解表"
+    }
+  ]
+}

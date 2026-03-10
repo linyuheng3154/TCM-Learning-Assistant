@@ -1,0 +1,251 @@
+[
+    {
+      "id": "f021",
+      "name": "栀子豉汤",
+      "pinyin": "zhizichi tang",
+      "alias": [],
+      "composition": [
+        {"herb": "栀子", "dosage": "9g", "role": "君"},
+        {"herb": "香豉", "dosage": "12g", "role": "臣"}
+      ],
+      "efficacy": "清热除烦",
+      "indications": "热扰胸膈证，症见身热懊憹，虚烦不眠，胸脘痞闷，按之软而不痛，或嘈杂似饥，但不欲食，舌红苔微黄，脉数",
+      "contraindications": "脾胃虚寒者慎用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "清热剂-清脏腑热",
+      "modern_research": "栀子具有镇静、抗炎、利胆作用，香豉能调节胃肠功能",
+      "clinical_cases": [
+        "《伤寒论》原文：发汗吐下后，虚烦不得眠，若剧者，必反复颠倒...",
+        "现代应用：用于神经衰弱、胃炎、胆囊炎等"
+      ]
+    },
+    {
+      "id": "f022",
+      "name": "真武汤",
+      "pinyin": "zhenwu tang",
+      "alias": ["玄武汤"],
+      "composition": [
+        {"herb": "茯苓", "dosage": "9g", "role": "君"},
+        {"herb": "芍药", "dosage": "9g", "role": "臣"},
+        {"herb": "白术", "dosage": "6g", "role": "佐"},
+        {"herb": "生姜", "dosage": "9g", "role": "佐"},
+        {"herb": "附子", "dosage": "9g", "role": "臣"}
+      ],
+      "efficacy": "温阳利水",
+      "indications": "阳虚水泛证，症见畏寒肢冷，小便不利，心下悸动不宁，头目眩晕，身体筋肉瞤动，站立不稳，四肢沉重疼痛，浮肿，腰以下为甚；或腹痛，泄泻；或咳喘呕逆。舌质淡胖，边有齿痕，舌苔白滑，脉沉细",
+      "contraindications": "阴虚内热者忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "祛湿剂-温化水湿",
+      "modern_research": "具有强心、利尿、改善微循环作用，对心肾功能不全有效",
+      "clinical_cases": [
+        "《伤寒论》原文：太阳病发汗，汗出不解，其人仍发热，心下悸...",
+        "现代应用：用于心力衰竭、肾衰竭、慢性肾炎等"
+      ]
+    },
+    {
+      "id": "f023",
+      "name": "黄连阿胶汤",
+      "pinyin": "huanglianejiao tang",
+      "alias": [],
+      "composition": [
+        {"herb": "黄连", "dosage": "12g", "role": "君"},
+        {"herb": "黄芩", "dosage": "6g", "role": "臣"},
+        {"herb": "芍药", "dosage": "6g", "role": "佐"},
+        {"herb": "鸡子黄", "dosage": "2枚", "role": "使"},
+        {"herb": "阿胶", "dosage": "9g", "role": "佐"}
+      ],
+      "efficacy": "滋阴降火，除烦安神",
+      "indications": "少阴病，心中烦，不得卧，邪火内攻，热伤阴血证",
+      "contraindications": "脾胃虚寒者慎用",
+      "usage": "先煎三味，去滓，内胶烊尽，小冷，内鸡子黄，搅令相得",
+      "source": "《伤寒论》",
+      "category": "清热剂-清虚热",
+      "modern_research": "具有镇静、抗焦虑、改善睡眠作用，黄连有抗菌消炎功效",
+      "clinical_cases": [
+        "《伤寒论》原文：少阴病，得之二三日以上，心中烦，不得卧...",
+        "现代应用：用于失眠、焦虑症、更年期综合征等"
+      ]
+    },
+    {
+      "id": "f024",
+      "name": "猪苓汤",
+      "pinyin": "zhuling tang",
+      "alias": [],
+      "composition": [
+        {"herb": "猪苓", "dosage": "9g", "role": "君"},
+        {"herb": "茯苓", "dosage": "9g", "role": "臣"},
+        {"herb": "泽泻", "dosage": "9g", "role": "佐"},
+        {"herb": "阿胶", "dosage": "9g", "role": "佐"},
+        {"herb": "滑石", "dosage": "9g", "role": "臣"}
+      ],
+      "efficacy": "利水清热养阴",
+      "indications": "水热互结证，症见小便不利，发热，口渴欲饮，或心烦不寐，或兼有咳嗽，呕恶，下利，舌红苔白或微黄，脉细数",
+      "contraindications": "内无热邪者不宜",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "祛湿剂-利水渗湿",
+      "modern_research": "具有利尿、抗炎、保护肾功能作用",
+      "clinical_cases": [
+        "《伤寒论》原文：若脉浮发热，渴欲饮水，小便不利者，猪苓汤主之。",
+        "现代应用：用于泌尿系感染、肾炎、前列腺炎等"
+      ]
+    },
+    {
+      "id": "f025",
+      "name": "乌梅丸",
+      "pinyin": "wumei wan",
+      "alias": [],
+      "composition": [
+        {"herb": "乌梅", "dosage": "30g", "role": "君"},
+        {"herb": "细辛", "dosage": "3g", "role": "臣"},
+        {"herb": "干姜", "dosage": "9g", "role": "臣"},
+        {"herb": "黄连", "dosage": "12g", "role": "佐"},
+        {"herb": "当归", "dosage": "6g", "role": "佐"},
+        {"herb": "附子", "dosage": "6g", "role": "佐"},
+        {"herb": "蜀椒", "dosage": "4g", "role": "佐"},
+        {"herb": "桂枝", "dosage": "6g", "role": "佐"},
+        {"herb": "人参", "dosage": "6g", "role": "佐"},
+        {"herb": "黄柏", "dosage": "6g", "role": "佐"}
+      ],
+      "efficacy": "温脏安蛔",
+      "indications": "蛔厥证，症见脘腹阵发性疼痛，心烦呕吐，时发时止，得食则吐，甚则吐蛔，手足厥冷；亦治久痢久泻",
+      "contraindications": "实热证忌用",
+      "usage": "乌梅用醋浸一宿，去核，蒸熟捣泥，余药研末，与乌梅泥拌匀，炼蜜为丸",
+      "source": "《伤寒论》",
+      "category": "驱虫剂",
+      "modern_research": "具有驱蛔、抗炎、调节胃肠功能作用",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒脉微而厥，至七八日肤冷，其人躁无暂安时者...",
+        "现代应用：用于胆道蛔虫症、慢性肠炎、痢疾等"
+      ]
+    },
+    {
+      "id": "f026",
+      "name": "当归四逆汤",
+      "pinyin": "danggui sin i tang",
+      "alias": [],
+      "composition": [
+        {"herb": "当归", "dosage": "9g", "role": "君"},
+        {"herb": "桂枝", "dosage": "9g", "role": "臣"},
+        {"herb": "芍药", "dosage": "9g", "role": "臣"},
+        {"herb": "细辛", "dosage": "3g", "role": "佐"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "通草", "dosage": "6g", "role": "佐"},
+        {"herb": "大枣", "dosage": "8枚", "role": "使"}
+      ],
+      "efficacy": "温经散寒，养血通脉",
+      "indications": "血虚寒厥证，症见手足厥寒，或腰、股、腿、足、肩臂疼痛，口不渴，舌淡苔白，脉沉细或细而欲绝",
+      "contraindications": "实热证忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "温里剂-温经散寒",
+      "modern_research": "具有改善微循环、抗炎镇痛、调节免疫功能",
+      "clinical_cases": [
+        "《伤寒论》原文：手足厥寒，脉细欲绝者，当归四逆汤主之。",
+        "现代应用：用于冻疮、雷诺病、痛经、关节炎等"
+      ]
+    },
+    {
+      "id": "f027",
+      "name": "麻黄升麻汤",
+      "pinyin": "mahuangshengma tang",
+      "alias": [],
+      "composition": [
+        {"herb": "麻黄", "dosage": "7.5g", "role": "君"},
+        {"herb": "升麻", "dosage": "4g", "role": "臣"},
+        {"herb": "当归", "dosage": "4g", "role": "佐"},
+        {"herb": "知母", "dosage": "3g", "role": "佐"},
+        {"herb": "黄芩", "dosage": "3g", "role": "佐"},
+        {"herb": "葳蕤", "dosage": "3g", "role": "佐"},
+        {"herb": "芍药", "dosage": "1.5g", "role": "佐"},
+        {"herb": "天门冬", "dosage": "1.5g", "role": "佐"},
+        {"herb": "桂枝", "dosage": "1.5g", "role": "佐"},
+        {"herb": "茯苓", "dosage": "1.5g", "role": "佐"},
+        {"herb": "甘草", "dosage": "1.5g", "role": "佐"},
+        {"herb": "石膏", "dosage": "1.5g", "role": "佐"},
+        {"herb": "白术", "dosage": "1.5g", "role": "佐"},
+        {"herb": "干姜", "dosage": "1.5g", "role": "佐"}
+      ],
+      "efficacy": "发越郁阳，清上温下",
+      "indications": "伤寒误下，正伤邪陷，肺热脾寒证",
+      "contraindications": "表实无汗者不宜",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "解表剂-扶正解表",
+      "modern_research": "具有解热、抗炎、调节免疫作用",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒六七日，大下后，寸脉沉而迟，手足厥逆...",
+        "现代应用：用于复杂感染、免疫功能紊乱等"
+      ]
+    },
+    {
+      "id": "f028",
+      "name": "干姜黄芩黄连人参汤",
+      "pinyin": "ganjianghuangqinhuangrenrenshen tang",
+      "alias": [],
+      "composition": [
+        {"herb": "干姜", "dosage": "9g", "role": "君"},
+        {"herb": "黄芩", "dosage": "9g", "role": "臣"},
+        {"herb": "黄连", "dosage": "9g", "role": "臣"},
+        {"herb": "人参", "dosage": "9g", "role": "佐"}
+      ],
+      "efficacy": "寒热平调，辛开苦降",
+      "indications": "上热下寒，寒热格拒证，症见食入即吐，下利",
+      "contraindications": "单纯寒证或热证不宜",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "和解剂-调和肠胃",
+      "modern_research": "具有调节胃肠功能、抗炎、止呕作用",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒本自寒下，医复吐下之，寒格更逆吐下...",
+        "现代应用：用于胃炎、肠炎、消化不良等"
+      ]
+    },
+    {
+      "id": "f029",
+      "name": "白头翁汤",
+      "pinyin": "baitouweng tang",
+      "alias": [],
+      "composition": [
+        {"herb": "白头翁", "dosage": "15g", "role": "君"},
+        {"herb": "黄柏", "dosage": "12g", "role": "臣"},
+        {"herb": "黄连", "dosage": "6g", "role": "佐"},
+        {"herb": "秦皮", "dosage": "12g", "role": "佐"}
+      ],
+      "efficacy": "清热解毒，凉血止痢",
+      "indications": "热毒痢疾，症见腹痛，里急后重，肛门灼热，下痢脓血，赤多白少，渴欲饮水，舌红苔黄，脉弦数",
+      "contraindications": "虚寒痢忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "清热剂-清热解毒",
+      "modern_research": "具有抗菌、抗炎、止痢作用，对痢疾杆菌有显著抑制作用",
+      "clinical_cases": [
+        "《伤寒论》原文：热利下重者，白头翁汤主之。",
+        "现代应用：用于细菌性痢疾、阿米巴痢疾、肠炎等"
+      ]
+    },
+    {
+      "id": "f030",
+      "name": "四逆汤",
+      "pinyin": "sini tang",
+      "alias": [],
+      "composition": [
+        {"herb": "附子", "dosage": "15g", "role": "君"},
+        {"herb": "干姜", "dosage": "9g", "role": "臣"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"}
+      ],
+      "efficacy": "回阳救逆",
+      "indications": "少阴病，症见四肢厥逆，恶寒蜷卧，呕吐不渴，腹痛下利，神衰欲寐，舌苔白滑，脉微；或太阳病误汗亡阳",
+      "contraindications": "真热假寒者忌用",
+      "usage": "水煎服，附子先煎",
+      "source": "《伤寒论》",
+      "category": "温里剂-回阳救逆",
+      "modern_research": "具有强心、升压、改善微循环作用，对休克有急救效果",
+      "clinical_cases": [
+        "《伤寒论》原文：少阴病，脉沉者，急温之，宜四逆汤。",
+        "现代应用：用于休克、心力衰竭、心肌梗死等"
+      ]
+    }
+]

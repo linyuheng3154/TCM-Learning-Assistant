@@ -1,0 +1,251 @@
+[
+    {
+      "id": "f031",
+      "name": "肾气丸",
+      "pinyin": "shenqi wan",
+      "alias": ["桂附地黄丸", "八味肾气丸"],
+      "composition": [
+        {"herb": "干地黄", "dosage": "24g", "role": "君"},
+        {"herb": "山药", "dosage": "12g", "role": "臣"},
+        {"herb": "山茱萸", "dosage": "12g", "role": "臣"},
+        {"herb": "泽泻", "dosage": "9g", "role": "佐"},
+        {"herb": "牡丹皮", "dosage": "9g", "role": "佐"},
+        {"herb": "茯苓", "dosage": "9g", "role": "佐"},
+        {"herb": "桂枝", "dosage": "3g", "role": "佐"},
+        {"herb": "附子", "dosage": "3g", "role": "佐"}
+      ],
+      "efficacy": "补肾助阳",
+      "indications": "肾阳不足证，症见腰痛脚软，身半以下常有冷感，少腹拘急，小便不利，或小便反多，入夜尤甚，阳痿早泄，舌淡而胖，脉虚弱，尺部沉细；以及痰饮、水肿、消渴、脚气、转胞等",
+      "contraindications": "阴虚火旺者忌用",
+      "usage": "蜜丸，每服9g，日2次",
+      "source": "《金匮要略》",
+      "category": "补益剂-补阳",
+      "modern_research": "具有调节内分泌、改善肾功能、抗衰老作用",
+      "clinical_cases": [
+        "《金匮要略》原文：虚劳腰痛，少腹拘急，小便不利者，八味肾气丸主之。",
+        "现代应用：用于慢性肾炎、糖尿病、前列腺增生、更年期综合征等"
+      ]
+    },
+    {
+      "id": "f032",
+      "name": "温经汤",
+      "pinyin": "wenjing tang",
+      "alias": [],
+      "composition": [
+        {"herb": "吴茱萸", "dosage": "9g", "role": "君"},
+        {"herb": "当归", "dosage": "6g", "role": "臣"},
+        {"herb": "芍药", "dosage": "6g", "role": "臣"},
+        {"herb": "川芎", "dosage": "6g", "role": "佐"},
+        {"herb": "人参", "dosage": "6g", "role": "佐"},
+        {"herb": "桂枝", "dosage": "6g", "role": "佐"},
+        {"herb": "阿胶", "dosage": "6g", "role": "佐"},
+        {"herb": "牡丹皮", "dosage": "6g", "role": "佐"},
+        {"herb": "生姜", "dosage": "6g", "role": "佐"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "半夏", "dosage": "6g", "role": "佐"},
+        {"herb": "麦冬", "dosage": "9g", "role": "佐"}
+      ],
+      "efficacy": "温经散寒，养血祛瘀",
+      "indications": "冲任虚寒，瘀血阻滞证，症见漏下不止，月经不调，或前或后，或一月再行，或经停不至，而见入暮发热，手心烦热，唇口干燥；亦治妇人久不受孕",
+      "contraindications": "阴虚血热者慎用",
+      "usage": "水煎服",
+      "source": "《金匮要略》",
+      "category": "理血剂-活血祛瘀",
+      "modern_research": "具有调节内分泌、改善子宫血液循环、抗炎作用",
+      "clinical_cases": [
+        "《金匮要略》原文：妇人年五十所，病下利数十日不止...",
+        "现代应用：用于月经不调、痛经、不孕症、更年期综合征等"
+      ]
+    },
+    {
+      "id": "f033",
+      "name": "黄土汤",
+      "pinyin": "huangtu tang",
+      "alias": [],
+      "composition": [
+        {"herb": "甘草", "dosage": "9g", "role": "君"},
+        {"herb": "干地黄", "dosage": "9g", "role": "臣"},
+        {"herb": "白术", "dosage": "9g", "role": "佐"},
+        {"herb": "附子", "dosage": "9g", "role": "佐"},
+        {"herb": "阿胶", "dosage": "9g", "role": "佐"},
+        {"herb": "黄芩", "dosage": "9g", "role": "佐"},
+        {"herb": "灶心黄土", "dosage": "30g", "role": "使"}
+      ],
+      "efficacy": "温阳健脾，养血止血",
+      "indications": "脾阳不足，脾不统血证，症见大便下血，先便后血，或吐血、衄血，及妇人崩漏，血色暗淡，四肢不温，面色萎黄，舌淡苔白，脉沉细无力",
+      "contraindications": "血热妄行者忌用",
+      "usage": "先将灶心黄土煎汤代水，再煎余药",
+      "source": "《金匮要略》",
+      "category": "理血剂-止血",
+      "modern_research": "具有止血、抗溃疡、调节免疫功能",
+      "clinical_cases": [
+        "《金匮要略》原文：下血，先便后血，此远血也，黄土汤主之。",
+        "现代应用：用于上消化道出血、功能性子宫出血、血小板减少等"
+      ]
+    },
+    {
+      "id": "f034",
+      "name": "大黄牡丹汤",
+      "pinyin": "dahuangmudan tang",
+      "alias": [],
+      "composition": [
+        {"herb": "大黄", "dosage": "12g", "role": "君"},
+        {"herb": "牡丹皮", "dosage": "9g", "role": "臣"},
+        {"herb": "桃仁", "dosage": "12g", "role": "佐"},
+        {"herb": "冬瓜仁", "dosage": "30g", "role": "佐"},
+        {"herb": "芒硝", "dosage": "9g", "role": "臣"}
+      ],
+      "efficacy": "泻热破瘀，散结消肿",
+      "indications": "肠痈初起，湿热瘀滞证，症见右少腹疼痛拒按，甚则局部有痞块，小便自调，时时发热，自汗恶寒，舌苔薄腻而黄，脉滑数",
+      "contraindications": "重型急性阑尾炎、阑尾炎穿孔等慎用",
+      "usage": "水煎服",
+      "source": "《金匮要略》",
+      "category": "泻下剂-寒下",
+      "modern_research": "具有抗炎、抗菌、促进肠蠕动作用",
+      "clinical_cases": [
+        "《金匮要略》原文：肠痈者，少腹肿痞，按之即痛如淋...",
+        "现代应用：用于急性阑尾炎、盆腔炎、附件炎等"
+      ]
+    },
+    {
+      "id": "f035",
+      "name": "薏苡附子败酱散",
+      "pinyin": "yiyifuzibaijiang san",
+      "alias": [],
+      "composition": [
+        {"herb": "薏苡仁", "dosage": "30g", "role": "君"},
+        {"herb": "附子", "dosage": "6g", "role": "臣"},
+        {"herb": "败酱草", "dosage": "15g", "role": "佐"}
+      ],
+      "efficacy": "排脓消肿",
+      "indications": "肠痈脓已成，身无热，肌肤甲错，腹皮急，按之濡，如肿状，脉数",
+      "contraindications": "肠痈初起者不宜",
+      "usage": "为末，每次6g，日2次",
+      "source": "《金匮要略》",
+      "category": "痈疡剂",
+      "modern_research": "具有抗炎、抗菌、促进脓液吸收作用",
+      "clinical_cases": [
+        "《金匮要略》原文：肠痈之为病，其身甲错，腹皮急，按之濡...",
+        "现代应用：用于慢性阑尾炎、腹腔脓肿、盆腔炎等"
+      ]
+    },
+    {
+      "id": "f036",
+      "name": "桂枝茯苓丸",
+      "pinyin": "guizhifuling wan",
+      "alias": [],
+      "composition": [
+        {"herb": "桂枝", "dosage": "6g", "role": "君"},
+        {"herb": "茯苓", "dosage": "6g", "role": "臣"},
+        {"herb": "牡丹皮", "dosage": "6g", "role": "佐"},
+        {"herb": "芍药", "dosage": "6g", "role": "佐"},
+        {"herb": "桃仁", "dosage": "6g", "role": "佐"}
+      ],
+      "efficacy": "活血化瘀，缓消癥块",
+      "indications": "瘀阻胞宫证，症见妇人素有癥块，妊娠漏下不止，或胎动不安，血色紫黑晦暗，腹痛拒按，或经闭腹痛，或产后恶露不尽而腹痛拒按者，舌质紫暗或有瘀点，脉沉涩",
+      "contraindications": "孕妇慎用",
+      "usage": "蜜丸，每服3g，日3次",
+      "source": "《金匮要略》",
+      "category": "理血剂-活血祛瘀",
+      "modern_research": "具有改善微循环、抗炎、调节内分泌作用",
+      "clinical_cases": [
+        "《金匮要略》原文：妇人宿有癥病，经断未及三月，而得漏下不止...",
+        "现代应用：用于子宫肌瘤、卵巢囊肿、子宫内膜异位症等"
+      ]
+    },
+    {
+      "id": "f037",
+      "name": "当归芍药散",
+      "pinyin": "dangguishaoyao san",
+      "alias": [],
+      "composition": [
+        {"herb": "当归", "dosage": "9g", "role": "君"},
+        {"herb": "芍药", "dosage": "30g", "role": "臣"},
+        {"herb": "川芎", "dosage": "15g", "role": "佐"},
+        {"herb": "茯苓", "dosage": "12g", "role": "佐"},
+        {"herb": "白术", "dosage": "12g", "role": "佐"},
+        {"herb": "泽泻", "dosage": "15g", "role": "佐"}
+      ],
+      "efficacy": "养血疏肝，健脾利湿",
+      "indications": "肝郁血虚脾弱证，症见妇人妊娠或经期，腹中拘急，绵绵作痛，头晕心悸，或下肢浮肿，小便不利，舌质淡，苔白腻",
+      "contraindications": "阴虚内热者慎用",
+      "usage": "为散，每服6g，酒和，日3次",
+      "source": "《金匮要略》",
+      "category": "理血剂-活血祛瘀",
+      "modern_research": "具有调节子宫功能、改善微循环、利尿作用",
+      "clinical_cases": [
+        "《金匮要略》原文：妇人怀妊，腹中疞痛，当归芍药散主之。",
+        "现代应用：用于痛经、月经不调、妊娠水肿、更年期综合征等"
+      ]
+    },
+    {
+      "id": "f038",
+      "name": "胶艾汤",
+      "pinyin": "jiaoai tang",
+      "alias": ["芎归胶艾汤"],
+      "composition": [
+        {"herb": "川芎", "dosage": "6g", "role": "君"},
+        {"herb": "阿胶", "dosage": "9g", "role": "臣"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "艾叶", "dosage": "9g", "role": "佐"},
+        {"herb": "当归", "dosage": "9g", "role": "臣"},
+        {"herb": "芍药", "dosage": "12g", "role": "佐"},
+        {"herb": "干地黄", "dosage": "15g", "role": "佐"}
+      ],
+      "efficacy": "养血止血，调经安胎",
+      "indications": "妇人冲任虚损，血虚寒滞证，症见崩漏下血，月经过多，淋漓不止，产后或流产损伤冲任，下血不绝；或妊娠胞阻，胎动不安，腹痛漏红",
+      "contraindications": "血热妄行者忌用",
+      "usage": "水煎服",
+      "source": "《金匮要略》",
+      "category": "理血剂-止血",
+      "modern_research": "具有止血、调节子宫功能、安胎作用",
+      "clinical_cases": [
+        "《金匮要略》原文：师曰：妇人有漏下者，有半产后因续下血都不绝者...",
+        "现代应用：用于功能性子宫出血、先兆流产、产后出血等"
+      ]
+    },
+    {
+      "id": "f039",
+      "name": "当归生姜羊肉汤",
+      "pinyin": "dangguishengjiangyangrou tang",
+      "alias": [],
+      "composition": [
+        {"herb": "当归", "dosage": "18g", "role": "君"},
+        {"herb": "生姜", "dosage": "30g", "role": "臣"},
+        {"herb": "羊肉", "dosage": "250g", "role": "佐"}
+      ],
+      "efficacy": "温中补血，祛寒止痛",
+      "indications": "血虚寒疝，症见腹中痛及胁痛里急；产后腹中疞痛，喜温喜按；虚劳不足",
+      "contraindications": "阴虚内热者忌用",
+      "usage": "水煎，食肉饮汤",
+      "source": "《金匮要略》",
+      "category": "温里剂-温中祛寒",
+      "modern_research": "具有补血、增强免疫力、改善微循环作用",
+      "clinical_cases": [
+        "《金匮要略》原文：寒疝腹中痛，及胁痛里急者，当归生姜羊肉汤主之。",
+        "现代应用：用于贫血、产后体虚、痛经、慢性腹痛等"
+      ]
+    },
+    {
+      "id": "f040",
+      "name": "甘麦大枣汤",
+      "pinyin": "ganmaidazao tang",
+      "alias": [],
+      "composition": [
+        {"herb": "甘草", "dosage": "9g", "role": "君"},
+        {"herb": "小麦", "dosage": "15g", "role": "臣"},
+        {"herb": "大枣", "dosage": "10枚", "role": "佐"}
+      ],
+      "efficacy": "养心安神，和中缓急",
+      "indications": "脏躁，症见精神恍惚，常悲伤欲哭，不能自主，心中烦乱，睡眠不安，甚则言行失常，呵欠频作，舌淡红苔少，脉细微数",
+      "contraindications": "痰火内盛者慎用",
+      "usage": "水煎服",
+      "source": "《金匮要略》",
+      "category": "安神剂-养心安神",
+      "modern_research": "具有镇静、抗焦虑、调节神经功能作用",
+      "clinical_cases": [
+        "《金匮要略》原文：妇人脏躁，喜悲伤欲哭，象如神灵所作...",
+        "现代应用：用于更年期综合征、神经衰弱、癔症、抑郁症等"
+      ]
+    }
+]

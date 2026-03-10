@@ -1,0 +1,238 @@
+[
+    {
+      "id": "f011",
+      "name": "四逆散",
+      "pinyin": "sini san",
+      "alias": [],
+      "composition": [
+        {"herb": "柴胡", "dosage": "6g", "role": "君"},
+        {"herb": "芍药", "dosage": "9g", "role": "臣"},
+        {"herb": "枳实", "dosage": "6g", "role": "佐"},
+        {"herb": "甘草", "dosage": "6g", "role": "使"}
+      ],
+      "efficacy": "透邪解郁，疏肝理脾",
+      "indications": "阳郁厥逆证，症见手足不温，或腹痛，或泄利下重，脉弦；肝脾气郁证，症见胁肋胀闷，脘腹疼痛，脉弦",
+      "contraindications": "阴虚火旺者慎用",
+      "usage": "水煎服，或作散剂冲服",
+      "source": "《伤寒论》",
+      "category": "和解剂-调和肝脾",
+      "modern_research": "具有解痉、镇痛、抗炎、保肝作用，能调节自主神经功能",
+      "clinical_cases": [
+        "《伤寒论》原文：少阴病，四逆，其人或咳，或悸，或小便不利...",
+        "现代应用：用于胃炎、肠炎、肝炎、胆囊炎、痛经等"
+      ]
+    },
+    {
+      "id": "f012",
+      "name": "半夏泻心汤",
+      "pinyin": "banxiaxiexin tang",
+      "alias": [],
+      "composition": [
+        {"herb": "半夏", "dosage": "12g", "role": "君"},
+        {"herb": "黄芩", "dosage": "9g", "role": "臣"},
+        {"herb": "干姜", "dosage": "9g", "role": "臣"},
+        {"herb": "人参", "dosage": "9g", "role": "佐"},
+        {"herb": "甘草", "dosage": "9g", "role": "佐"},
+        {"herb": "黄连", "dosage": "3g", "role": "佐"},
+        {"herb": "大枣", "dosage": "4枚", "role": "使"}
+      ],
+      "efficacy": "寒热平调，消痞散结",
+      "indications": "寒热互结之痞证，症见心下痞，但满而不痛，或呕吐，肠鸣下利，舌苔腻而微黄",
+      "contraindications": "脾胃虚寒者不宜单用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "和解剂-调和肠胃",
+      "modern_research": "具有调节胃肠功能、抗溃疡、抗炎、调节免疫作用",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒五六日，呕而发热者，柴胡汤证具...",
+        "现代应用：用于胃炎、胃溃疡、肠炎、消化不良等"
+      ]
+    },
+    {
+      "id": "f013",
+      "name": "白虎汤",
+      "pinyin": "baihu tang",
+      "alias": [],
+      "composition": [
+        {"herb": "石膏", "dosage": "50g", "role": "君"},
+        {"herb": "知母", "dosage": "18g", "role": "臣"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "粳米", "dosage": "9g", "role": "使"}
+      ],
+      "efficacy": "清热生津",
+      "indications": "气分热盛证，症见壮热面赤，烦渴引饮，汗出恶热，脉洪大有力",
+      "contraindications": "表证未解、阳虚发热者忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "清热剂-清气分热",
+      "modern_research": "具有强效解热、抗炎、抗病毒作用，石膏能抑制发热中枢",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒脉浮滑，此表有热，里有寒，白虎汤主之。",
+        "现代应用：用于高热、中暑、肺炎、脑炎等"
+      ]
+    },
+    {
+      "id": "f014",
+      "name": "白虎加人参汤",
+      "pinyin": "baihujiarenshen tang",
+      "alias": [],
+      "composition": [
+        {"herb": "石膏", "dosage": "50g", "role": "君"},
+        {"herb": "知母", "dosage": "18g", "role": "臣"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "粳米", "dosage": "9g", "role": "使"},
+        {"herb": "人参", "dosage": "9g", "role": "臣"}
+      ],
+      "efficacy": "清热，益气，生津",
+      "indications": "气分热盛，气津两伤证，症见汗、吐、下后，里热炽盛，而见四大症者；或暑热病见气津两伤者",
+      "contraindications": "阳虚发热者忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "清热剂-清气分热",
+      "modern_research": "在白虎汤基础上增强免疫功能，对热病后期体虚者更适宜",
+      "clinical_cases": [
+        "《伤寒论》原文：服桂枝汤，大汗出后，大烦渴不解，脉洪大者...",
+        "现代应用：用于高热脱水、糖尿病、中暑等"
+      ]
+    },
+    {
+      "id": "f015",
+      "name": "竹叶石膏汤",
+      "pinyin": "zhuyeshigao tang",
+      "alias": [],
+      "composition": [
+        {"herb": "竹叶", "dosage": "6g", "role": "君"},
+        {"herb": "石膏", "dosage": "50g", "role": "臣"},
+        {"herb": "半夏", "dosage": "9g", "role": "佐"},
+        {"herb": "麦门冬", "dosage": "20g", "role": "臣"},
+        {"herb": "人参", "dosage": "6g", "role": "佐"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "粳米", "dosage": "10g", "role": "使"}
+      ],
+      "efficacy": "清热生津，益气和胃",
+      "indications": "伤寒、温病、暑病余热未清，气津两伤证，症见身热多汗，心胸烦闷，气逆欲呕，口干喜饮，或虚烦不寐，舌红苔少，脉虚数",
+      "contraindications": "脾胃虚寒者慎用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "清热剂-清气分热",
+      "modern_research": "具有解热、抗炎、调节免疫、保护胃黏膜作用",
+      "clinical_cases": [
+        "《伤寒论》原文：伤寒解后，虚羸少气，气逆欲吐，竹叶石膏汤主之。",
+        "现代应用：用于热病后期、夏季热、口腔溃疡等"
+      ]
+    },
+    {
+      "id": "f016",
+      "name": "调胃承气汤",
+      "pinyin": "tiaoweichengqi tang",
+      "alias": [],
+      "composition": [
+        {"herb": "大黄", "dosage": "12g", "role": "君"},
+        {"herb": "甘草", "dosage": "6g", "role": "佐"},
+        {"herb": "芒硝", "dosage": "12g", "role": "臣"}
+      ],
+      "efficacy": "缓下热结",
+      "indications": "阳明腑实证，症见大便不通，口渴心烦，或谵语，腹满，舌苔正黄，脉滑数；胃肠积热引起的发斑，口齿喉痛等",
+      "contraindications": "孕妇、体虚者慎用",
+      "usage": "大黄、甘草同煎，芒硝冲服",
+      "source": "《伤寒论》",
+      "category": "泻下剂-寒下",
+      "modern_research": "具有泻下、抗炎、抗菌作用，作用较缓和",
+      "clinical_cases": [
+        "《伤寒论》原文：阳明病，不吐不下，心烦者，可与调胃承气汤。",
+        "现代应用：用于便秘、口腔溃疡、牙龈炎等"
+      ]
+    },
+    {
+      "id": "f017",
+      "name": "小承气汤",
+      "pinyin": "xiaochengqi tang",
+      "alias": [],
+      "composition": [
+        {"herb": "大黄", "dosage": "12g", "role": "君"},
+        {"herb": "厚朴", "dosage": "6g", "role": "臣"},
+        {"herb": "枳实", "dosage": "9g", "role": "佐"}
+      ],
+      "efficacy": "轻下热结",
+      "indications": "阳明腑实证，症见谵语潮热，大便秘结，胸腹痞满，舌苔老黄，脉滑而疾；或痢疾初起，腹中胀痛，里急后重者",
+      "contraindications": "孕妇、体虚者慎用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "泻下剂-寒下",
+      "modern_research": "具有泻下、促进胃肠蠕动、抗炎作用",
+      "clinical_cases": [
+        "《伤寒论》原文：阳明病，其人多汗，以津液外出，胃中燥...",
+        "现代应用：用于便秘、肠梗阻、痢疾等"
+      ]
+    },
+    {
+      "id": "f018",
+      "name": "大承气汤",
+      "pinyin": "dachengqi tang",
+      "alias": [],
+      "composition": [
+        {"herb": "大黄", "dosage": "12g", "role": "君"},
+        {"herb": "厚朴", "dosage": "24g", "role": "臣"},
+        {"herb": "枳实", "dosage": "12g", "role": "佐"},
+        {"herb": "芒硝", "dosage": "9g", "role": "臣"}
+      ],
+      "efficacy": "峻下热结",
+      "indications": "阳明腑实证，症见大便不通，频转矢气，脘腹痞满，腹痛拒按，日晡潮热，神昏谵语，舌苔黄燥起刺，脉沉实；热结旁流；里热实证之热厥、痉病或发狂",
+      "contraindications": "表证未解、阴虚肠燥、孕妇忌用",
+      "usage": "先煎厚朴、枳实，后下大黄，芒硝冲服",
+      "source": "《伤寒论》",
+      "category": "泻下剂-寒下",
+      "modern_research": "具有强效泻下、抗炎、抗菌、改善肠道微循环作用",
+      "clinical_cases": [
+        "《伤寒论》原文：阳明病，脉迟，虽汗出，不恶寒者...",
+        "现代应用：用于急性肠梗阻、急性胰腺炎、中毒性痢疾等"
+      ]
+    },
+    {
+      "id": "f019",
+      "name": "麻子仁丸",
+      "pinyin": "maziren wan",
+      "alias": ["脾约丸"],
+      "composition": [
+        {"herb": "麻子仁", "dosage": "20g", "role": "君"},
+        {"herb": "芍药", "dosage": "9g", "role": "臣"},
+        {"herb": "枳实", "dosage": "9g", "role": "佐"},
+        {"herb": "大黄", "dosage": "12g", "role": "臣"},
+        {"herb": "厚朴", "dosage": "9g", "role": "佐"},
+        {"herb": "杏仁", "dosage": "10g", "role": "佐"}
+      ],
+      "efficacy": "润肠泄热，行气通便",
+      "indications": "肠胃燥热，脾约便秘证，症见大便干结，小便频数，苔微黄少津",
+      "contraindications": "孕妇、虚秘者慎用",
+      "usage": "上药为末，炼蜜为丸，每次9g，每日1-2次",
+      "source": "《伤寒论》",
+      "category": "泻下剂-润下",
+      "modern_research": "具有缓泻、润肠、促进肠蠕动作用",
+      "clinical_cases": [
+        "《伤寒论》原文：趺阳脉浮而涩，浮则胃气强，涩则小便数...",
+        "现代应用：用于习惯性便秘、老年便秘、产后便秘等"
+      ]
+    },
+    {
+      "id": "f020",
+      "name": "茵陈蒿汤",
+      "pinyin": "yinchenhao tang",
+      "alias": [],
+      "composition": [
+        {"herb": "茵陈蒿", "dosage": "18g", "role": "君"},
+        {"herb": "栀子", "dosage": "9g", "role": "臣"},
+        {"herb": "大黄", "dosage": "6g", "role": "佐"}
+      ],
+      "efficacy": "清热，利湿，退黄",
+      "indications": "湿热黄疸，症见一身面目俱黄，黄色鲜明，发热，无汗或但头汗出，口渴欲饮，恶心呕吐，腹微满，小便短赤，大便不爽或秘结，舌红苔黄腻，脉沉数或滑数有力",
+      "contraindications": "寒湿黄疸忌用",
+      "usage": "水煎服",
+      "source": "《伤寒论》",
+      "category": "祛湿剂-清热祛湿",
+      "modern_research": "具有利胆、保肝、降酶、退黄作用，对急性黄疸型肝炎有显著疗效",
+      "clinical_cases": [
+        "《伤寒论》原文：阳明病，发热汗出者，此为热越，不能发黄也...",
+        "现代应用：用于急性黄疸型肝炎、胆囊炎、胆石症等"
+      ]
+    }
+]

@@ -2,10 +2,12 @@
 应用配置管理
 """
 
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     """应用配置"""
+    
+    model_config = SettingsConfigDict(env_file=".env")
     
     # 应用配置
     app_name: str = "TCM Learning Assistant"
@@ -22,9 +24,6 @@ class Settings(BaseSettings):
     
     # 数据配置
     data_dir: str = "data"
-    
-    class Config:
-        env_file = ".env"
 
 # 全局配置实例
 _settings = None

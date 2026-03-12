@@ -24,7 +24,7 @@ AI协作说明：
 """
 
 from typing import Optional, List
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator, ConfigDict
 
 
 class HerbComposition(BaseModel):
@@ -102,8 +102,8 @@ class FormulaModel(BaseModel):
     is_patent_medicine: Optional[bool] = Field(None, description="是否为中成药")
     specification: Optional[str] = Field(None, description="规格")
     
-    class Config:
-        json_schema_extra = {
+    model_config = ConfigDict(
+        json_schema_extra={
             "example": {
                 "id": "f002",
                 "name": "桂枝汤",
@@ -118,6 +118,15 @@ class FormulaModel(BaseModel):
                 "category": "解表剂-辛温解表"
             }
         }
+    )
+    
+    @field_validator('composition')
+    @classmethod
+    def validate_composition_not_empty(cls, v: List[HerbComposition]) -> List[HerbComposition]:
+        """验证组成药材列表不能为空"""
+        if not v:
+            raise ValueError('组成药材列表不能为空')
+        return v
 
 
 class FormulaBriefModel(BaseModel):
@@ -184,8 +193,8 @@ class ExpandedFormulaModel(FormulaModel):
     # 使用扩展的药材组成模型
     # composition字段从父类继承，可以包含ExpandedHerbComposition对象
     
-    class Config:
-        json_schema_extra = {
+    model_config = ConfigDict(
+        json_schema_extra={
             "example": {
                 "id": "f002",
                 "name": "桂枝汤",
@@ -209,3 +218,4 @@ class ExpandedFormulaModel(FormulaModel):
                 ]
             }
         }
+    )

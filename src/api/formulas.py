@@ -274,7 +274,7 @@ async def get_expanded_formula_by_id(formula_id: str):
         
         # 转换为扩展模型（保持兼容性）
         # 在实际应用中，这里应该从扩展数据源加载完整数据
-        expanded_data = formula.dict()
+        expanded_data = formula.model_dump()
         
         # 添加扩展字段的默认值（在实际系统中应该从完整数据源加载）
         expanded_data.setdefault('alias', [])

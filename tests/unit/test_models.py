@@ -57,7 +57,7 @@ class TestExpandedHerbComposition:
         """测试扩展模型与基础模型的兼容性"""
         # 扩展模型应该能够接受基础模型的所有字段
         base_comp = HerbComposition(herb="麻黄", dosage="9g")
-        expanded_comp = ExpandedHerbComposition(**base_comp.dict())
+        expanded_comp = ExpandedHerbComposition(**base_comp.model_dump())
         
         assert expanded_comp.herb == "麻黄"
         assert expanded_comp.dosage == "9g"
@@ -145,7 +145,7 @@ class TestExpandedFormulaModel:
         )
         
         # 转换为扩展模型
-        expanded_data = base_formula.dict()
+        expanded_data = base_formula.model_dump()
         expanded_data['alias'] = []
         expanded_data['modern_research'] = ''
         expanded_data['clinical_cases'] = []

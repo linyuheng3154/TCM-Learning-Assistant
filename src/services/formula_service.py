@@ -177,11 +177,12 @@ class FormulaService:
         1. 在指定字段中查找关键词
         2. 计算匹配度评分（基于匹配字段数量和匹配位置）
         3. 按评分降序排序返回结果
+        4. 支持拼音首字母搜索（如 "gzt" 匹配 "桂枝汤"）
         
         Args:
             keyword: 搜索关键词
             limit: 返回结果数量限制，默认10条
-            fields: 搜索字段列表，默认为 ["name", "efficacy", "indications", "pinyin"]
+            fields: 搜索字段列表，默认为 ["name", "efficacy", "indications", "pinyin", "pinyin_initials", "category"]
         
         Returns:
             搜索结果列表，包含匹配度评分
@@ -192,11 +193,14 @@ class FormulaService:
             
             # 仅在方剂名称中搜索
             results = service.search_formulas("桂枝", fields=["name"])
+            
+            # 拼音首字母搜索
+            results = service.search_formulas("gzt")  # 匹配桂枝汤
         """
         self._load_data()
         
         if fields is None:
-            fields = ["name", "efficacy", "indications", "pinyin", "category"]
+            fields = ["name", "efficacy", "indications", "pinyin", "pinyin_initials", "category"]
         
         results = []
         keyword_lower = keyword.lower()
@@ -205,8 +209,18 @@ class FormulaService:
             matched_fields = []
             score = 0.0
             
+            # 计算拼音首字母（如果不存在）
+            pinyin_initials = getattr(formula, 'pinyin_initials', None)
+            if pinyin_initials is None and formula.pinyin:
+                pinyin_initials = self._get_pinyin_initials(formula.pinyin)
+            
             for field in fields:
                 value = getattr(formula, field, None)
+                
+                # 特殊处理 pinyin_initials 字段
+                if field == "pinyin_initials":
+                    value = pinyin_initials
+                
                 if value is None:
                     continue
                 
@@ -222,6 +236,12 @@ class FormulaService:
                             score += 1.0  # 完全匹配
                         else:
                             score += 0.8  # 部分匹配
+                    elif field == "pinyin_initials":
+                        # 拼音首字母匹配权重高
+                        if keyword_lower == value_lower:
+                            score += 0.95  # 完全匹配首字母
+                        else:
+                            score += 0.7
                     elif field == "pinyin":
                         score += 0.7
                     elif field == "efficacy":
@@ -250,6 +270,24 @@ class FormulaService:
         results.sort(key=lambda x: x.score, reverse=True)
         
         return results[:limit]
+    
+    def _get_pinyin_initials(self, pinyin: str) -> str:
+        """
+        从拼音字符串提取首字母
+        
+        Args:
+            pinyin: 拼音字符串，如 "guizhi tang"
+        
+        Returns:
+            首字母字符串，如 "gzt"
+        """
+        if not pinyin:
+            return ""
+        
+        # 分割拼音单词，取每个单词的首字母
+        words = pinyin.lower().split()
+        initials = "".join(word[0] for word in words if word)
+        return initials
     
     def get_formulas_by_category(self, category: str) -> List[FormulaBriefModel]:
         """

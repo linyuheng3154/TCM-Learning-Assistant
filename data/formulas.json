@@ -6,7 +6,9 @@
     "source": "《伤寒论》《金匮要略》《温病条辨》《太平惠民和剂局方》",
     "total_formulas": 50,
     "description": "50首经典中医方剂数据库，包含完整组成、功效、主治、出处及现代研究",
-    "data_quality": "专业准确，基于经典医籍原文"
+    "data_quality": "专业准确，基于经典医籍原文",
+    "last_updated": "2026-03-12",
+    "sources": []
   },
   "formulas": [
     {

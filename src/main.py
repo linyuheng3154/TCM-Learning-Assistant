@@ -29,7 +29,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 from src.config.settings import get_settings
-from src.api import formulas
+from src.api import formulas, diagnosis
 
 # 获取配置
 settings = get_settings()
@@ -75,6 +75,7 @@ app.add_middleware(
 # ============================================================
 
 app.include_router(formulas.router)
+app.include_router(diagnosis.router)
 
 
 # ============================================================
@@ -99,6 +100,7 @@ async def root():
         "endpoints": {
             "formulas": "/formulas",
             "search": "/formulas/search?keyword=桂枝",
+            "diagnosis": "/diagnosis/recommend",
             "health": "/health"
         }
     }

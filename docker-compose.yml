@@ -1,0 +1,42 @@
+# TCM Learning Assistant - Docker Compose
+# 中医学习助手 - Docker 编排配置
+
+version: '3.8'
+
+services:
+  tcm-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tcm-learning-assistant
+    ports:
+      - "8000:8000"
+    volumes:
+      # 挂载数据目录（持久化数据）
+      - ./data:/app/data
+      # 挂载环境变量文件
+      - ./.env:/app/.env:ro
+    environment:
+      - APP_NAME=TCM Learning Assistant
+      - DEBUG=false
+      - HOST=0.0.0.0
+      - PORT=8000
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+# 可选：添加 Nginx 反向代理
+#  nginx:
+#    image: nginx:alpine
+#    container_name: tcm-nginx
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+#    depends_on:
+#      - tcm-api
+#    restart: unless-stopped

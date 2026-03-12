@@ -89,6 +89,7 @@ class FormulaModel(BaseModel):
     id: str = Field(..., description="方剂唯一标识")
     name: str = Field(..., description="方剂名称")
     pinyin: Optional[str] = Field(None, description="拼音名称")
+    pinyin_initials: Optional[str] = Field(None, description="拼音首字母（如 'gzt' 代表桂枝汤）")
     composition: List[HerbComposition] = Field(default_factory=list, description="组成药材")
     efficacy: str = Field(..., description="功效")
     indications: str = Field(..., description="主治")

@@ -49,3 +49,11 @@ Thumbs.db
 config/secrets.py
 .env.local
 .env.production
+
+# Design docs (local only)
+PROJECT_NOTES.md
+docs/ROADMAP.md
+docs/skill-pack-modularization.md
+docs/tcm-diagnosis-multi-agent-architecture.md
+docs/agent-specialization-plan.md
+docs/deployment-optimization.md

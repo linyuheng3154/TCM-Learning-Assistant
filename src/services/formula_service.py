@@ -26,7 +26,9 @@ from src.models.formula import (
     FormulaModel,
     FormulaBriefModel,
     FormulaSearchResult,
-    HerbComposition
+    HerbComposition,
+    FormulaCompareResult,
+    HerbCompareResult
 )
 
 
@@ -341,6 +343,124 @@ class FormulaService:
                     break
         
         return results
+    
+    def compare_formulas(self, formula_ids: List[str]) -> FormulaCompareResult:
+        """
+        对比多方剂信息
+        
+        分析多首方剂的组成、功效、主治、禁忌等差异。
+        
+        Args:
+            formula_ids: 要对比的方剂ID列表（2-5个）
+        
+        Returns:
+            FormulaCompareResult: 对比结果
+        
+        Raises:
+            ValueError: 方剂ID数量不在2-5范围内
+        """
+        self._load_data()
+        
+        if not (2 <= len(formula_ids) <= 5):
+            raise ValueError("对比方剂数量需在2-5个之间")
+        
+        # 获取所有方剂
+        formulas = []
+        for fid in formula_ids:
+            formula = self._formulas_cache.get(fid)
+            if formula is None:
+                raise ValueError(f"方剂不存在: {fid}")
+            formulas.append(formula)
+        
+        # 收集所有药材
+        all_herbs = {}  # {药材名: {方剂ID: (用量, 角色)}}
+        formula_herb_sets = {}  # {方剂ID: set(药材名)}
+        
+        for formula in formulas:
+            herb_set = set()
+            for comp in formula.composition:
+                herb_name = comp.herb
+                herb_set.add(herb_name)
+                
+                if herb_name not in all_herbs:
+                    all_herbs[herb_name] = {}
+                
+                role = getattr(comp, 'role', None) or ''
+                all_herbs[herb_name][formula.id] = (comp.dosage, role)
+            
+            formula_herb_sets[formula.id] = herb_set
+        
+        # 找出共同药材和各方剂独有药材
+        if formula_herb_sets:
+            common_herbs = set.intersection(*formula_herb_sets.values())
+        else:
+            common_herbs = set()
+        
+        unique_herbs = {}
+        for fid in formula_ids:
+            other_herbs = set()
+            for other_fid, herb_set in formula_herb_sets.items():
+                if other_fid != fid:
+                    other_herbs.update(herb_set)
+            unique_herbs[fid] = list(formula_herb_sets[fid] - other_herbs)
+        
+        # 构建药材对比结果
+        herbs_comparison = []
+        for herb_name in sorted(all_herbs.keys()):
+            usage_dict = {}
+            roles_dict = {}
+            for fid in formula_ids:
+                if fid in all_herbs[herb_name]:
+                    usage_dict[fid], roles_dict[fid] = all_herbs[herb_name][fid]
+                else:
+                    usage_dict[fid] = "-"
+                    roles_dict[fid] = "-"
+            
+            herbs_comparison.append(HerbCompareResult(
+                herb=herb_name,
+                usage=usage_dict,
+                roles=roles_dict
+            ))
+        
+        # 功效对比
+        efficacy_comparison = {f.id: f.efficacy for f in formulas}
+        
+        # 主治对比
+        indications_comparison = {f.id: f.indications for f in formulas}
+        
+        # 禁忌对比
+        contraindications_comparison = {}
+        for f in formulas:
+            contraindications_comparison[f.id] = f.contraindications or "暂无记载"
+        
+        # 生成对比摘要
+        summary_parts = [f"对比{len(formulas)}首方剂："]
+        for f in formulas:
+            summary_parts.append(f"- {f.name}：{f.efficacy[:20]}...")
+        summary_parts.append(f"\n共同药材：{', '.join(common_herbs) if common_herbs else '无'}")
+        
+        summary = "\n".join(summary_parts)
+        
+        # 构建简要信息列表
+        brief_formulas = [
+            FormulaBriefModel(
+                id=f.id,
+                name=f.name,
+                efficacy=f.efficacy,
+                category=f.category
+            ) for f in formulas
+        ]
+        
+        return FormulaCompareResult(
+            formulas=brief_formulas,
+            herbs_comparison=herbs_comparison,
+            common_herbs=list(common_herbs),
+            unique_herbs=unique_herbs,
+            efficacy_comparison=efficacy_comparison,
+            indications_comparison=indications_comparison,
+            contraindications_comparison=contraindications_comparison,
+            summary=summary
+        )
 
 
 # 创建全局服务实例（单例模式）

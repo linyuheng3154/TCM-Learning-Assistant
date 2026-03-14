@@ -24,15 +24,22 @@ AI协作说明：
 - 业务逻辑在 src/services/ 目录下
 """
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 import uvicorn
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 from src.config.settings import get_settings
-from src.api import formulas, diagnosis
+from src.api import formulas, diagnosis, herbs
 
 # 获取配置
 settings = get_settings()
+
+# 创建限流器
+limiter = Limiter(key_func=get_remote_address)
 
 # 创建FastAPI应用
 app = FastAPI(
@@ -69,6 +76,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 绑定限流器到应用
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
 
 # ============================================================
 # 注册路由
@@ -76,6 +87,7 @@ app.add_middleware(
 
 app.include_router(formulas.router)
 app.include_router(diagnosis.router)
+app.include_router(herbs.router)
 
 
 # ============================================================
@@ -99,7 +111,9 @@ async def root():
         "docs": "/docs",
         "endpoints": {
             "formulas": "/formulas",
-            "search": "/formulas/search?keyword=桂枝",
+            "herbs": "/herbs",
+            "search_formulas": "/formulas/search?keyword=桂枝",
+            "search_herbs": "/herbs/search?keyword=人参",
             "diagnosis": "/diagnosis/recommend",
             "health": "/health"
         }

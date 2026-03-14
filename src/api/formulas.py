@@ -25,15 +25,22 @@ AI协作说明：
 """
 
 from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Body, Request
+from slowapi import Limiter
+from slowapi.util import get_remote_address
 
 from src.models.formula import (
     FormulaModel, 
     FormulaBriefModel, 
     FormulaSearchResult,
-    ExpandedFormulaModel
+    ExpandedFormulaModel,
+    FormulaCompareRequest,
+    FormulaCompareResult
 )
 from src.services.formula_service import formula_service
+
+# 创建限流器
+limiter = Limiter(key_func=get_remote_address)
 
 
 # 创建路由器
@@ -63,7 +70,8 @@ router = APIRouter(
 - 下拉选择框数据源
 """
 )
-async def get_all_formulas():
+@limiter.limit("30/minute")
+async def get_all_formulas(request: Request):
     """
     获取所有方剂列表
     
@@ -91,7 +99,9 @@ async def get_all_formulas():
 返回结果按匹配度评分排序。
 """
 )
+@limiter.limit("20/minute")
 async def search_formulas(
+    request: Request,
     keyword: str = Query(..., description="搜索关键词", min_length=1),
     limit: int = Query(10, description="返回结果数量限制", ge=1, le=50)
 ):
@@ -387,3 +397,50 @@ async def get_all_categories():
         return sorted(list(categories))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"获取分类列表失败: {str(e)}")
+
+
+@router.post("/compare",
+    response_model=FormulaCompareResult,
+    summary="对比多方剂",
+    description="""对比2-5首方剂的组成、功效、主治、禁忌等信息。
+
+对比维度：
+- 组成药材对比：共同药材、各方剂独有药材
+- 功效对比：各方剂功效描述
+- 主治对比：各方剂主治病症
+- 禁忌对比：各方剂使用禁忌
+
+使用场景：
+- 方剂异同分析
+- 类似方剂鉴别
+- 学习方剂配伍规律
+
+AI协作说明：
+- 返回结构化对比数据，便于AI进行深度分析
+- 支持多维度对比，便于发现方剂间的细微差异
+"""
+)
+@limiter.limit("10/minute")
+async def compare_formulas(
+    request: Request,
+    compare_request: FormulaCompareRequest = Body(...)
+):
+    """
+    对比多方剂信息
+    
+    Args:
+        compare_request: 包含要对比的方剂ID列表（2-5个）
+    
+    Returns:
+        FormulaCompareResult: 对比结果
+    
+    Raises:
+        HTTPException: 方剂数量不在2-5范围或方剂不存在
+    """
+    try:
+        result = formula_service.compare_formulas(compare_request.formula_ids)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"对比失败: {str(e)}")

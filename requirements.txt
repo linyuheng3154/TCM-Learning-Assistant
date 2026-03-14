@@ -10,3 +10,4 @@ pytest-asyncio==0.21.1
 httpx==0.25.2
 python-dotenv==1.0.0
 sqlalchemy==2.0.23
+slowapi==0.1.9

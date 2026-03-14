@@ -220,3 +220,81 @@ class ExpandedFormulaModel(FormulaModel):
             }
         }
     )
+
+
+class FormulaCompareRequest(BaseModel):
+    """
+    方剂对比请求模型
+    
+    用于请求对比多首方剂的信息。
+    
+    Attributes:
+        formula_ids: 要对比的方剂ID列表，最多5个
+    """
+    formula_ids: List[str] = Field(
+        ...,
+        description="要对比的方剂ID列表",
+        min_length=2,
+        max_length=5
+    )
+
+
+class HerbCompareResult(BaseModel):
+    """
+    药材对比结果模型
+    
+    显示各方剂中该药材的使用情况。
+    
+    Attributes:
+        herb: 药材名称
+        usage: 各方剂中的用量 {方剂ID: 用量}
+        roles: 各方剂中的配伍角色 {方剂ID: 角色}
+    """
+    herb: str = Field(..., description="药材名称")
+    usage: dict = Field(default_factory=dict, description="各方剂中的用量")
+    roles: dict = Field(default_factory=dict, description="各方剂中的配伍角色")
+
+
+class FormulaCompareResult(BaseModel):
+    """
+    方剂对比结果模型
+    
+    包含多方剂的详细对比信息。
+    
+    Attributes:
+        formulas: 参与对比的方剂简要信息
+        herbs_comparison: 药材对比结果（共同药材和差异）
+        efficacy_comparison: 功效对比
+        indications_comparison: 主治对比
+        contraindications_comparison: 禁忌对比
+        summary: 对比摘要
+    """
+    formulas: List[FormulaBriefModel] = Field(..., description="参与对比的方剂")
+    herbs_comparison: List[HerbCompareResult] = Field(
+        default_factory=list,
+        description="药材对比结果"
+    )
+    common_herbs: List[str] = Field(
+        default_factory=list,
+        description="共同药材"
+    )
+    unique_herbs: dict = Field(
+        default_factory=dict,
+        description="各方剂独有药材 {方剂ID: [药材列表]}"
+    )
+    efficacy_comparison: dict = Field(
+        default_factory=dict,
+        description="功效对比 {方剂ID: 功效}"
+    )
+    indications_comparison: dict = Field(
+        default_factory=dict,
+        description="主治对比 {方剂ID: 主治}"
+    )
+    contraindications_comparison: dict = Field(
+        default_factory=dict,
+        description="禁忌对比 {方剂ID: 禁忌}"
+    )
+    summary: str = Field(
+        default="",
+        description="对比摘要"
+    )

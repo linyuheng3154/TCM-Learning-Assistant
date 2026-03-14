@@ -17,10 +17,15 @@ AI协作说明：
 """
 
 from typing import List, Optional
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 from pydantic import BaseModel, Field
+from slowapi import Limiter
+from slowapi.util import get_remote_address
 
 from src.services.diagnosis_service import diagnosis_service, DiagnosisResult
+
+# 创建限流器
+limiter = Limiter(key_func=get_remote_address)
 
 
 # 创建路由器
@@ -111,21 +116,22 @@ class DiagnosisResponse(BaseModel):
 - 本功能仅供学习参考，不能替代专业医生诊断
 """
 )
-async def recommend_formulas(request: DiagnosisRequest):
+@limiter.limit("10/minute")
+async def recommend_formulas(request: Request, diagnosis_request: DiagnosisRequest):
     """
     辨证推荐
     
     Args:
-        request: 包含症状列表的请求
+        diagnosis_request: 包含症状列表的请求
     
     Returns:
         DiagnosisResponse: 辨证推荐结果
     """
     try:
         result = diagnosis_service.diagnose(
-            symptoms=request.symptoms,
-            top_k=request.top_k,
-            min_score=request.min_score
+            symptoms=diagnosis_request.symptoms,
+            top_k=diagnosis_request.top_k,
+            min_score=diagnosis_request.min_score
         )
         
         # 转换为响应模型
@@ -157,7 +163,9 @@ async def recommend_formulas(request: DiagnosisRequest):
     summary="辨证推荐 (GET方式)",
     description="通过GET参数进行辨证推荐，适合简单查询场景。"
 )
+@limiter.limit("10/minute")
 async def recommend_formulas_get(
+    request: Request,
     symptoms: str = Query(
         ...,
         description="症状列表，用逗号分隔",

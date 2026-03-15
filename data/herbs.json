@@ -4,9 +4,9 @@
     "source": "中国药典 + 神农本草经 (tcmoc)",
     "source_url": "https://github.com/lab99x/tcmoc",
     "license": "开源可用，遵循原项目许可",
-    "last_updated": "2026-03-12",
-    "total_herbs": 355,
-    "shennong_herbs": 342
+    "last_updated": "2026-03-15",
+    "total_herbs": 347,
+    "shennong_herbs": 327
   },
   "herbs": [
     {
@@ -4908,118 +4908,6 @@
       "source": "神农本草经",
       "grade": "下品",
       "classic_text": "味甘，温。主腹中邪气，去三虫、蛇螫、蛊毒、鬼注、伏尸。生山谷（旧在《唐本》退 中）。 "
-    },
-    {
-      "id": "h348",
-      "name": "附∶诸药制使",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "唐慎微曰∶《神农本经》相使，正各一种，冀以《药对》参之，乃有两三。"
-    },
-    {
-      "id": "h349",
-      "name": "玉、石，上部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "玉泉 畏款冬花。 玉屑 恶鹿角。 丹砂 恶磁石，畏咸水。 曾青 畏菟丝子。 石胆 水英为使；畏牡桂、菌桂、芫花、辛夷白。 钟乳 蛇床子为使，恶牡丹、牡蒙、元石、畏紫石英、 草。 云母 泽泻为使；畏蛇甲及流水。 消石 口为使；恶苦参、苦菜，畏女菀。 朴硝 畏麦句姜。 芒硝 石苇为使，恶麦句姜。 矾石 甘草为使；畏牡蛎。 滑石 石苇为使；恶曾青。 紫石英 长石为使，畏扁青、附子，不欲蛇甲、黄连、麦句姜"
-    },
-    {
-      "id": "h350",
-      "name": "玉、石，下部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "矾石 得火良；棘针为使；恶虎掌、毒公、 屎、细辛、水。 青琅 得水银良；畏鸡骨；杀锡毒。 特生矾石 得火良；畏水。 代赭 畏天雄。 方解石 恶巴豆。 大盐 漏芦为使。"
-    },
-    {
-      "id": "h351",
-      "name": "虫、鱼，上部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "蜜蜡 恶芫花、齐蛤。 蜂子 畏黄芩、芍药、牡蛎。 牡蛎 贝母为使；得甘草、牛膝、远志、蛇床，良；恶麻黄、吴茱萸、辛夷。 桑螵蛸 畏旋复花。 海蛤 蜀漆为使；畏狗胆、甘遂、芫花。 龟甲 恶沙参、蜚蠊。"
-    },
-    {
-      "id": "h352",
-      "name": "虫、鱼，中部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "皮 得酒良；畏桔梗、麦门冬。 蜥蜴 恶硫黄、斑蝥、芜荑。 露蜂房 恶干姜、丹参、黄芩、芍药、牡蛎。 虫 畏皂荚、菖蒲。 蛴螬 蜚蠊为使，恶附子。 龟甲 恶矾石。 蟹 杀莨菪毒、漆毒。 鱼甲 蜀漆为使；畏狗胆、甘遂、芫花。 乌贼鱼骨 恶白蔹、白芨。"
-    },
-    {
-      "id": "h353",
-      "name": "虫、鱼，下部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "蜣螂 畏羊角，石膏。 蛇蜕 畏磁石及酒。 斑蝥 马刀为使；畏巴豆、丹参、空青；恶肤青。 地胆 恶甘草。 马刀 得水良。"
-    },
-    {
-      "id": "h354",
-      "name": "米，上部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "",
-      "indications": "",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "麻 、麻子 畏牡蛎、白薇；恶茯苓。"
-    },
-    {
-      "id": "h355",
-      "name": "米，中部",
-      "pinyin": "",
-      "nature": "",
-      "meridian": "",
-      "efficacy": "二百草，为之长",
-      "indications": "二百草，为之长",
-      "dosage": "",
-      "contraindications": "",
-      "source": "神农本草经",
-      "grade": "下品",
-      "classic_text": "大豆及黄卷 恶五参、龙胆；得前胡、乌喙、杏仁、牡蛎，良；杀乌头毒。 大麦 蜜为使。 上二百三十一种，有相制使，其余皆无（三十四种续添，案∶当云三十 立冬之日，菊、卷柏先生；时为阳起石、桑螵蛸。凡十物使，主二百草，为之长。 立春之日，木兰、射干先生。为柴胡、半夏使。主头痛，四十五节。 立夏之日，蜚蠊先生。为人参、茯苓使。主腹中。七节，保神守中。 夏至之日，豕道、茱萸先生；为牡蛎、乌喙使。主四肢，三十"
     }
   ]
 }

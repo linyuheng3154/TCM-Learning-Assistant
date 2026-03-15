@@ -35,7 +35,8 @@ from src.models.formula import (
     FormulaSearchResult,
     ExpandedFormulaModel,
     FormulaCompareRequest,
-    FormulaCompareResult
+    FormulaCompareResult,
+    FormulaVariationResult
 )
 from src.services.formula_service import formula_service
 
@@ -444,3 +445,46 @@ async def compare_formulas(
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"对比失败: {str(e)}")
+
+
+@router.get("/{formula_id}/variations",
+    response_model=FormulaVariationResult,
+    summary="获取方剂加减变化",
+    description="""获取指定方剂的加减变化信息。
+
+返回内容：
+- base_formula: 基础方剂信息
+- inherited_from: 继承来源（该方剂由哪个方剂加减而来）
+- derived_to: 衍生方剂（该方剂加减变化后的方剂）
+
+使用场景：
+- 学习经方演变规律
+- 理解方剂加减原理
+- 查看桂枝汤类方、四君子汤类方等
+
+示例：
+- GET /formulas/f002/variations - 查看桂枝汤的加减变化
+- GET /formulas/f051/variations - 查看四君子汤的加减变化
+"""
+)
+@limiter.limit("20/minute")
+async def get_formula_variations(request: Request, formula_id: str):
+    """
+    获取方剂加减变化
+    
+    Args:
+        formula_id: 方剂ID，如 "f002"（桂枝汤）
+    
+    Returns:
+        FormulaVariationResult: 方剂变化结果
+    
+    Raises:
+        HTTPException: 方剂不存在时返回404
+    """
+    try:
+        result = formula_service.get_formula_variations(formula_id)
+        return result
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"获取变化失败: {str(e)}")

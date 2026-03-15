@@ -28,7 +28,10 @@ from src.models.formula import (
     FormulaSearchResult,
     HerbComposition,
     FormulaCompareResult,
-    HerbCompareResult
+    HerbCompareResult,
+    FormulaVariation,
+    FormulaVariationResult,
+    HerbVariation
 )
 
 
@@ -65,6 +68,7 @@ class FormulaService:
         
         self.data_dir = Path(data_dir)
         self._formulas_cache: Optional[Dict[str, FormulaModel]] = None
+        self._variations_cache: Optional[List[FormulaVariation]] = None
         self._metadata: Optional[Dict[str, Any]] = None
     
     def _load_data(self) -> None:
@@ -460,6 +464,89 @@ class FormulaService:
             indications_comparison=indications_comparison,
             contraindications_comparison=contraindications_comparison,
             summary=summary
+        )
+    
+    def _load_variations(self) -> None:
+        """
+        加载方剂加减变化数据
+        
+        数据格式说明：
+        - 文件位置: data/formula_variations.json
+        - 包含方剂的加减变化信息
+        """
+        if self._variations_cache is not None:
+            return
+        
+        file_path = self.data_dir / "formula_variations.json"
+        
+        if not file_path.exists():
+            self._variations_cache = []
+            return
+        
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        self._variations_cache = []
+        for item in data.get("variations", []):
+            variations = [
+                HerbVariation(**v) for v in item.get("variations", [])
+            ]
+            variation = FormulaVariation(
+                name=item["name"],
+                base_formula_id=item["base_formula_id"],
+                variations=variations,
+                indication_change=item.get("indication_change", ""),
+                source=item.get("source")
+            )
+            self._variations_cache.append(variation)
+    
+    def get_formula_variations(self, formula_id: str) -> FormulaVariationResult:
+        """
+        获取方剂的加减变化
+        
+        Args:
+            formula_id: 方剂ID
+        
+        Returns:
+            FormulaVariationResult: 包含继承来源和衍生方剂
+        
+        使用场景:
+            - 查看方剂的加减变化规律
+            - 学习经方演变
+        """
+        self._load_data()
+        self._load_variations()
+        
+        # 获取基础方剂信息
+        formula = self._formulas_cache.get(formula_id)
+        if formula is None:
+            raise ValueError(f"方剂不存在: {formula_id}")
+        
+        base_formula = FormulaBriefModel(
+            id=formula.id,
+            name=formula.name,
+            efficacy=formula.efficacy,
+            category=formula.category
+        )
+        
+        # 查找继承来源（该方剂是由哪个方剂加减而来）
+        inherited_from = []
+        for v in self._variations_cache:
+            if v.name == formula.name and v.base_formula_id != formula_id:
+                # 该方剂是其他方剂的变体
+                inherited_from.append(v)
+        
+        # 查找衍生方剂（该方剂加减变化后的方剂）
+        derived_to = [
+            v for v in self._variations_cache
+            if v.base_formula_id == formula_id and v.variations  # 有实际变化的
+        ]
+        
+        return FormulaVariationResult(
+            base_formula=base_formula,
+            inherited_from=inherited_from,
+            derived_to=derived_to,
+            total_variations=len(inherited_from) + len(derived_to)
         )
 
 

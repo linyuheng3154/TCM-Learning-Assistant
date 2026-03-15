@@ -298,3 +298,59 @@ class FormulaCompareResult(BaseModel):
         default="",
         description="对比摘要"
     )
+
+
+# ============================================================
+# 方剂加减变化模型
+# ============================================================
+
+class HerbVariation(BaseModel):
+    """
+    单味药材的加减变化
+    
+    Attributes:
+        herb: 药材名称
+        action: 加减动作 (add/remove/modify)
+        original_dosage: 原用量（可选）
+        new_dosage: 新用量（可选）
+        reason: 加减原因
+    """
+    herb: str = Field(..., description="药材名称")
+    action: str = Field(..., description="加减动作: add(增加)/remove(减去)/modify(调整用量)")
+    original_dosage: Optional[str] = Field(None, description="原用量")
+    new_dosage: Optional[str] = Field(None, description="新用量")
+    reason: str = Field(..., description="加减原因")
+
+
+class FormulaVariation(BaseModel):
+    """
+    方剂加减变化
+    
+    Attributes:
+        name: 变化后方剂名称
+        base_formula_id: 基础方剂ID
+        variations: 药材变化列表
+        indication_change: 主治变化说明
+        source: 出处
+    """
+    name: str = Field(..., description="变化后方剂名称")
+    base_formula_id: str = Field(..., description="基础方剂ID")
+    variations: List[HerbVariation] = Field(default_factory=list, description="药材变化列表")
+    indication_change: str = Field(default="", description="主治变化说明")
+    source: Optional[str] = Field(None, description="出处")
+
+
+class FormulaVariationResult(BaseModel):
+    """
+    方剂加减变化查询结果
+    
+    Attributes:
+        base_formula: 基础方剂信息
+        variations: 变化列表（向上继承和向下衍生）
+        inherited_from: 继承来源（该方剂是由哪个方剂加减而来）
+        derived_to: 衍生方剂（该方剂加减变化后的方剂）
+    """
+    base_formula: FormulaBriefModel = Field(..., description="基础方剂信息")
+    inherited_from: List[FormulaVariation] = Field(default_factory=list, description="继承来源")
+    derived_to: List[FormulaVariation] = Field(default_factory=list, description="衍生方剂")
+    total_variations: int = Field(default=0, description="变化总数")

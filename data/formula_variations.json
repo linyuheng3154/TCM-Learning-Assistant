@@ -1,0 +1,392 @@
+{
+  "_metadata": {
+    "description": "方剂加减变化数据库 - Formula Variations Database",
+    "source": "《伤寒论》《金匮要略》《温病条辨》等经典医籍",
+    "created_at": "2026-03-15",
+    "total_variations": 20
+  },
+  "variations": [
+    {
+      "id": "v001",
+      "name": "桂枝加葛根汤",
+      "base_formula_id": "f002",
+      "variations": [
+        {
+          "herb": "葛根",
+          "action": "add",
+          "new_dosage": "12g",
+          "reason": "解肌发表，生津舒筋"
+        }
+      ],
+      "indication_change": "太阳病，项背强几几，反汗出恶风者",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v002",
+      "name": "桂枝加厚朴杏子汤",
+      "base_formula_id": "f002",
+      "variations": [
+        {
+          "herb": "厚朴",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "下气平喘"
+        },
+        {
+          "herb": "杏仁",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "止咳平喘"
+        }
+      ],
+      "indication_change": "喘家作，桂枝汤加厚朴杏子佳",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v003",
+      "name": "桂枝加附子汤",
+      "base_formula_id": "f002",
+      "variations": [
+        {
+          "herb": "附子",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "温经复阳"
+        }
+      ],
+      "indication_change": "太阳病发汗，遂漏不止，恶风小便难，四肢微急",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v004",
+      "name": "桂枝去芍药汤",
+      "base_formula_id": "f002",
+      "variations": [
+        {
+          "herb": "芍药",
+          "action": "remove",
+          "original_dosage": "9g",
+          "reason": "芍药酸寒，不利于胸满"
+        }
+      ],
+      "indication_change": "太阳病下之后，脉促胸满者",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v005",
+      "name": "小建中汤",
+      "base_formula_id": "f002",
+      "variations": [
+        {
+          "herb": "芍药",
+          "action": "modify",
+          "original_dosage": "9g",
+          "new_dosage": "18g",
+          "reason": "倍芍药以缓急止痛"
+        },
+        {
+          "herb": "饴糖",
+          "action": "add",
+          "new_dosage": "30g",
+          "reason": "温中补虚，和里缓急"
+        }
+      ],
+      "indication_change": "虚劳里急，腹中时痛，喜温喜按",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v006",
+      "name": "麻黄加术汤",
+      "base_formula_id": "f001",
+      "variations": [
+        {
+          "herb": "白术",
+          "action": "add",
+          "new_dosage": "12g",
+          "reason": "健脾祛湿"
+        }
+      ],
+      "indication_change": "湿家身烦疼，可与麻黄加术汤发其汗",
+      "source": "《金匮要略》"
+    },
+    {
+      "id": "v007",
+      "name": "麻杏薏甘汤",
+      "base_formula_id": "f001",
+      "variations": [
+        {
+          "herb": "桂枝",
+          "action": "remove",
+          "original_dosage": "6g",
+          "reason": "去桂枝之温，减发汗之力"
+        },
+        {
+          "herb": "薏苡仁",
+          "action": "add",
+          "new_dosage": "15g",
+          "reason": "利湿清热"
+        }
+      ],
+      "indication_change": "病者一身尽疼，发热，日晡所剧者，名风湿",
+      "source": "《金匮要略》"
+    },
+    {
+      "id": "v008",
+      "name": "大青龙汤",
+      "base_formula_id": "f001",
+      "variations": [
+        {
+          "herb": "石膏",
+          "action": "add",
+          "new_dosage": "18g",
+          "reason": "清泄郁热"
+        },
+        {
+          "herb": "生姜",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "助麻桂发散"
+        },
+        {
+          "herb": "大枣",
+          "action": "add",
+          "new_dosage": "10枚",
+          "reason": "调和营卫"
+        },
+        {
+          "herb": "甘草",
+          "action": "modify",
+          "original_dosage": "3g",
+          "new_dosage": "6g",
+          "reason": "和中缓急"
+        }
+      ],
+      "indication_change": "太阳中风，脉浮紧，发热恶寒，身疼痛，不汗出而烦躁者",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v009",
+      "name": "麻黄附子细辛汤",
+      "base_formula_id": "f001",
+      "variations": [
+        {
+          "herb": "桂枝",
+          "action": "remove",
+          "original_dosage": "6g",
+          "reason": "去桂枝，减发表之力"
+        },
+        {
+          "herb": "杏仁",
+          "action": "remove",
+          "original_dosage": "9g",
+          "reason": "去杏仁"
+        },
+        {
+          "herb": "附子",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "温经助阳"
+        },
+        {
+          "herb": "细辛",
+          "action": "add",
+          "new_dosage": "3g",
+          "reason": "温经散寒"
+        }
+      ],
+      "indication_change": "少阴病，始得之，反发热脉沉者",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v010",
+      "name": "四君子汤",
+      "base_formula_id": "f051",
+      "variations": [],
+      "indication_change": "基础方剂",
+      "source": "《太平惠民和剂局方》"
+    },
+    {
+      "id": "v011",
+      "name": "六君子汤",
+      "base_formula_id": "f051",
+      "variations": [
+        {
+          "herb": "陈皮",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "理气燥湿"
+        },
+        {
+          "herb": "半夏",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "燥湿化痰"
+        }
+      ],
+      "indication_change": "脾胃气虚兼痰湿证，食少便溏，胸脘痞闷，呕逆",
+      "source": "《医学正传》"
+    },
+    {
+      "id": "v012",
+      "name": "香砂六君子汤",
+      "base_formula_id": "f051",
+      "variations": [
+        {
+          "herb": "陈皮",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "理气燥湿"
+        },
+        {
+          "herb": "半夏",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "燥湿化痰"
+        },
+        {
+          "herb": "木香",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "行气止痛"
+        },
+        {
+          "herb": "砂仁",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "化湿行气"
+        }
+      ],
+      "indication_change": "脾胃气虚，痰阻气滞证，纳呆嗳气，脘腹胀满或疼痛，呕吐泄泻",
+      "source": "《古今名医方论》"
+    },
+    {
+      "id": "v013",
+      "name": "四物汤",
+      "base_formula_id": "f055",
+      "variations": [],
+      "indication_change": "基础方剂",
+      "source": "《太平惠民和剂局方》"
+    },
+    {
+      "id": "v014",
+      "name": "桃红四物汤",
+      "base_formula_id": "f055",
+      "variations": [
+        {
+          "herb": "桃仁",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "活血祛瘀"
+        },
+        {
+          "herb": "红花",
+          "action": "add",
+          "new_dosage": "6g",
+          "reason": "活血通经"
+        }
+      ],
+      "indication_change": "血虚兼血瘀证，月经不调，痛经，闭经",
+      "source": "《医宗金鉴》"
+    },
+    {
+      "id": "v015",
+      "name": "八珍汤",
+      "base_formula_id": "f063",
+      "variations": [],
+      "indication_change": "四君子汤 + 四物汤，气血双补",
+      "source": "《瑞竹堂经验方》"
+    },
+    {
+      "id": "v016",
+      "name": "十全大补汤",
+      "base_formula_id": "f064",
+      "variations": [
+        {
+          "herb": "黄芪",
+          "action": "add",
+          "new_dosage": "15g",
+          "reason": "补气升阳"
+        },
+        {
+          "herb": "肉桂",
+          "action": "add",
+          "new_dosage": "3g",
+          "reason": "温阳散寒"
+        }
+      ],
+      "indication_change": "气血两虚证，面色苍白，气短心悸，头晕自汗，体倦乏力",
+      "source": "《太平惠民和剂局方》"
+    },
+    {
+      "id": "v017",
+      "name": "小柴胡汤加减",
+      "base_formula_id": "f009",
+      "variations": [
+        {
+          "herb": "生姜",
+          "action": "modify",
+          "original_dosage": "9g",
+          "new_dosage": "3片",
+          "reason": "改为生姜3片"
+        }
+      ],
+      "indication_change": "少阳证基础方",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v018",
+      "name": "四逆散",
+      "base_formula_id": "f011",
+      "variations": [],
+      "indication_change": "小柴胡汤去黄芩、半夏、生姜、大枣，加枳实、芍药，改柴胡、甘草用量",
+      "source": "《伤寒论》"
+    },
+    {
+      "id": "v019",
+      "name": "逍遥散",
+      "base_formula_id": "f099",
+      "variations": [
+        {
+          "herb": "当归",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "养血柔肝"
+        },
+        {
+          "herb": "白芍",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "养血柔肝"
+        },
+        {
+          "herb": "白术",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "健脾益气"
+        },
+        {
+          "herb": "茯苓",
+          "action": "add",
+          "new_dosage": "9g",
+          "reason": "健脾利湿"
+        },
+        {
+          "herb": "薄荷",
+          "action": "add",
+          "new_dosage": "3g",
+          "reason": "疏肝散热"
+        }
+      ],
+      "indication_change": "四逆散加减，肝郁血虚脾弱证",
+      "source": "《太平惠民和剂局方》"
+    },
+    {
+      "id": "v020",
+      "name": "六味地黄丸加减",
+      "base_formula_id": "f058",
+      "variations": [],
+      "indication_change": "肾阴虚基础方",
+      "source": "《小儿药证直诀》"
+    }
+  ]
+}

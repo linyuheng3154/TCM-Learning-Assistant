@@ -63,6 +63,7 @@ def migrate_formulas(session, data_dir: Path):
             id=item["id"],
             name=item["name"],
             pinyin=item.get("pinyin", ""),
+            pinyin_initials=item.get("pinyin_initials", ""),
             efficacy=item.get("efficacy", ""),
             indications=item.get("indications", ""),
             contraindications=item.get("contraindications", ""),

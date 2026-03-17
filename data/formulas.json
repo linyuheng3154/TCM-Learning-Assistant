@@ -2,19 +2,20 @@
   "_metadata": {
     "version": "2.0.0",
     "created_at": "2026-03-10",
-    "updated_at": "2026-03-14",
+    "updated_at": "2026-03-17",
     "source": "《伤寒论》《金匮要略》《温病条辨》《太平惠民和剂局方》",
     "total_formulas": 100,
     "description": "100首经典中医方剂数据库，包含完整组成、功效、主治、出处",
     "data_quality": "专业准确，基于经典医籍原文",
     "last_updated": "2026-03-12",
-    "sources": []
+    "sources": [],
+    "pinyin_format": "hanzi-level"
   },
   "formulas": [
     {
       "id": "f001",
       "name": "麻黄汤",
-      "pinyin": "mahuang tang",
+      "pinyin": "ma huang tang",
       "alias": [
         "麻黄解表汤"
       ],
@@ -51,12 +52,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳病，头痛发热，身疼腰痛，骨节疼痛，恶风无汗而喘者，麻黄汤主之。",
         "现代应用：用于感冒、流感、支气管哮喘等属风寒表实证者"
-      ]
+      ],
+      "pinyin_initials": "mht"
     },
     {
       "id": "f002",
       "name": "桂枝汤",
-      "pinyin": "guizhi tang",
+      "pinyin": "gui zhi tang",
       "alias": [
         "阳旦汤"
       ],
@@ -98,12 +100,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳中风，阳浮而阴弱，阳浮者热自发，阴弱者汗自出...",
         "现代应用：用于感冒、流感、产后发热、自主神经功能紊乱等"
-      ]
+      ],
+      "pinyin_initials": "gzt"
     },
     {
       "id": "f003",
       "name": "小青龙汤",
-      "pinyin": "xiaoqinglong tang",
+      "pinyin": "xiao qing long tang",
       "alias": [],
       "composition": [
         {
@@ -158,12 +161,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒表不解，心下有水气，干呕发热而咳...",
         "现代应用：用于支气管哮喘、慢性支气管炎、肺气肿等"
-      ]
+      ],
+      "pinyin_initials": "xqlt"
     },
     {
       "id": "f004",
       "name": "大青龙汤",
-      "pinyin": "daqinglong tang",
+      "pinyin": "da qing long tang",
       "alias": [],
       "composition": [
         {
@@ -213,12 +217,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳中风，脉浮紧，发热恶寒，身疼痛，不汗出而烦躁者...",
         "现代应用：用于重感冒、肺炎初期、急性肾炎等"
-      ]
+      ],
+      "pinyin_initials": "dqlt"
     },
     {
       "id": "f005",
       "name": "葛根汤",
-      "pinyin": "gegen tang",
+      "pinyin": "ge gen tang",
       "alias": [],
       "composition": [
         {
@@ -268,12 +273,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳病，项背强几几，无汗恶风，葛根汤主之。",
         "现代应用：用于感冒、颈椎病、肩周炎、腹泻等"
-      ]
+      ],
+      "pinyin_initials": "ggt"
     },
     {
       "id": "f006",
       "name": "麻黄杏仁甘草石膏汤",
-      "pinyin": "mahuangxingrengancaoshigao tang",
+      "pinyin": "ma huang xing ren gan cao shi gao tang",
       "alias": [
         "麻杏石甘汤"
       ],
@@ -310,12 +316,13 @@
       "clinical_cases": [
         "《伤寒论》原文：发汗后，不可更行桂枝汤，汗出而喘，无大热者...",
         "现代应用：用于肺炎、支气管炎、哮喘、麻疹等"
-      ]
+      ],
+      "pinyin_initials": "mhxrgcsgt"
     },
     {
       "id": "f007",
       "name": "桂枝加葛根汤",
-      "pinyin": "guizhijiagegen tang",
+      "pinyin": "gui zhi jia ge gen tang",
       "alias": [],
       "composition": [
         {
@@ -360,12 +367,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳病，项背强几几，反汗出恶风者，桂枝加葛根汤主之。",
         "现代应用：用于颈椎病、落枕、感冒项强等"
-      ]
+      ],
+      "pinyin_initials": "gzjggt"
     },
     {
       "id": "f008",
       "name": "桂枝加厚朴杏子汤",
-      "pinyin": "guizhijiahoupoxingzi tang",
+      "pinyin": "gui zhi jia hou po xing zi tang",
       "alias": [],
       "composition": [
         {
@@ -415,12 +423,13 @@
       "clinical_cases": [
         "《伤寒论》原文：喘家作桂枝汤，加厚朴杏子佳。",
         "现代应用：用于慢性支气管炎、哮喘合并感冒等"
-      ]
+      ],
+      "pinyin_initials": "gzjhpxzt"
     },
     {
       "id": "f009",
       "name": "小柴胡汤",
-      "pinyin": "xiaochaihu tang",
+      "pinyin": "xiao chai hu tang",
       "alias": [],
       "composition": [
         {
@@ -469,12 +478,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒五六日，中风，往来寒热，胸胁苦满...",
         "现代应用：用于感冒、肝炎、胆囊炎、疟疾、妇科炎症等"
-      ]
+      ],
+      "pinyin_initials": "xcht"
     },
     {
       "id": "f010",
       "name": "大柴胡汤",
-      "pinyin": "dachaihu tang",
+      "pinyin": "da chai hu tang",
       "alias": [],
       "composition": [
         {
@@ -528,12 +538,13 @@
       "clinical_cases": [
         "《金匮要略》原文：按之心下满痛者，此为实也，当下之，宜大柴胡汤。",
         "现代应用：用于急性胰腺炎、胆囊炎、胆石症、肝炎等"
-      ]
+      ],
+      "pinyin_initials": "dcht"
     },
     {
       "id": "f011",
       "name": "四逆散",
-      "pinyin": "sini san",
+      "pinyin": "si ni san",
       "alias": [],
       "composition": [
         {
@@ -567,12 +578,13 @@
       "clinical_cases": [
         "《伤寒论》原文：少阴病，四逆，其人或咳，或悸，或小便不利...",
         "现代应用：用于胃炎、肠炎、肝炎、胆囊炎、痛经等"
-      ]
+      ],
+      "pinyin_initials": "sns"
     },
     {
       "id": "f012",
       "name": "半夏泻心汤",
-      "pinyin": "banxiaxiexin tang",
+      "pinyin": "ban xia xie xin tang",
       "alias": [],
       "composition": [
         {
@@ -621,12 +633,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒五六日，呕而发热者，柴胡汤证具...",
         "现代应用：用于胃炎、胃溃疡、肠炎、消化不良等"
-      ]
+      ],
+      "pinyin_initials": "bxxxt"
     },
     {
       "id": "f013",
       "name": "白虎汤",
-      "pinyin": "baihu tang",
+      "pinyin": "bai hu tang",
       "alias": [],
       "composition": [
         {
@@ -660,12 +673,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒脉浮滑，此表有热，里有寒，白虎汤主之。",
         "现代应用：用于高热、中暑、肺炎、脑炎等"
-      ]
+      ],
+      "pinyin_initials": "bht"
     },
     {
       "id": "f014",
       "name": "白虎加人参汤",
-      "pinyin": "baihujiarenshen tang",
+      "pinyin": "bai hu jia ren shen tang",
       "alias": [],
       "composition": [
         {
@@ -704,12 +718,13 @@
       "clinical_cases": [
         "《伤寒论》原文：服桂枝汤，大汗出后，大烦渴不解，脉洪大者...",
         "现代应用：用于高热脱水、糖尿病、中暑等"
-      ]
+      ],
+      "pinyin_initials": "bhjrst"
     },
     {
       "id": "f015",
       "name": "竹叶石膏汤",
-      "pinyin": "zhuyeshigao tang",
+      "pinyin": "zhu ye shi gao tang",
       "alias": [],
       "composition": [
         {
@@ -758,12 +773,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒解后，虚羸少气，气逆欲吐，竹叶石膏汤主之。",
         "现代应用：用于热病后期、夏季热、口腔溃疡等"
-      ]
+      ],
+      "pinyin_initials": "zysgt"
     },
     {
       "id": "f016",
       "name": "调胃承气汤",
-      "pinyin": "tiaoweichengqi tang",
+      "pinyin": "diao wei cheng qi tang",
       "alias": [],
       "composition": [
         {
@@ -792,12 +808,13 @@
       "clinical_cases": [
         "《伤寒论》原文：阳明病，不吐不下，心烦者，可与调胃承气汤。",
         "现代应用：用于便秘、口腔溃疡、牙龈炎等"
-      ]
+      ],
+      "pinyin_initials": "dwcqt"
     },
     {
       "id": "f017",
       "name": "小承气汤",
-      "pinyin": "xiaochengqi tang",
+      "pinyin": "xiao cheng qi tang",
       "alias": [],
       "composition": [
         {
@@ -826,12 +843,13 @@
       "clinical_cases": [
         "《伤寒论》原文：阳明病，其人多汗，以津液外出，胃中燥...",
         "现代应用：用于便秘、肠梗阻、痢疾等"
-      ]
+      ],
+      "pinyin_initials": "xcqt"
     },
     {
       "id": "f018",
       "name": "大承气汤",
-      "pinyin": "dachengqi tang",
+      "pinyin": "da cheng qi tang",
       "alias": [],
       "composition": [
         {
@@ -865,12 +883,13 @@
       "clinical_cases": [
         "《伤寒论》原文：阳明病，脉迟，虽汗出，不恶寒者...",
         "现代应用：用于急性肠梗阻、急性胰腺炎、中毒性痢疾等"
-      ]
+      ],
+      "pinyin_initials": "dcqt"
     },
     {
       "id": "f019",
       "name": "麻子仁丸",
-      "pinyin": "maziren wan",
+      "pinyin": "ma zi ren wan",
       "alias": [
         "脾约丸"
       ],
@@ -916,12 +935,13 @@
       "clinical_cases": [
         "《伤寒论》原文：趺阳脉浮而涩，浮则胃气强，涩则小便数...",
         "现代应用：用于习惯性便秘、老年便秘、产后便秘等"
-      ]
+      ],
+      "pinyin_initials": "mzrw"
     },
     {
       "id": "f020",
       "name": "茵陈蒿汤",
-      "pinyin": "yinchenhao tang",
+      "pinyin": "yin chen hao tang",
       "alias": [],
       "composition": [
         {
@@ -950,12 +970,13 @@
       "clinical_cases": [
         "《伤寒论》原文：阳明病，发热汗出者，此为热越，不能发黄也...",
         "现代应用：用于急性黄疸型肝炎、胆囊炎、胆石症等"
-      ]
+      ],
+      "pinyin_initials": "ycht"
     },
     {
       "id": "f021",
       "name": "栀子豉汤",
-      "pinyin": "zhizichi tang",
+      "pinyin": "zhi zi shi tang",
       "alias": [],
       "composition": [
         {
@@ -979,12 +1000,13 @@
       "clinical_cases": [
         "《伤寒论》原文：发汗吐下后，虚烦不得眠，若剧者，必反复颠倒...",
         "现代应用：用于神经衰弱、胃炎、胆囊炎等"
-      ]
+      ],
+      "pinyin_initials": "zzst"
     },
     {
       "id": "f022",
       "name": "真武汤",
-      "pinyin": "zhenwu tang",
+      "pinyin": "zhen wu tang",
       "alias": [
         "玄武汤"
       ],
@@ -1025,12 +1047,13 @@
       "clinical_cases": [
         "《伤寒论》原文：太阳病发汗，汗出不解，其人仍发热，心下悸...",
         "现代应用：用于心力衰竭、肾衰竭、慢性肾炎等"
-      ]
+      ],
+      "pinyin_initials": "zwt"
     },
     {
       "id": "f023",
       "name": "黄连阿胶汤",
-      "pinyin": "huanglianejiao tang",
+      "pinyin": "huang lian e jiao tang",
       "alias": [],
       "composition": [
         {
@@ -1069,12 +1092,13 @@
       "clinical_cases": [
         "《伤寒论》原文：少阴病，得之二三日以上，心中烦，不得卧...",
         "现代应用：用于失眠、焦虑症、更年期综合征等"
-      ]
+      ],
+      "pinyin_initials": "hlejt"
     },
     {
       "id": "f024",
       "name": "猪苓汤",
-      "pinyin": "zhuling tang",
+      "pinyin": "zhu ling tang",
       "alias": [],
       "composition": [
         {
@@ -1113,12 +1137,13 @@
       "clinical_cases": [
         "《伤寒论》原文：若脉浮发热，渴欲饮水，小便不利者，猪苓汤主之。",
         "现代应用：用于泌尿系感染、肾炎、前列腺炎等"
-      ]
+      ],
+      "pinyin_initials": "zlt"
     },
     {
       "id": "f025",
       "name": "乌梅丸",
-      "pinyin": "wumei wan",
+      "pinyin": "wu mei wan",
       "alias": [],
       "composition": [
         {
@@ -1182,12 +1207,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒脉微而厥，至七八日肤冷，其人躁无暂安时者...",
         "现代应用：用于胆道蛔虫症、慢性肠炎、痢疾等"
-      ]
+      ],
+      "pinyin_initials": "wmw"
     },
     {
       "id": "f026",
       "name": "当归四逆汤",
-      "pinyin": "danggui sin i tang",
+      "pinyin": "dang gui si ni tang",
       "alias": [],
       "composition": [
         {
@@ -1236,12 +1262,13 @@
       "clinical_cases": [
         "《伤寒论》原文：手足厥寒，脉细欲绝者，当归四逆汤主之。",
         "现代应用：用于冻疮、雷诺病、痛经、关节炎等"
-      ]
+      ],
+      "pinyin_initials": "dgsnt"
     },
     {
       "id": "f027",
       "name": "麻黄升麻汤",
-      "pinyin": "mahuangshengma tang",
+      "pinyin": "ma huang sheng ma tang",
       "alias": [],
       "composition": [
         {
@@ -1325,12 +1352,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒六七日，大下后，寸脉沉而迟，手足厥逆...",
         "现代应用：用于复杂感染、免疫功能紊乱等"
-      ]
+      ],
+      "pinyin_initials": "mhsmt"
     },
     {
       "id": "f028",
       "name": "干姜黄芩黄连人参汤",
-      "pinyin": "ganjianghuangqinhuangrenrenshen tang",
+      "pinyin": "gan jiang huang qin huang lian ren shen tang",
       "alias": [],
       "composition": [
         {
@@ -1364,12 +1392,13 @@
       "clinical_cases": [
         "《伤寒论》原文：伤寒本自寒下，医复吐下之，寒格更逆吐下...",
         "现代应用：用于胃炎、肠炎、消化不良等"
-      ]
+      ],
+      "pinyin_initials": "gjhqhlrst"
     },
     {
       "id": "f029",
       "name": "白头翁汤",
-      "pinyin": "baitouweng tang",
+      "pinyin": "bai tou weng tang",
       "alias": [],
       "composition": [
         {
@@ -1403,12 +1432,13 @@
       "clinical_cases": [
         "《伤寒论》原文：热利下重者，白头翁汤主之。",
         "现代应用：用于细菌性痢疾、阿米巴痢疾、肠炎等"
-      ]
+      ],
+      "pinyin_initials": "btwt"
     },
     {
       "id": "f030",
       "name": "四逆汤",
-      "pinyin": "sini tang",
+      "pinyin": "si ni tang",
       "alias": [],
       "composition": [
         {
@@ -1437,12 +1467,13 @@
       "clinical_cases": [
         "《伤寒论》原文：少阴病，脉沉者，急温之，宜四逆汤。",
         "现代应用：用于休克、心力衰竭、心肌梗死等"
-      ]
+      ],
+      "pinyin_initials": "snt"
     },
     {
       "id": "f031",
       "name": "肾气丸",
-      "pinyin": "shenqi wan",
+      "pinyin": "shen qi wan",
       "alias": [
         "桂附地黄丸",
         "八味肾气丸"
@@ -1499,12 +1530,13 @@
       "clinical_cases": [
         "《金匮要略》原文：虚劳腰痛，少腹拘急，小便不利者，八味肾气丸主之。",
         "现代应用：用于慢性肾炎、糖尿病、前列腺增生、更年期综合征等"
-      ]
+      ],
+      "pinyin_initials": "sqw"
     },
     {
       "id": "f032",
       "name": "温经汤",
-      "pinyin": "wenjing tang",
+      "pinyin": "wen jing tang",
       "alias": [],
       "composition": [
         {
@@ -1578,12 +1610,13 @@
       "clinical_cases": [
         "《金匮要略》原文：妇人年五十所，病下利数十日不止...",
         "现代应用：用于月经不调、痛经、不孕症、更年期综合征等"
-      ]
+      ],
+      "pinyin_initials": "wjt"
     },
     {
       "id": "f033",
       "name": "黄土汤",
-      "pinyin": "huangtu tang",
+      "pinyin": "huang tu tang",
       "alias": [],
       "composition": [
         {
@@ -1632,12 +1665,13 @@
       "clinical_cases": [
         "《金匮要略》原文：下血，先便后血，此远血也，黄土汤主之。",
         "现代应用：用于上消化道出血、功能性子宫出血、血小板减少等"
-      ]
+      ],
+      "pinyin_initials": "htt"
     },
     {
       "id": "f034",
       "name": "大黄牡丹汤",
-      "pinyin": "dahuangmudan tang",
+      "pinyin": "dai huang mu dan tang",
       "alias": [],
       "composition": [
         {
@@ -1676,12 +1710,13 @@
       "clinical_cases": [
         "《金匮要略》原文：肠痈者，少腹肿痞，按之即痛如淋...",
         "现代应用：用于急性阑尾炎、盆腔炎、附件炎等"
-      ]
+      ],
+      "pinyin_initials": "dhmdt"
     },
     {
       "id": "f035",
       "name": "薏苡附子败酱散",
-      "pinyin": "yiyifuzibaijiang san",
+      "pinyin": "yi yi fu zi bai jiang san",
       "alias": [],
       "composition": [
         {
@@ -1710,12 +1745,13 @@
       "clinical_cases": [
         "《金匮要略》原文：肠痈之为病，其身甲错，腹皮急，按之濡...",
         "现代应用：用于慢性阑尾炎、腹腔脓肿、盆腔炎等"
-      ]
+      ],
+      "pinyin_initials": "yyfzbjs"
     },
     {
       "id": "f036",
       "name": "桂枝茯苓丸",
-      "pinyin": "guizhifuling wan",
+      "pinyin": "gui zhi fu ling wan",
       "alias": [],
       "composition": [
         {
@@ -1754,12 +1790,13 @@
       "clinical_cases": [
         "《金匮要略》原文：妇人宿有癥病，经断未及三月，而得漏下不止...",
         "现代应用：用于子宫肌瘤、卵巢囊肿、子宫内膜异位症等"
-      ]
+      ],
+      "pinyin_initials": "gzflw"
     },
     {
       "id": "f037",
       "name": "当归芍药散",
-      "pinyin": "dangguishaoyao san",
+      "pinyin": "dang gui shao yao san",
       "alias": [],
       "composition": [
         {
@@ -1803,12 +1840,13 @@
       "clinical_cases": [
         "《金匮要略》原文：妇人怀妊，腹中疞痛，当归芍药散主之。",
         "现代应用：用于痛经、月经不调、妊娠水肿、更年期综合征等"
-      ]
+      ],
+      "pinyin_initials": "dgsys"
     },
     {
       "id": "f038",
       "name": "胶艾汤",
-      "pinyin": "jiaoai tang",
+      "pinyin": "jiao ai tang",
       "alias": [
         "芎归胶艾汤"
       ],
@@ -1859,12 +1897,13 @@
       "clinical_cases": [
         "《金匮要略》原文：师曰：妇人有漏下者，有半产后因续下血都不绝者...",
         "现代应用：用于功能性子宫出血、先兆流产、产后出血等"
-      ]
+      ],
+      "pinyin_initials": "jat"
     },
     {
       "id": "f039",
       "name": "当归生姜羊肉汤",
-      "pinyin": "dangguishengjiangyangrou tang",
+      "pinyin": "dang gui sheng jiang yang rou tang",
       "alias": [],
       "composition": [
         {
@@ -1893,12 +1932,13 @@
       "clinical_cases": [
         "《金匮要略》原文：寒疝腹中痛，及胁痛里急者，当归生姜羊肉汤主之。",
         "现代应用：用于贫血、产后体虚、痛经、慢性腹痛等"
-      ]
+      ],
+      "pinyin_initials": "dgsjyrt"
     },
     {
       "id": "f040",
       "name": "甘麦大枣汤",
-      "pinyin": "ganmaidazao tang",
+      "pinyin": "gan mai da zao tang",
       "alias": [],
       "composition": [
         {
@@ -1927,12 +1967,13 @@
       "clinical_cases": [
         "《金匮要略》原文：妇人脏躁，喜悲伤欲哭，象如神灵所作...",
         "现代应用：用于更年期综合征、神经衰弱、癔症、抑郁症等"
-      ]
+      ],
+      "pinyin_initials": "gmdzt"
     },
     {
       "id": "f041",
       "name": "黄连解毒汤",
-      "pinyin": "huanglian jiedu tang",
+      "pinyin": "huang lian jie du tang",
       "alias": [],
       "composition": [
         {
@@ -1966,12 +2007,13 @@
       "clinical_cases": [
         "《外台秘要》原文记载用于热病烦躁",
         "现代应用：用于败血症、脓毒血症、急性感染性疾病"
-      ]
+      ],
+      "pinyin_initials": "hljdt"
     },
     {
       "id": "f042",
       "name": "普济消毒饮",
-      "pinyin": "puji xiaodu yin",
+      "pinyin": "pu ji xiao du yin",
       "alias": [
         "普济消毒散"
       ],
@@ -2057,12 +2099,13 @@
       "clinical_cases": [
         "《东垣试效方》记载用于大头瘟",
         "现代应用：用于流行性腮腺炎、急性扁桃体炎、颌下腺炎"
-      ]
+      ],
+      "pinyin_initials": "pjxdy"
     },
     {
       "id": "f043",
       "name": "凉膈散",
-      "pinyin": "liangge san",
+      "pinyin": "liang ge san",
       "alias": [],
       "composition": [
         {
@@ -2111,12 +2154,13 @@
       "clinical_cases": [
         "《太平惠民和剂局方》记载",
         "现代应用：用于口腔溃疡、咽喉炎、便秘"
-      ]
+      ],
+      "pinyin_initials": "lgs"
     },
     {
       "id": "f044",
       "name": "仙方活命饮",
-      "pinyin": "xianfang huoming yin",
+      "pinyin": "xian fang huo ming yin",
       "alias": [
         "真人活命饮"
       ],
@@ -2197,12 +2241,13 @@
       "clinical_cases": [
         "《校注妇人良方》记载",
         "现代应用：用于蜂窝织炎、脓肿、乳腺炎"
-      ]
+      ],
+      "pinyin_initials": "xfhmy"
     },
     {
       "id": "f045",
       "name": "导赤散",
-      "pinyin": "daochi san",
+      "pinyin": "dao chi san",
       "alias": [],
       "composition": [
         {
@@ -2236,12 +2281,13 @@
       "clinical_cases": [
         "《小儿药证直诀》记载用于小儿心热",
         "现代应用：用于口腔溃疡、泌尿系感染"
-      ]
+      ],
+      "pinyin_initials": "dcs"
     },
     {
       "id": "f046",
       "name": "龙胆泻肝汤",
-      "pinyin": "longdan xiegan tang",
+      "pinyin": "long dan xie gan tang",
       "alias": [],
       "composition": [
         {
@@ -2305,12 +2351,13 @@
       "clinical_cases": [
         "《医方集解》记载",
         "现代应用：用于急性结膜炎、急性中耳炎、急性胆囊炎、带状疱疹"
-      ]
+      ],
+      "pinyin_initials": "ldxgt"
     },
     {
       "id": "f047",
       "name": "左金丸",
-      "pinyin": "zuojin wan",
+      "pinyin": "zuo jin wan",
       "alias": [
         "回令丸"
       ],
@@ -2336,12 +2383,13 @@
       "clinical_cases": [
         "《丹溪心法》记载",
         "现代应用：用于胃炎、胃溃疡、反流性食管炎"
-      ]
+      ],
+      "pinyin_initials": "zjw"
     },
     {
       "id": "f048",
       "name": "清胃散",
-      "pinyin": "qingwei san",
+      "pinyin": "qing wei san",
       "alias": [],
       "composition": [
         {
@@ -2380,12 +2428,13 @@
       "clinical_cases": [
         "《脾胃论》记载",
         "现代应用：用于牙周炎、牙龈炎、口腔炎"
-      ]
+      ],
+      "pinyin_initials": "qws"
     },
     {
       "id": "f049",
       "name": "玉女煎",
-      "pinyin": "yunu jian",
+      "pinyin": "yu nv jian",
       "alias": [],
       "composition": [
         {
@@ -2424,12 +2473,13 @@
       "clinical_cases": [
         "《景岳全书》记载",
         "现代应用：用于牙周炎、糖尿病、口腔溃疡"
-      ]
+      ],
+      "pinyin_initials": "ynj"
     },
     {
       "id": "f050",
       "name": "芍药汤",
-      "pinyin": "shaoyao tang",
+      "pinyin": "shao yao tang",
       "alias": [],
       "composition": [
         {
@@ -2488,12 +2538,13 @@
       "clinical_cases": [
         "《素问病机气宜保命集》记载",
         "现代应用：用于细菌性痢疾、阿米巴痢疾、肠炎"
-      ]
+      ],
+      "pinyin_initials": "syt"
     },
     {
       "id": "f051",
       "name": "四君子汤",
-      "pinyin": "sijunzi tang",
+      "pinyin": "si jun zi tang",
       "alias": [
         "四君子散"
       ],
@@ -2524,12 +2575,13 @@
       "contraindications": "阴虚血热者慎用",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
-      "category": "补益剂-补气"
+      "category": "补益剂-补气",
+      "pinyin_initials": "sjzt"
     },
     {
       "id": "f052",
       "name": "参苓白术散",
-      "pinyin": "shenling baishu san",
+      "pinyin": "can ling bai zhu san",
       "alias": [
         "参苓白术汤"
       ],
@@ -2590,12 +2642,13 @@
       "contraindications": "湿热泄泻者慎用",
       "usage": "散剂，每服6g，枣汤调下；或作汤剂",
       "source": "《太平惠民和剂局方》",
-      "category": "补益剂-补气"
+      "category": "补益剂-补气",
+      "pinyin_initials": "clbzs"
     },
     {
       "id": "f053",
       "name": "补中益气汤",
-      "pinyin": "buzhong yiqi tang",
+      "pinyin": "bu zhong yi qi tang",
       "alias": [],
       "composition": [
         {
@@ -2644,12 +2697,13 @@
       "contraindications": "阴虚发热者禁用",
       "usage": "水煎服",
       "source": "《脾胃论》",
-      "category": "补益剂-补气"
+      "category": "补益剂-补气",
+      "pinyin_initials": "bzyqt"
     },
     {
       "id": "f054",
       "name": "生脉散",
-      "pinyin": "shengmai san",
+      "pinyin": "sheng mai san",
       "alias": [
         "生脉饮"
       ],
@@ -2675,12 +2729,13 @@
       "contraindications": "外邪未解或暑病热盛者不宜使用",
       "usage": "水煎服",
       "source": "《医学启源》",
-      "category": "补益剂-补气"
+      "category": "补益剂-补气",
+      "pinyin_initials": "sms"
     },
     {
       "id": "f055",
       "name": "四物汤",
-      "pinyin": "siwu tang",
+      "pinyin": "si wu tang",
       "alias": [
         "地黄汤"
       ],
@@ -2711,12 +2766,13 @@
       "contraindications": "阴虚血热者慎用",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
-      "category": "补益剂-补血"
+      "category": "补益剂-补血",
+      "pinyin_initials": "swt"
     },
     {
       "id": "f056",
       "name": "归脾汤",
-      "pinyin": "guipi tang",
+      "pinyin": "gui pi tang",
       "alias": [],
       "composition": [
         {
@@ -2785,12 +2841,13 @@
       "contraindications": "实热证不宜使用",
       "usage": "水煎服",
       "source": "《正体类要》",
-      "category": "补益剂-气血双补"
+      "category": "补益剂-气血双补",
+      "pinyin_initials": "gpt"
     },
     {
       "id": "f057",
       "name": "炙甘草汤",
-      "pinyin": "zhigancao tang",
+      "pinyin": "zhi gan cao tang",
       "alias": [
         "复脉汤"
       ],
@@ -2847,12 +2904,13 @@
       "contraindications": "阴虚火旺者慎用",
       "usage": "水煎服，阿胶烊化",
       "source": "《伤寒论》",
-      "category": "补益剂-气血双补"
+      "category": "补益剂-气血双补",
+      "pinyin_initials": "zgct"
     },
     {
       "id": "f058",
       "name": "六味地黄丸",
-      "pinyin": "liuwei dihuang wan",
+      "pinyin": "liu wei di huang wan",
       "alias": [
         "地黄丸"
       ],
@@ -2893,12 +2951,13 @@
       "contraindications": "脾虚泄泻者慎用",
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《小儿药证直诀》",
-      "category": "补益剂-补阴"
+      "category": "补益剂-补阴",
+      "pinyin_initials": "lwdhw"
     },
     {
       "id": "f059",
       "name": "左归丸",
-      "pinyin": "zuogui wan",
+      "pinyin": "zuo gui wan",
       "alias": [],
       "composition": [
         {
@@ -2947,12 +3006,13 @@
       "contraindications": "脾虚便溏者慎用",
       "usage": "蜜丸，每服9g，日2次",
       "source": "《景岳全书》",
-      "category": "补益剂-补阴"
+      "category": "补益剂-补阴",
+      "pinyin_initials": "zgw"
     },
     {
       "id": "f060",
       "name": "大补阴丸",
-      "pinyin": "dabuyin wan",
+      "pinyin": "da bu yin wan",
       "alias": [
         "大补丸"
       ],
@@ -2988,12 +3048,13 @@
       "contraindications": "脾胃虚弱、食少便溏者慎用",
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《丹溪心法》",
-      "category": "补益剂-补阴"
+      "category": "补益剂-补阴",
+      "pinyin_initials": "dbyw"
     },
     {
       "id": "f061",
       "name": "一贯煎",
-      "pinyin": "yiguan jian",
+      "pinyin": "yi guan jian",
       "alias": [],
       "composition": [
         {
@@ -3032,12 +3093,13 @@
       "contraindications": "肝胆湿热、肝郁化火者不宜使用",
       "usage": "水煎服",
       "source": "《续名医类案》",
-      "category": "补益剂-补阴"
+      "category": "补益剂-补阴",
+      "pinyin_initials": "ygj"
     },
     {
       "id": "f062",
       "name": "百合固金汤",
-      "pinyin": "baihe gujin tang",
+      "pinyin": "bai he gu jin tang",
       "alias": [],
       "composition": [
         {
@@ -3096,12 +3158,13 @@
       "contraindications": "脾虚便溏者慎用",
       "usage": "水煎服",
       "source": "《慎斋遗书》",
-      "category": "补益剂-补阴"
+      "category": "补益剂-补阴",
+      "pinyin_initials": "bhgjt"
     },
     {
       "id": "f063",
       "name": "八珍汤",
-      "pinyin": "bazhen tang",
+      "pinyin": "ba zhen tang",
       "alias": [],
       "composition": [
         {
@@ -3160,12 +3223,13 @@
       "contraindications": "实热证不宜使用",
       "usage": "水煎服",
       "source": "《正体类要》",
-      "category": "补益剂-气血双补"
+      "category": "补益剂-气血双补",
+      "pinyin_initials": "bzt"
     },
     {
       "id": "f064",
       "name": "十全大补汤",
-      "pinyin": "shiquan dabu tang",
+      "pinyin": "shi quan da bu tang",
       "alias": [],
       "composition": [
         {
@@ -3234,12 +3298,13 @@
       "contraindications": "实热证、阴虚火旺者禁用",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
-      "category": "补益剂-气血双补"
+      "category": "补益剂-气血双补",
+      "pinyin_initials": "sqdbt"
     },
     {
       "id": "f065",
       "name": "越鞠丸",
-      "pinyin": "yueju wan",
+      "pinyin": "yue ju wan",
       "alias": [
         "芎术丸"
       ],
@@ -3275,12 +3340,13 @@
       "contraindications": "孕妇慎用",
       "usage": "水丸，每服6g，日2次；或作汤剂",
       "source": "《丹溪心法》",
-      "category": "理气剂-行气"
+      "category": "理气剂-行气",
+      "pinyin_initials": "yjw"
     },
     {
       "id": "f066",
       "name": "柴胡疏肝散",
-      "pinyin": "chaihu shugan san",
+      "pinyin": "chai hu shu gan san",
       "alias": [],
       "composition": [
         {
@@ -3324,12 +3390,13 @@
       "contraindications": "肝阴不足者慎用",
       "usage": "水煎服",
       "source": "《证治准绳》",
-      "category": "理气剂-行气"
+      "category": "理气剂-行气",
+      "pinyin_initials": "chsgs"
     },
     {
       "id": "f067",
       "name": "半夏厚朴汤",
-      "pinyin": "banxia houpo tang",
+      "pinyin": "ban xia hou po tang",
       "alias": [
         "四七汤"
       ],
@@ -3365,12 +3432,13 @@
       "contraindications": "阴虚咽燥者慎用",
       "usage": "水煎服",
       "source": "《金匮要略》",
-      "category": "理气剂-行气"
+      "category": "理气剂-行气",
+      "pinyin_initials": "bxhpt"
     },
     {
       "id": "f068",
       "name": "瓜蒌薤白白酒汤",
-      "pinyin": "gualou xiebai baijiu tang",
+      "pinyin": "gua lou xie bai bai jiu tang",
       "alias": [],
       "composition": [
         {
@@ -3394,12 +3462,13 @@
       "contraindications": "阴虚阳亢者慎用",
       "usage": "水煎服，加白酒适量",
       "source": "《金匮要略》",
-      "category": "理气剂-行气"
+      "category": "理气剂-行气",
+      "pinyin_initials": "glxbbjt"
     },
     {
       "id": "f069",
       "name": "四磨汤",
-      "pinyin": "simo tang",
+      "pinyin": "si mo tang",
       "alias": [],
       "composition": [
         {
@@ -3428,12 +3497,13 @@
       "contraindications": "孕妇慎用",
       "usage": "水煎服",
       "source": "《重订严氏济生方》",
-      "category": "理气剂-行气"
+      "category": "理气剂-行气",
+      "pinyin_initials": "smt"
     },
     {
       "id": "f070",
       "name": "保和丸",
-      "pinyin": "baohe wan",
+      "pinyin": "bao he wan",
       "alias": [],
       "composition": [
         {
@@ -3477,12 +3547,13 @@
       "contraindications": "脾胃虚弱者慎用",
       "usage": "水丸，每服6g，日2次；或作汤剂",
       "source": "《丹溪心法》",
-      "category": "消食剂"
+      "category": "消食剂",
+      "pinyin_initials": "bhw"
     },
     {
       "id": "f071",
       "name": "健脾丸",
-      "pinyin": "jianpi wan",
+      "pinyin": "jian pi wan",
       "alias": [],
       "composition": [
         {
@@ -3556,12 +3627,13 @@
       "contraindications": "实热食积者不宜使用",
       "usage": "蜜丸，每服9g，日2次",
       "source": "《证治准绳》",
-      "category": "消食剂"
+      "category": "消食剂",
+      "pinyin_initials": "jpw"
     },
     {
       "id": "f072",
       "name": "二陈汤",
-      "pinyin": "erchen tang",
+      "pinyin": "er chen tang",
       "alias": [],
       "composition": [
         {
@@ -3600,12 +3672,13 @@
       "contraindications": "阴虚燥咳者慎用",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
-      "category": "祛痰剂-燥湿化痰"
+      "category": "祛痰剂-燥湿化痰",
+      "pinyin_initials": "ect"
     },
     {
       "id": "f073",
       "name": "温胆汤",
-      "pinyin": "wendan tang",
+      "pinyin": "wen dan tang",
       "alias": [],
       "composition": [
         {
@@ -3654,12 +3727,13 @@
       "contraindications": "阴虚有热者慎用",
       "usage": "水煎服",
       "source": "《三因极一病证方论》",
-      "category": "祛痰剂-清热化痰"
+      "category": "祛痰剂-清热化痰",
+      "pinyin_initials": "wdt"
     },
     {
       "id": "f074",
       "name": "清气化痰丸",
-      "pinyin": "qingqi huatan wan",
+      "pinyin": "qing qi hua tan wan",
       "alias": [],
       "composition": [
         {
@@ -3708,12 +3782,13 @@
       "contraindications": "寒痰、湿痰者禁用",
       "usage": "水丸，每服6g，日2次；或作汤剂",
       "source": "《医方考》",
-      "category": "祛痰剂-清热化痰"
+      "category": "祛痰剂-清热化痰",
+      "pinyin_initials": "qqhtw"
     },
     {
       "id": "f075",
       "name": "半夏白术天麻汤",
-      "pinyin": "banxia baizhu tianma tang",
+      "pinyin": "ban xia bai zhu tian ma tang",
       "alias": [],
       "composition": [
         {
@@ -3762,12 +3837,13 @@
       "contraindications": "肝阳上亢、阴虚阳亢者不宜使用",
       "usage": "水煎服",
       "source": "《医学心悟》",
-      "category": "祛痰剂-治风化痰"
+      "category": "祛痰剂-治风化痰",
+      "pinyin_initials": "bxbztmt"
     },
     {
       "id": "f076",
       "name": "川芎茶调散",
-      "pinyin": "chuanxiong chatiao san",
+      "pinyin": "chuan qiong cha diao san",
       "alias": [],
       "composition": [
         {
@@ -3816,12 +3892,13 @@
       "contraindications": "气血亏虚、肝阳上亢之头痛不宜使用",
       "usage": "散剂，每服6g，清茶调下；或作汤剂",
       "source": "《太平惠民和剂局方》",
-      "category": "治风剂-疏散外风"
+      "category": "治风剂-疏散外风",
+      "pinyin_initials": "cqcds"
     },
     {
       "id": "f077",
       "name": "独活寄生汤",
-      "pinyin": "duhuo jisheng tang",
+      "pinyin": "du huo ji sheng tang",
       "alias": [],
       "composition": [
         {
@@ -3905,12 +3982,13 @@
       "contraindications": "湿热痹证不宜使用",
       "usage": "水煎服",
       "source": "《备急千金要方》",
-      "category": "治风剂-疏散外风"
+      "category": "治风剂-疏散外风",
+      "pinyin_initials": "dhjst"
     },
     {
       "id": "f078",
       "name": "羚角钩藤汤",
-      "pinyin": "lingjiao gouteng tang",
+      "pinyin": "ling jiao gou teng tang",
       "alias": [],
       "composition": [
         {
@@ -3970,12 +4048,13 @@
       "contraindications": "虚风内动者不宜使用",
       "usage": "水煎服，羚羊角另煎兑入",
       "source": "《通俗伤寒论》",
-      "category": "治风剂-平熄内风"
+      "category": "治风剂-平熄内风",
+      "pinyin_initials": "ljgtt"
     },
     {
       "id": "f079",
       "name": "镇肝熄风汤",
-      "pinyin": "zhengan xifeng tang",
+      "pinyin": "zhen gan xi feng tang",
       "alias": [],
       "composition": [
         {
@@ -4044,12 +4123,13 @@
       "contraindications": "痰湿中阻、气血亏虚之眩晕不宜使用",
       "usage": "水煎服",
       "source": "《医学衷中参西录》",
-      "category": "治风剂-平熄内风"
+      "category": "治风剂-平熄内风",
+      "pinyin_initials": "zgxft"
     },
     {
       "id": "f080",
       "name": "平胃散",
-      "pinyin": "pingwei san",
+      "pinyin": "ping wei san",
       "alias": [],
       "composition": [
         {
@@ -4088,12 +4168,13 @@
       "contraindications": "阴虚气滞、脾胃虚弱者慎用",
       "usage": "散剂，每服6g，姜枣煎汤送下；或作汤剂",
       "source": "《简要济众方》",
-      "category": "祛湿剂-燥湿和胃"
+      "category": "祛湿剂-燥湿和胃",
+      "pinyin_initials": "pws"
     },
     {
       "id": "f081",
       "name": "藿香正气散",
-      "pinyin": "huoxiang zhengqi san",
+      "pinyin": "huo xiang zheng qi san",
       "alias": [],
       "composition": [
         {
@@ -4167,12 +4248,13 @@
       "contraindications": "湿热、阴虚者慎用",
       "usage": "散剂，每服6g，姜枣煎汤送下；或作汤剂",
       "source": "《太平惠民和剂局方》",
-      "category": "祛湿剂-芳香化湿"
+      "category": "祛湿剂-芳香化湿",
+      "pinyin_initials": "hxzqs"
     },
     {
       "id": "f082",
       "name": "八正散",
-      "pinyin": "bazheng san",
+      "pinyin": "ba zheng san",
       "alias": [],
       "composition": [
         {
@@ -4221,12 +4303,13 @@
       "contraindications": "淋证日久，脾胃虚弱者慎用",
       "usage": "散剂，每服6g，灯心煎汤送下；或作汤剂",
       "source": "《太平惠民和剂局方》",
-      "category": "祛湿剂-清热祛湿"
+      "category": "祛湿剂-清热祛湿",
+      "pinyin_initials": "bzs"
     },
     {
       "id": "f083",
       "name": "三仁汤",
-      "pinyin": "sanren tang",
+      "pinyin": "san ren tang",
       "alias": [],
       "composition": [
         {
@@ -4275,12 +4358,13 @@
       "contraindications": "热重于湿者不宜使用",
       "usage": "水煎服",
       "source": "《温病条辨》",
-      "category": "祛湿剂-清热祛湿"
+      "category": "祛湿剂-清热祛湿",
+      "pinyin_initials": "srt"
     },
     {
       "id": "f084",
       "name": "银翘散",
-      "pinyin": "yinqiao san",
+      "pinyin": "yin qiao san",
       "alias": [],
       "composition": [
         {
@@ -4339,12 +4423,13 @@
       "contraindications": "风寒表证禁用",
       "usage": "散剂，每服18g，鲜苇根汤煎服；或作汤剂",
       "source": "《温病条辨》",
-      "category": "解表剂-辛凉解表"
+      "category": "解表剂-辛凉解表",
+      "pinyin_initials": "yqs"
     },
     {
       "id": "f085",
       "name": "桑菊饮",
-      "pinyin": "sangju yin",
+      "pinyin": "sang ju yin",
       "alias": [],
       "composition": [
         {
@@ -4393,12 +4478,13 @@
       "contraindications": "风寒咳嗽禁用",
       "usage": "水煎服",
       "source": "《温病条辨》",
-      "category": "解表剂-辛凉解表"
+      "category": "解表剂-辛凉解表",
+      "pinyin_initials": "sjy"
     },
     {
       "id": "f086",
       "name": "败毒散",
-      "pinyin": "baidu san",
+      "pinyin": "bai du san",
       "alias": [
         "人参败毒散"
       ],
@@ -4464,12 +4550,13 @@
       "contraindications": "阴虚外感者不宜使用",
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
-      "category": "解表剂-扶正解表"
+      "category": "解表剂-扶正解表",
+      "pinyin_initials": "bds"
     },
     {
       "id": "f087",
       "name": "理中丸",
-      "pinyin": "lizhong wan",
+      "pinyin": "li zhong wan",
       "alias": [
         "人参汤"
       ],
@@ -4500,12 +4587,13 @@
       "contraindications": "湿热内蕴者禁用",
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《伤寒论》",
-      "category": "温里剂-温中祛寒"
+      "category": "温里剂-温中祛寒",
+      "pinyin_initials": "lzw"
     },
     {
       "id": "f088",
       "name": "吴茱萸汤",
-      "pinyin": "wuzhuyu tang",
+      "pinyin": "wu zhu yu tang",
       "alias": [],
       "composition": [
         {
@@ -4534,12 +4622,13 @@
       "contraindications": "胃热呕吐、肝郁化火者禁用",
       "usage": "水煎服",
       "source": "《伤寒论》",
-      "category": "温里剂-温中祛寒"
+      "category": "温里剂-温中祛寒",
+      "pinyin_initials": "wzyt"
     },
     {
       "id": "f089",
       "name": "朱砂安神丸",
-      "pinyin": "zhusha anshen wan",
+      "pinyin": "zhu sha an shen wan",
       "alias": [
         "安神丸"
       ],
@@ -4576,12 +4665,13 @@
       "contraindications": "脾胃虚弱者慎用，孕妇禁用，不可久服",
       "usage": "蜜丸，每服3g，睡前服",
       "source": "《内外伤辨惑论》",
-      "category": "安神剂-重镇安神"
+      "category": "安神剂-重镇安神",
+      "pinyin_initials": "zsasw"
     },
     {
       "id": "f090",
       "name": "天王补心丹",
-      "pinyin": "tianwang buxin dan",
+      "pinyin": "tian wang bu xin dan",
       "alias": [],
       "composition": [
         {
@@ -4661,12 +4751,13 @@
       "contraindications": "脾胃虚寒者慎用，孕妇禁用朱砂",
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《校注妇人良方》",
-      "category": "安神剂-滋养安神"
+      "category": "安神剂-滋养安神",
+      "pinyin_initials": "twbxd"
     },
     {
       "id": "f091",
       "name": "苏合香丸",
-      "pinyin": "suhexiang wan",
+      "pinyin": "su he xiang wan",
       "alias": [],
       "composition": [
         {
@@ -4750,12 +4841,13 @@
       "contraindications": "热闭、脱证禁用，孕妇禁用",
       "usage": "蜜丸，每服3g，日1-2次",
       "source": "《广济方》",
-      "category": "开窍剂-温开"
+      "category": "开窍剂-温开",
+      "pinyin_initials": "shxw"
     },
     {
       "id": "f092",
       "name": "四神丸",
-      "pinyin": "sishen wan",
+      "pinyin": "si shen wan",
       "alias": [],
       "composition": [
         {
@@ -4794,12 +4886,13 @@
       "contraindications": "湿热泄泻禁用",
       "usage": "水丸，每服6g，日2次；或作汤剂",
       "source": "《证治准绳》",
-      "category": "固涩剂-涩肠固脱"
+      "category": "固涩剂-涩肠固脱",
+      "pinyin_initials": "ssw"
     },
     {
       "id": "f093",
       "name": "固冲汤",
-      "pinyin": "guchong tang",
+      "pinyin": "gu chong tang",
       "alias": [],
       "composition": [
         {
@@ -4858,12 +4951,13 @@
       "contraindications": "血热妄行者禁用",
       "usage": "水煎服",
       "source": "《医学衷中参西录》",
-      "category": "固涩剂-固崩止带"
+      "category": "固涩剂-固崩止带",
+      "pinyin_initials": "gct"
     },
     {
       "id": "f094",
       "name": "血府逐瘀汤",
-      "pinyin": "xuefu zhuyu tang",
+      "pinyin": "xue fu zhu yu tang",
       "alias": [],
       "composition": [
         {
@@ -4927,12 +5021,13 @@
       "contraindications": "孕妇禁用",
       "usage": "水煎服",
       "source": "《医林改错》",
-      "category": "理血剂-活血祛瘀"
+      "category": "理血剂-活血祛瘀",
+      "pinyin_initials": "xfzyt"
     },
     {
       "id": "f095",
       "name": "补阳还五汤",
-      "pinyin": "buyang huanwu tang",
+      "pinyin": "bu yang hai wu tang",
       "alias": [],
       "composition": [
         {
@@ -4976,12 +5071,13 @@
       "contraindications": "阴虚血热者慎用，孕妇禁用",
       "usage": "水煎服",
       "source": "《医林改错》",
-      "category": "理血剂-活血祛瘀"
+      "category": "理血剂-活血祛瘀",
+      "pinyin_initials": "byhwt"
     },
     {
       "id": "f096",
       "name": "生化汤",
-      "pinyin": "shenghua tang",
+      "pinyin": "sheng hua tang",
       "alias": [],
       "composition": [
         {
@@ -5015,12 +5111,13 @@
       "contraindications": "产后血热而有瘀滞者不宜使用",
       "usage": "水煎服，或酌加黄酒同煎",
       "source": "《傅青主女科》",
-      "category": "理血剂-活血祛瘀"
+      "category": "理血剂-活血祛瘀",
+      "pinyin_initials": "sht"
     },
     {
       "id": "f097",
       "name": "小蓟饮子",
-      "pinyin": "xiaoji yinzi",
+      "pinyin": "xiao ji yin zi",
       "alias": [],
       "composition": [
         {
@@ -5079,12 +5176,13 @@
       "contraindications": "虚寒性出血不宜使用",
       "usage": "水煎服",
       "source": "《济生方》",
-      "category": "理血剂-止血"
+      "category": "理血剂-止血",
+      "pinyin_initials": "xjyz"
     },
     {
       "id": "f098",
       "name": "黄土汤",
-      "pinyin": "huangtu tang",
+      "pinyin": "huang tu tang",
       "alias": [],
       "composition": [
         {
@@ -5128,12 +5226,13 @@
       "contraindications": "热证出血禁用",
       "usage": "水煎服，灶心黄土包煎",
       "source": "《金匮要略》",
-      "category": "理血剂-止血"
+      "category": "理血剂-止血",
+      "pinyin_initials": "htt"
     },
     {
       "id": "f099",
       "name": "逍遥散",
-      "pinyin": "xiaoyao san",
+      "pinyin": "xiao yao san",
       "alias": [],
       "composition": [
         {
@@ -5182,12 +5281,13 @@
       "contraindications": "肝胆湿热、肝郁化火者不宜使用",
       "usage": "水煎服，薄荷后下",
       "source": "《太平惠民和剂局方》",
-      "category": "和解剂-调和肝脾"
+      "category": "和解剂-调和肝脾",
+      "pinyin_initials": "xys"
     },
     {
       "id": "f100",
       "name": "酸枣仁汤",
-      "pinyin": "suanzaoren tang",
+      "pinyin": "suan zao ren tang",
       "alias": [],
       "composition": [
         {
@@ -5221,7 +5321,8 @@
       "contraindications": "实热或痰热内扰者慎用",
       "usage": "水煎服，酸枣仁先煎",
       "source": "《金匮要略》",
-      "category": "安神剂-滋养安神"
+      "category": "安神剂-滋养安神",
+      "pinyin_initials": "szrt"
     }
   ]
 }

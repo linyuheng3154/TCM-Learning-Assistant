@@ -26,6 +26,7 @@ class FormulaDB(Base):
     id = Column(String(10), primary_key=True)
     name = Column(String(100), nullable=False, index=True)
     pinyin = Column(String(200))
+    pinyin_initials = Column(String(50), index=True)  # 拼音首字母，如 'gzt'
     efficacy = Column(Text)
     indications = Column(Text)
     contraindications = Column(Text)

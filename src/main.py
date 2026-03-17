@@ -33,7 +33,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 
 from src.config.settings import get_settings
-from src.api import formulas, diagnosis, herbs
+from src.api import formulas, diagnosis, herbs, compatibility
 
 # 获取配置
 settings = get_settings()
@@ -88,6 +88,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.include_router(formulas.router)
 app.include_router(diagnosis.router)
 app.include_router(herbs.router)
+app.include_router(compatibility.router)
 
 
 # ============================================================
@@ -115,6 +116,7 @@ async def root():
             "search_formulas": "/formulas/search?keyword=桂枝",
             "search_herbs": "/herbs/search?keyword=人参",
             "diagnosis": "/diagnosis/recommend",
+            "compatibility": "/compatibility/check/herbs",
             "health": "/health"
         }
     }

@@ -58,7 +58,7 @@ docs/tcm-diagnosis-multi-agent-architecture.md
 docs/agent-specialization-plan.md
 docs/deployment-optimization.md
 
-# Diagnosis feature (under development, not for production)
+# Development modules
 src/api/diagnosis.py
 src/services/diagnosis_service.py
 data/syndrome_formulas.json

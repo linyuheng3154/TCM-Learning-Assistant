@@ -2,12 +2,12 @@
   "_metadata": {
     "version": "2.0.0",
     "created_at": "2026-03-10",
-    "updated_at": "2026-03-17",
+    "updated_at": "2026-03-19",
     "source": "《伤寒论》《金匮要略》《温病条辨》《太平惠民和剂局方》",
     "total_formulas": 100,
     "description": "100首经典中医方剂数据库，包含完整组成、功效、主治、出处",
     "data_quality": "专业准确，基于经典医籍原文",
-    "last_updated": "2026-03-12",
+    "last_updated": "2026-03-19",
     "sources": [],
     "pinyin_format": "hanzi-level"
   },
@@ -29,17 +29,20 @@
         {
           "herb": "桂枝",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "杏仁",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "发汗解表，宣肺平喘",
@@ -53,7 +56,10 @@
         "《伤寒论》原文：太阳病，头痛发热，身疼腰痛，骨节疼痛，恶风无汗而喘者，麻黄汤主之。",
         "现代应用：用于感冒、流感、支气管哮喘等属风寒表实证者"
       ],
-      "pinyin_initials": "mht"
+      "pinyin_initials": "mht",
+      "classic_text": "太阳病，头痛发热，身疼腰痛，骨节疼痛，恶风无汗而喘者，麻黄汤主之。",
+      "classic_source": "《伤寒论》第35条",
+      "classic_usage": "上四味，以水九升，先煮麻黄，减二升，去上沫，内诸药，煮取二升半，去滓，温服八合。覆取微似汗，不须啜粥，余如桂枝法将息。"
     },
     {
       "id": "f002",
@@ -72,22 +78,26 @@
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "12枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "解肌发表，调和营卫",
@@ -101,7 +111,10 @@
         "《伤寒论》原文：太阳中风，阳浮而阴弱，阳浮者热自发，阴弱者汗自出...",
         "现代应用：用于感冒、流感、产后发热、自主神经功能紊乱等"
       ],
-      "pinyin_initials": "gzt"
+      "pinyin_initials": "gzt",
+      "classic_text": "太阳中风，阳浮而阴弱，阳浮者热自发，阴弱者汗自出，啬啬恶寒，淅淅恶风，翕翕发热，鼻鸣干呕者，桂枝汤主之。",
+      "classic_source": "《伤寒论》第12条",
+      "classic_usage": "上五味，㕮咀三味，以水七升，微火煮取三升，去滓，适寒温，服一升。服已须臾，啜热稀粥一升余，以助药力。温覆令一时许，遍身漐漐微似有汗者益佳，不可令如水流漓，病必不除。若一服汗出病差，停后服，不必尽剂；若不汗，更服，依前法；又不汗，后服小促其间，半日许令三服尽。若病重者，一日一夜服，周时观之。服一剂尽，病证犹在者，更作服。若汗不出者，乃服至二三剂。禁生冷、粘滑、肉面、五辛、酒酪、臭恶等物。"
     },
     {
       "id": "f003",
@@ -118,37 +131,44 @@
         {
           "herb": "桂枝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "细辛",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "干姜",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "洗"
         },
         {
           "herb": "五味子",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "解表散寒，温肺化饮",
@@ -162,7 +182,10 @@
         "《伤寒论》原文：伤寒表不解，心下有水气，干呕发热而咳...",
         "现代应用：用于支气管哮喘、慢性支气管炎、肺气肿等"
       ],
-      "pinyin_initials": "xqlt"
+      "pinyin_initials": "xqlt",
+      "classic_text": "伤寒表不解，心下有水气，干呕，发热而咳，或渴，或利，或噎，或小便不利、少腹满，或喘者，小青龙汤主之。",
+      "classic_source": "《伤寒论》第40条",
+      "classic_usage": "上八味，以水一斗，先煮麻黄，减二升，去上沫，内诸药，煮取三升，去滓，温服一升。"
     },
     {
       "id": "f004",
@@ -179,32 +202,38 @@
         {
           "herb": "桂枝",
           "dosage": "4g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "甘草",
           "dosage": "5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "杏仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "10枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         },
         {
           "herb": "石膏",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "碎"
         }
       ],
       "efficacy": "发汗解表，清热除烦",
@@ -218,7 +247,10 @@
         "《伤寒论》原文：太阳中风，脉浮紧，发热恶寒，身疼痛，不汗出而烦躁者...",
         "现代应用：用于重感冒、肺炎初期、急性肾炎等"
       ],
-      "pinyin_initials": "dqlt"
+      "pinyin_initials": "dqlt",
+      "classic_text": "太阳中风，脉浮紧，发热恶寒，身疼痛，不汗出而烦躁者，大青龙汤主之。",
+      "classic_source": "《伤寒论》第38条",
+      "classic_usage": "上七味，以水九升，先煮麻黄，减二升，去上沫，内诸药，煮取三升，去滓，温服一升，取微似汗。汗出多者，温粉扑之。一服汗者，停后服。若复服，汗多亡阳，遂虚，恶风烦躁，不得眠也。"
     },
     {
       "id": "f005",
@@ -229,7 +261,8 @@
         {
           "herb": "葛根",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "麻黄",
@@ -240,27 +273,32 @@
         {
           "herb": "桂枝",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "12枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "发汗解表，升津舒筋",
@@ -274,7 +312,10 @@
         "《伤寒论》原文：太阳病，项背强几几，无汗恶风，葛根汤主之。",
         "现代应用：用于感冒、颈椎病、肩周炎、腹泻等"
       ],
-      "pinyin_initials": "ggt"
+      "pinyin_initials": "ggt",
+      "classic_text": "太阳病，项背强几几，无汗恶风，葛根汤主之。",
+      "classic_source": "《伤寒论》第31条",
+      "classic_usage": "上七味，以水一斗，先煮麻黄、葛根，减二升，去上沫，内诸药，煮取三升，去滓，温服一升。覆取微似汗，余如桂枝法将息及禁忌。"
     },
     {
       "id": "f006",
@@ -293,17 +334,20 @@
         {
           "herb": "杏仁",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮尖"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "石膏",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "碎"
         }
       ],
       "efficacy": "辛凉宣泄，清肺平喘",
@@ -317,7 +361,8 @@
         "《伤寒论》原文：发汗后，不可更行桂枝汤，汗出而喘，无大热者...",
         "现代应用：用于肺炎、支气管炎、哮喘、麻疹等"
       ],
-      "pinyin_initials": "mhxrgcsgt"
+      "pinyin_initials": "mhxrgcsgt",
+      "classic_usage": "上四味，以水七升，先煮麻黄，减二升，去上沫，内诸药，煮取二升，去滓，温服一升。"
     },
     {
       "id": "f007",
@@ -334,27 +379,32 @@
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "4g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "12枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         },
         {
           "herb": "葛根",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         }
       ],
       "efficacy": "解肌发表，升津舒筋",
@@ -385,32 +435,38 @@
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "12枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         },
         {
           "herb": "厚朴",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙去皮"
         },
         {
           "herb": "杏仁",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         }
       ],
       "efficacy": "解肌发表，降气平喘",
@@ -435,37 +491,44 @@
         {
           "herb": "柴胡",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "洗"
         },
         {
           "herb": "甘草",
           "dosage": "5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "4枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "和解少阳",
@@ -479,7 +542,10 @@
         "《伤寒论》原文：伤寒五六日，中风，往来寒热，胸胁苦满...",
         "现代应用：用于感冒、肝炎、胆囊炎、疟疾、妇科炎症等"
       ],
-      "pinyin_initials": "xcht"
+      "pinyin_initials": "xcht",
+      "classic_text": "伤寒五六日中风，往来寒热，胸胁苦满，嘿嘿不欲饮食，心烦喜呕，或胸中烦而不呕，或渴，或腹中痛，或胁下痞硬，或心下悸、小便不利，或不渴、身有微热，或咳者，小柴胡汤主之。",
+      "classic_source": "《伤寒论》第96条",
+      "classic_usage": "上七味，以水一斗二升，煮取六升，去滓，再煎取三升，温服一升，日三服。若胸中烦而不呕者，去半夏、人参，加栝楼实一枚；若渴，去半夏，加人参，合前成四两半、栝楼根四两；若腹中痛者，去黄芩，加芍药三两；若胁下痞硬，去大枣，加牡蛎四两；若心下悸、小便不利者，去黄芩，加茯苓四两；若不渴、外有微热者，去人参，加桂枝三两，温覆微汗愈；若咳者，去人参、大枣、生姜，加五味子半升、干姜二两。"
     },
     {
       "id": "f010",
@@ -490,42 +556,50 @@
         {
           "herb": "柴胡",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "洗"
         },
         {
           "herb": "生姜",
           "dosage": "15g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "枳实",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "大枣",
           "dosage": "4枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         },
         {
           "herb": "大黄",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         }
       ],
       "efficacy": "和解少阳，内泻热结",
@@ -539,7 +613,10 @@
         "《金匮要略》原文：按之心下满痛者，此为实也，当下之，宜大柴胡汤。",
         "现代应用：用于急性胰腺炎、胆囊炎、胆石症、肝炎等"
       ],
-      "pinyin_initials": "dcht"
+      "pinyin_initials": "dcht",
+      "classic_text": "太阳病，过经十余日，反二三下之，后四五日，柴胡证仍在者，先与小柴胡。呕不止，心下急，郁郁微烦者，为未解也，与大柴胡汤下之则愈。",
+      "classic_source": "《伤寒论》第103条",
+      "classic_usage": "上八味，以水一斗二升，煮取六升，去滓，再煎取三升，温服一升，日三服。"
     },
     {
       "id": "f011",
@@ -550,22 +627,26 @@
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "枳实",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "透邪解郁，疏肝理脾",
@@ -590,37 +671,44 @@
         {
           "herb": "半夏",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "洗"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "干姜",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "黄连",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "4枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "寒热平调，消痞散结",
@@ -645,22 +733,26 @@
         {
           "herb": "石膏",
           "dosage": "50g",
-          "role": "君"
+          "role": "君",
+          "note": "碎"
         },
         {
           "herb": "知母",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "粳米",
           "dosage": "9g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "清热生津",
@@ -674,7 +766,10 @@
         "《伤寒论》原文：伤寒脉浮滑，此表有热，里有寒，白虎汤主之。",
         "现代应用：用于高热、中暑、肺炎、脑炎等"
       ],
-      "pinyin_initials": "bht"
+      "pinyin_initials": "bht",
+      "classic_text": "伤寒脉浮滑，此以表有热、里有寒，白虎汤主之。",
+      "classic_source": "《伤寒论》第176条",
+      "classic_usage": "上四味，以水一斗，煮米熟，汤成去滓，温服一升，日三服。"
     },
     {
       "id": "f014",
@@ -685,27 +780,32 @@
         {
           "herb": "石膏",
           "dosage": "50g",
-          "role": "君"
+          "role": "君",
+          "note": "碎"
         },
         {
           "herb": "知母",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "粳米",
           "dosage": "9g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         }
       ],
       "efficacy": "清热，益气，生津",
@@ -719,7 +819,8 @@
         "《伤寒论》原文：服桂枝汤，大汗出后，大烦渴不解，脉洪大者...",
         "现代应用：用于高热脱水、糖尿病、中暑等"
       ],
-      "pinyin_initials": "bhjrst"
+      "pinyin_initials": "bhjrst",
+      "classic_usage": "上五味，以水一斗，煮米熟，汤成去滓，温服一升，日三服。"
     },
     {
       "id": "f015",
@@ -730,37 +831,44 @@
         {
           "herb": "竹叶",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "石膏",
           "dosage": "50g",
-          "role": "臣"
+          "role": "臣",
+          "note": "碎"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "洗"
         },
         {
           "herb": "麦门冬",
           "dosage": "20g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去心"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "粳米",
           "dosage": "10g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "清热生津，益气和胃",
@@ -774,7 +882,8 @@
         "《伤寒论》原文：伤寒解后，虚羸少气，气逆欲吐，竹叶石膏汤主之。",
         "现代应用：用于热病后期、夏季热、口腔溃疡等"
       ],
-      "pinyin_initials": "zysgt"
+      "pinyin_initials": "zysgt",
+      "classic_usage": "上七味，以水一斗，煮取六升，去滓，内粳米，煮米熟，汤成去滓，温服一升，日三服。"
     },
     {
       "id": "f016",
@@ -785,17 +894,20 @@
         {
           "herb": "大黄",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "芒硝",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "冲服"
         }
       ],
       "efficacy": "缓下热结",
@@ -809,7 +921,10 @@
         "《伤寒论》原文：阳明病，不吐不下，心烦者，可与调胃承气汤。",
         "现代应用：用于便秘、口腔溃疡、牙龈炎等"
       ],
-      "pinyin_initials": "dwcqt"
+      "pinyin_initials": "dwcqt",
+      "classic_text": "太阳病三日，发汗不解，蒸蒸发热者，属胃也，调胃承气汤主之。",
+      "classic_source": "《伤寒论》第248条",
+      "classic_usage": "上三味，以水三升，煮取一升，去滓，内芒硝，更煮微沸，少少温服之。"
     },
     {
       "id": "f017",
@@ -820,17 +935,20 @@
         {
           "herb": "大黄",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "厚朴",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮炙"
         },
         {
           "herb": "枳实",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         }
       ],
       "efficacy": "轻下热结",
@@ -844,7 +962,10 @@
         "《伤寒论》原文：阳明病，其人多汗，以津液外出，胃中燥...",
         "现代应用：用于便秘、肠梗阻、痢疾等"
       ],
-      "pinyin_initials": "xcqt"
+      "pinyin_initials": "xcqt",
+      "classic_text": "阳明病，其人多汗，以津液外出，胃中燥，大便必硬，硬则谵语，小承气汤主之。",
+      "classic_source": "《伤寒论》第213条",
+      "classic_usage": "上三味，以水四升，煮取一升二合，去滓，分温二服。初服汤当更衣，不尔者尽饮之，若更衣者，勿服之。"
     },
     {
       "id": "f018",
@@ -855,22 +976,26 @@
         {
           "herb": "大黄",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "厚朴",
           "dosage": "24g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮炙"
         },
         {
           "herb": "枳实",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "芒硝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "冲服"
         }
       ],
       "efficacy": "峻下热结",
@@ -884,7 +1009,10 @@
         "《伤寒论》原文：阳明病，脉迟，虽汗出，不恶寒者...",
         "现代应用：用于急性肠梗阻、急性胰腺炎、中毒性痢疾等"
       ],
-      "pinyin_initials": "dcqt"
+      "pinyin_initials": "dcqt",
+      "classic_text": "阳明病，发热汗多者，急下之，宜大承气汤。",
+      "classic_source": "《伤寒论》第253条",
+      "classic_usage": "上四味，以水一斗，先煮二物，取五升，去滓，内大黄，更煮取二升，去滓，内芒硝，更上微火一两沸，分温再服。得下，余勿服。"
     },
     {
       "id": "f019",
@@ -897,32 +1025,38 @@
         {
           "herb": "麻子仁",
           "dosage": "20g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "枳实",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "大黄",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "厚朴",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮炙"
         },
         {
           "herb": "杏仁",
           "dosage": "10g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         }
       ],
       "efficacy": "润肠泄热，行气通便",
@@ -936,7 +1070,8 @@
         "《伤寒论》原文：趺阳脉浮而涩，浮则胃气强，涩则小便数...",
         "现代应用：用于习惯性便秘、老年便秘、产后便秘等"
       ],
-      "pinyin_initials": "mzrw"
+      "pinyin_initials": "mzrw",
+      "classic_usage": "上六味，蜜和丸，如梧桐子大，饮服十丸，日三服，渐加，以知为度。"
     },
     {
       "id": "f020",
@@ -947,17 +1082,20 @@
         {
           "herb": "茵陈蒿",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "栀子",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "擘"
         },
         {
           "herb": "大黄",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         }
       ],
       "efficacy": "清热，利湿，退黄",
@@ -971,7 +1109,8 @@
         "《伤寒论》原文：阳明病，发热汗出者，此为热越，不能发黄也...",
         "现代应用：用于急性黄疸型肝炎、胆囊炎、胆石症等"
       ],
-      "pinyin_initials": "ycht"
+      "pinyin_initials": "ycht",
+      "classic_usage": "上三味，以水一斗二升，先煮茵陈，减六升，内二味，煮取三升，去滓，分温三服。小便当利，尿如皂荚汁状，色正赤，一宿腹减，黄从小便去也。"
     },
     {
       "id": "f021",
@@ -982,12 +1121,14 @@
         {
           "herb": "栀子",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "擘"
         },
         {
           "herb": "香豉",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "绵裹"
         }
       ],
       "efficacy": "清热除烦",
@@ -1014,27 +1155,32 @@
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "附子",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炮去皮"
         }
       ],
       "efficacy": "温阳利水",
@@ -1048,7 +1194,10 @@
         "《伤寒论》原文：太阳病发汗，汗出不解，其人仍发热，心下悸...",
         "现代应用：用于心力衰竭、肾衰竭、慢性肾炎等"
       ],
-      "pinyin_initials": "zwt"
+      "pinyin_initials": "zwt",
+      "classic_text": "太阳病发汗，汗出不解，其人仍发热，心下悸，头眩，身瞤动，振振欲擗地者，真武汤主之。",
+      "classic_source": "《伤寒论》第82条",
+      "classic_usage": "上五味，以水八升，煮取三升，去滓，温服七合，日三服。"
     },
     {
       "id": "f023",
@@ -1059,27 +1208,32 @@
         {
           "herb": "黄连",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "鸡子黄",
           "dosage": "2枚",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "阿胶",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         }
       ],
       "efficacy": "滋阴降火，除烦安神",
@@ -1093,7 +1247,8 @@
         "《伤寒论》原文：少阴病，得之二三日以上，心中烦，不得卧...",
         "现代应用：用于失眠、焦虑症、更年期综合征等"
       ],
-      "pinyin_initials": "hlejt"
+      "pinyin_initials": "hlejt",
+      "classic_usage": "上五味，以水六升，先煮三物，取二升，去滓，内阿胶烊尽，小冷，内鸡子黄，搅令相得，温服七合，日三服。"
     },
     {
       "id": "f024",
@@ -1104,27 +1259,32 @@
         {
           "herb": "猪苓",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去皮"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "泽泻",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "阿胶",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "滑石",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "碎"
         }
       ],
       "efficacy": "利水清热养阴",
@@ -1138,7 +1298,8 @@
         "《伤寒论》原文：若脉浮发热，渴欲饮水，小便不利者，猪苓汤主之。",
         "现代应用：用于泌尿系感染、肾炎、前列腺炎等"
       ],
-      "pinyin_initials": "zlt"
+      "pinyin_initials": "zlt",
+      "classic_usage": "上五味，以水四升，先煮四味，取二升，去滓，内阿胶烊消，温服七合，日三服。"
     },
     {
       "id": "f025",
@@ -1149,52 +1310,62 @@
         {
           "herb": "乌梅",
           "dosage": "30g",
-          "role": "君"
+          "role": "君",
+          "note": "醋浸"
         },
         {
           "herb": "细辛",
           "dosage": "3g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "干姜",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "附子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炮去皮"
         },
         {
           "herb": "蜀椒",
           "dosage": "4g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒出汗"
         },
         {
           "herb": "桂枝",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "黄柏",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "温脏安蛔",
@@ -1208,7 +1379,10 @@
         "《伤寒论》原文：伤寒脉微而厥，至七八日肤冷，其人躁无暂安时者...",
         "现代应用：用于胆道蛔虫症、慢性肠炎、痢疾等"
       ],
-      "pinyin_initials": "wmw"
+      "pinyin_initials": "wmw",
+      "classic_text": "伤寒，脉微而厥，至七八日肤冷，其人躁无暂安时者，此为脏厥，非蛔厥也。蛔厥者，其人当吐蛔。今病者静，而复时烦者，此为脏寒。蛔上入其膈，故烦，须臾复止；得食而呕，又烦者，蛔闻食臭出，其人常自吐蛔。蛔厥者，乌梅丸主之。",
+      "classic_source": "《伤寒论》第338条",
+      "classic_usage": "上十味，异捣筛，合治之，以苦酒渍乌梅一宿，去核，蒸之五斗米下，饭熟捣成泥，和药令相得，内臼中，与蜜杵二千下，丸如梧桐子大，先食饮服十丸，日三服，稍加至二十丸。禁生冷、滑物、臭食等。"
     },
     {
       "id": "f026",
@@ -1219,37 +1393,44 @@
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "桂枝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "细辛",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "通草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "8枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "温经散寒，养血通脉",
@@ -1263,7 +1444,10 @@
         "《伤寒论》原文：手足厥寒，脉细欲绝者，当归四逆汤主之。",
         "现代应用：用于冻疮、雷诺病、痛经、关节炎等"
       ],
-      "pinyin_initials": "dgsnt"
+      "pinyin_initials": "dgsnt",
+      "classic_text": "手足厥寒，脉细欲绝者，当归四逆汤主之。",
+      "classic_source": "《伤寒论》第351条",
+      "classic_usage": "上七味，以水八升，煮取三升，去滓，温服一升，日三服。"
     },
     {
       "id": "f027",
@@ -1274,72 +1458,86 @@
         {
           "herb": "麻黄",
           "dosage": "7.5g",
-          "role": "君"
+          "role": "君",
+          "note": "去节"
         },
         {
           "herb": "升麻",
           "dosage": "4g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "4g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "知母",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "葳蕤",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "天门冬",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去心"
         },
         {
           "herb": "桂枝",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "茯苓",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "石膏",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "碎"
         },
         {
           "herb": "白术",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "干姜",
           "dosage": "1.5g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "发越郁阳，清上温下",
@@ -1364,22 +1562,26 @@
         {
           "herb": "干姜",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "寒热平调，辛开苦降",
@@ -1404,22 +1606,26 @@
         {
           "herb": "白头翁",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄柏",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "秦皮",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "清热解毒，凉血止痢",
@@ -1444,17 +1650,20 @@
         {
           "herb": "附子",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用去皮"
         },
         {
           "herb": "干姜",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         }
       ],
       "efficacy": "回阳救逆",
@@ -1468,7 +1677,10 @@
         "《伤寒论》原文：少阴病，脉沉者，急温之，宜四逆汤。",
         "现代应用：用于休克、心力衰竭、心肌梗死等"
       ],
-      "pinyin_initials": "snt"
+      "pinyin_initials": "snt",
+      "classic_text": "少阴病，脉沉者，急温之，宜四逆汤。",
+      "classic_source": "《伤寒论》第323条",
+      "classic_usage": "上三味，以水三升，煮取一升二合，去滓，分温再服。强人可大附子一枚、干姜三两。"
     },
     {
       "id": "f031",
@@ -1482,42 +1694,50 @@
         {
           "herb": "干地黄",
           "dosage": "24g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "山药",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "山茱萸",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "泽泻",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "牡丹皮",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桂枝",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "附子",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炮去皮"
         }
       ],
       "efficacy": "补肾助阳",
@@ -1531,7 +1751,10 @@
         "《金匮要略》原文：虚劳腰痛，少腹拘急，小便不利者，八味肾气丸主之。",
         "现代应用：用于慢性肾炎、糖尿病、前列腺增生、更年期综合征等"
       ],
-      "pinyin_initials": "sqw"
+      "pinyin_initials": "sqw",
+      "classic_text": "虚劳腰痛，少腹拘急，小便不利者，八味肾气丸主之。",
+      "classic_source": "《金匮要略·血痹虚劳病脉证并治》",
+      "classic_usage": "上八味，末之，炼蜜和丸梧桐子大，酒下十五丸，加至二十五丸，日再服。"
     },
     {
       "id": "f032",
@@ -1542,62 +1765,74 @@
         {
           "herb": "吴茱萸",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桂枝",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "阿胶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "牡丹皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "生姜",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "半夏",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "洗"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "温经散寒，养血祛瘀",
@@ -1622,37 +1857,44 @@
         {
           "herb": "甘草",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "炙"
         },
         {
           "herb": "干地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "附子",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炮去皮"
         },
         {
           "herb": "阿胶",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "灶心黄土",
           "dosage": "30g",
-          "role": "使"
+          "role": "使",
+          "note": "包煎"
         }
       ],
       "efficacy": "温阳健脾，养血止血",
@@ -1677,27 +1919,32 @@
         {
           "herb": "大黄",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "牡丹皮",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "桃仁",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         },
         {
           "herb": "冬瓜仁",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "芒硝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "冲服"
         }
       ],
       "efficacy": "泻热破瘀，散结消肿",
@@ -1722,17 +1969,20 @@
         {
           "herb": "薏苡仁",
           "dosage": "30g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "附子",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炮去皮"
         },
         {
           "herb": "败酱草",
           "dosage": "15g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "排脓消肿",
@@ -1757,27 +2007,32 @@
         {
           "herb": "桂枝",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "去皮"
         },
         {
           "herb": "茯苓",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "牡丹皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桃仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         }
       ],
       "efficacy": "活血化瘀，缓消癥块",
@@ -1802,32 +2057,38 @@
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "15g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "泽泻",
           "dosage": "15g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "养血疏肝，健脾利湿",
@@ -1854,37 +2115,44 @@
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "阿胶",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "烊化"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "艾叶",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "芍药",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "干地黄",
           "dosage": "15g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "养血止血，调经安胎",
@@ -1909,17 +2177,20 @@
         {
           "herb": "当归",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "生姜",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "切"
         },
         {
           "herb": "羊肉",
           "dosage": "250g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切块"
         }
       ],
       "efficacy": "温中补血，祛寒止痛",
@@ -1944,17 +2215,20 @@
         {
           "herb": "甘草",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "炙"
         },
         {
           "herb": "小麦",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "10枚",
-          "role": "佐"
+          "role": "佐",
+          "note": "擘"
         }
       ],
       "efficacy": "养心安神，和中缓急",
@@ -1968,7 +2242,10 @@
         "《金匮要略》原文：妇人脏躁，喜悲伤欲哭，象如神灵所作...",
         "现代应用：用于更年期综合征、神经衰弱、癔症、抑郁症等"
       ],
-      "pinyin_initials": "gmdzt"
+      "pinyin_initials": "gmdzt",
+      "classic_text": "妇人脏躁，喜悲伤欲哭，象如神灵所作，数欠伸，甘麦大枣汤主之。",
+      "classic_source": "《金匮要略·妇人杂病脉证并治》",
+      "classic_usage": "上三味，以水六升，煮取三升，温分三服。亦补脾气。"
     },
     {
       "id": "f041",
@@ -1979,22 +2256,26 @@
         {
           "herb": "黄连",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "酒炒"
         },
         {
           "herb": "黄芩",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "黄柏",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒炒"
         },
         {
           "herb": "栀子",
           "dosage": "9g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "泻火解毒",
@@ -2008,7 +2289,9 @@
         "《外台秘要》原文记载用于热病烦躁",
         "现代应用：用于败血症、脓毒血症、急性感染性疾病"
       ],
-      "pinyin_initials": "hljdt"
+      "pinyin_initials": "hljdt",
+      "classic_text": "治时行热病，发狂闷绝，黄连解毒汤。",
+      "classic_source": "《外台秘要》引崔氏方"
     },
     {
       "id": "f042",
@@ -2021,72 +2304,86 @@
         {
           "herb": "黄芩",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "酒炒"
         },
         {
           "herb": "黄连",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "酒炒"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炙"
         },
         {
           "herb": "玄参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "连翘",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "板蓝根",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "马勃",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "牛蒡子",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "薄荷",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "僵蚕",
           "dosage": "2g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "升麻",
           "dosage": "2g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "清热解毒，疏风散邪",
@@ -2111,37 +2408,44 @@
         {
           "herb": "大黄",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "芒硝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "冲服"
         },
         {
           "herb": "甘草",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "栀子",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "连翘",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "薄荷",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "泻火通便，清上泄下",
@@ -2168,67 +2472,80 @@
         {
           "herb": "白芷",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "贝母",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "防风",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "赤芍",
           "dosage": "3g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "当归尾",
           "dosage": "3g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "皂角刺",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "穿山甲",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "天花粉",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "乳香",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "没药",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "金银花",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "陈皮",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         }
       ],
       "efficacy": "清热解毒，消肿溃坚，活血止痛",
@@ -2253,22 +2570,26 @@
         {
           "herb": "生地黄",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "木通",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草梢",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "竹叶",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "清心养阴，利水通淋",
@@ -2293,52 +2614,62 @@
         {
           "herb": "龙胆草",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "酒炒"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "栀子",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "泽泻",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "木通",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "车前子",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "包煎"
         },
         {
           "herb": "当归",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "生地黄",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒炒"
         },
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "泻肝胆实火，清下焦湿热",
@@ -2365,12 +2696,14 @@
         {
           "herb": "黄连",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "姜炒"
         },
         {
           "herb": "吴茱萸",
           "dosage": "3g",
-          "role": "佐使"
+          "role": "佐使",
+          "note": "生用"
         }
       ],
       "efficacy": "清泻肝火，降逆止呕",
@@ -2395,27 +2728,32 @@
         {
           "herb": "生地黄",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "牡丹皮",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "升麻",
           "dosage": "9g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "清胃凉血",
@@ -2440,27 +2778,32 @@
         {
           "herb": "石膏",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "煅"
         },
         {
           "herb": "熟地黄",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "熟用"
         },
         {
           "herb": "知母",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "麦门冬",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "牛膝",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "清胃热，滋肾阴",
@@ -2485,47 +2828,56 @@
         {
           "herb": "芍药",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "酒炒"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "大黄",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "木香",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "槟榔",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "肉桂",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "后下"
         }
       ],
       "efficacy": "清热燥湿，调气和血",
@@ -2552,22 +2904,26 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "益气健脾",
@@ -2576,7 +2932,9 @@
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
       "category": "补益剂-补气",
-      "pinyin_initials": "sjzt"
+      "pinyin_initials": "sjzt",
+      "classic_text": "脾胃气虚，饮食不进，多困少力，中满痞噎，心悸气喘，呕吐泄泻，及伤寒胃虚，嗜卧烦闷，不思饮食，四君子汤主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f052",
@@ -2589,52 +2947,62 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "山药",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "莲子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去心"
         },
         {
           "herb": "薏苡仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "砂仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "白扁豆",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         }
       ],
       "efficacy": "益气健脾，渗湿止泻",
@@ -2654,42 +3022,50 @@
         {
           "herb": "黄芪",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "蜜炙"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去芦"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "升麻",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "补中益气，升阳举陷",
@@ -2711,17 +3087,20 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "五味子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "益气生津，敛阴止汗",
@@ -2743,22 +3122,26 @@
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "熟地黄",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒蒸"
         }
       ],
       "efficacy": "补血调血",
@@ -2767,7 +3150,9 @@
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
       "category": "补益剂-补血",
-      "pinyin_initials": "swt"
+      "pinyin_initials": "swt",
+      "classic_text": "冲任虚损，月水不调，脐腹疼痛，崩中漏下，血瘕块硬，发歇疼痛，妊娠宿冷，将理失宜，胎动不安，血下不止，及产后乘虚，风寒内搏，恶露不下，结生瘕聚，少腹坚痛，时作寒热，四物汤主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f056",
@@ -2778,62 +3163,74 @@
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "土炒"
         },
         {
           "herb": "茯神",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "黄芪",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "蜜炙"
         },
         {
           "herb": "龙眼肉",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "酸枣仁",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去芦"
         },
         {
           "herb": "木香",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "远志",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去心"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "益气补血，健脾养心",
@@ -2861,42 +3258,50 @@
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "切"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "生地黄",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "桂枝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "阿胶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "麻仁",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "10枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "益气滋阴，通阳复脉",
@@ -2918,32 +3323,38 @@
         {
           "herb": "熟地黄",
           "dosage": "24g",
-          "role": "君"
+          "role": "君",
+          "note": "酒蒸"
         },
         {
           "herb": "山茱萸",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒润"
         },
         {
           "herb": "山药",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "泽泻",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "牡丹皮",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "滋补肝肾",
@@ -2952,7 +3363,9 @@
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《小儿药证直诀》",
       "category": "补益剂-补阴",
-      "pinyin_initials": "lwdhw"
+      "pinyin_initials": "lwdhw",
+      "classic_text": "肾气虚，腰脚疼痛，肢体劳伤，发歇虚羸，行步少气，面无颜色，小腹急硬，囊下湿痒，小便频数，房室无力，及虚劳不足，六味地黄丸主之。",
+      "classic_source": "《小儿药证直诀》"
     },
     {
       "id": "f059",
@@ -2963,42 +3376,50 @@
         {
           "herb": "熟地黄",
           "dosage": "24g",
-          "role": "君"
+          "role": "君",
+          "note": "酒蒸"
         },
         {
           "herb": "山药",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "枸杞子",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "山茱萸",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒润"
         },
         {
           "herb": "川牛膝",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "菟丝子",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "鹿角胶",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "龟板胶",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         }
       ],
       "efficacy": "滋阴补肾，填精益髓",
@@ -3020,27 +3441,32 @@
         {
           "herb": "熟地黄",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "酒蒸"
         },
         {
           "herb": "龟板",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "酥炙"
         },
         {
           "herb": "黄柏",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "盐炒"
         },
         {
           "herb": "知母",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "盐炒"
         },
         {
           "herb": "猪脊髓",
           "dosage": "适量",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "滋阴降火",
@@ -3060,32 +3486,38 @@
         {
           "herb": "北沙参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "生地黄",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "枸杞子",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川楝子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "滋阴疏肝",
@@ -3105,52 +3537,62 @@
         {
           "herb": "百合",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "熟地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "熟用"
         },
         {
           "herb": "生地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "白芍",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "玄参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "贝母",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "滋肾保肺，止咳化痰",
@@ -3170,52 +3612,62 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "熟地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒蒸"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "益气补血",
@@ -3224,7 +3676,9 @@
       "usage": "水煎服",
       "source": "《正体类要》",
       "category": "补益剂-气血双补",
-      "pinyin_initials": "bzt"
+      "pinyin_initials": "bzt",
+      "classic_text": "气血两虚，面色萎黄，头晕目眩，体倦乏力，心悸怔忡，食少便溏，八珍汤主之。",
+      "classic_source": "《正体类要》"
     },
     {
       "id": "f064",
@@ -3235,62 +3689,74 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "熟地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒蒸"
         },
         {
           "herb": "黄芪",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "蜜炙"
         },
         {
           "herb": "肉桂",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "后下"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "温补气血",
@@ -3299,7 +3765,9 @@
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
       "category": "补益剂-气血双补",
-      "pinyin_initials": "sqdbt"
+      "pinyin_initials": "sqdbt",
+      "classic_text": "治男子妇人诸虚不足，五劳七伤，不进饮食，久病虚损，时发潮热，气攻骨脊，拘急疼痛，夜梦遗精，面色萎黄，脚膝无力，一切病后气不如旧，忧愁思虑，伤动气血，喘嗽中满，脾肾气弱，五心烦闷，十全大补汤主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f065",
@@ -3312,27 +3780,32 @@
         {
           "herb": "香附",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "醋炒"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "苍术",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "米泔水浸"
         },
         {
           "herb": "栀子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "神曲",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         }
       ],
       "efficacy": "行气解郁",
@@ -3352,37 +3825,44 @@
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "醋炒"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "醋炒"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "香附",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "醋炒"
         },
         {
           "herb": "枳壳",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "麸炒"
         },
         {
           "herb": "芍药",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "疏肝解郁，行气止痛",
@@ -3404,27 +3884,32 @@
         {
           "herb": "半夏",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "制"
         },
         {
           "herb": "厚朴",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "姜制"
         },
         {
           "herb": "茯苓",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "生姜",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         },
         {
           "herb": "苏叶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "行气散结，降逆化痰",
@@ -3444,17 +3929,20 @@
         {
           "herb": "瓜蒌",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "薤白",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白酒",
           "dosage": "适量",
-          "role": "佐"
+          "role": "佐",
+          "note": "入煎"
         }
       ],
       "efficacy": "通阳散结，行气祛痰",
@@ -3474,22 +3962,26 @@
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "槟榔",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "沉香",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "天台乌药",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "行气降逆，宽胸散结",
@@ -3509,37 +4001,44 @@
         {
           "herb": "山楂",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "神曲",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "莱菔子",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "制"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "连翘",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "消食和胃",
@@ -3559,67 +4058,80 @@
         {
           "herb": "白术",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "土炒"
         },
         {
           "herb": "木香",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄连",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去芦"
         },
         {
           "herb": "神曲",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "砂仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "麦芽",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "山楂",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "山药",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "肉豆蔻",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "煨"
         }
       ],
       "efficacy": "健脾和胃，消食止泻",
@@ -3639,32 +4151,38 @@
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "制"
         },
         {
           "herb": "橘红",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "乌梅",
           "dosage": "1个",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "燥湿化痰，理气和中",
@@ -3673,7 +4191,9 @@
       "usage": "水煎服",
       "source": "《太平惠民和剂局方》",
       "category": "祛痰剂-燥湿化痰",
-      "pinyin_initials": "ect"
+      "pinyin_initials": "ect",
+      "classic_text": "治痰饮为患，或呕吐恶心，或头眩心悸，或中脘不快，或发为寒热，或因食生冷，脾胃不和，二陈汤主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f073",
@@ -3684,42 +4204,50 @@
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "制"
         },
         {
           "herb": "竹茹",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "枳实",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "麸炒"
         },
         {
           "herb": "陈皮",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "理气化痰，和胃利胆",
@@ -3739,42 +4267,50 @@
         {
           "herb": "瓜蒌仁",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去油"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "杏仁",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮尖"
         },
         {
           "herb": "枳实",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "麸炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "胆南星",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "制"
         }
       ],
       "efficacy": "清热化痰，理气止咳",
@@ -3794,42 +4330,50 @@
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "制"
         },
         {
           "herb": "天麻",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "橘红",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "化痰熄风，健脾祛湿",
@@ -3849,42 +4393,50 @@
         {
           "herb": "川芎",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "荆芥",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芷",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "羌活",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "细辛",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "防风",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "薄荷",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "疏风止痛",
@@ -3904,77 +4456,92 @@
         {
           "herb": "独活",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "桑寄生",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "杜仲",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "牛膝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "细辛",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "秦艽",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "肉桂心",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "防风",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去芦"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "芍药",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "干地黄",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "祛风湿，止痹痛，益肝肾，补气血",
@@ -4000,47 +4567,56 @@
         {
           "herb": "钩藤",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "后下"
         },
         {
           "herb": "桑叶",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "菊花",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "鲜生地",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川贝母",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "竹茹",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "鲜"
         },
         {
           "herb": "茯神",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "凉肝熄风，增液舒筋",
@@ -4060,62 +4636,74 @@
         {
           "herb": "怀牛膝",
           "dosage": "30g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "代赭石",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "龙骨",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "牡蛎",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "龟板",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "玄参",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "天冬",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川楝子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "捣碎"
         },
         {
           "herb": "麦芽",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "茵陈",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "镇肝熄风，滋阴潜阳",
@@ -4135,32 +4723,38 @@
         {
           "herb": "苍术",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "米泔水浸"
         },
         {
           "herb": "厚朴",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "姜制"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "燥湿运脾，行气和胃",
@@ -4169,7 +4763,9 @@
       "usage": "散剂，每服6g，姜枣煎汤送下；或作汤剂",
       "source": "《简要济众方》",
       "category": "祛湿剂-燥湿和胃",
-      "pinyin_initials": "pws"
+      "pinyin_initials": "pws",
+      "classic_text": "治脾胃不和，不思饮食，心腹胁肋胀满刺痛，口苦无味，胸满短气，呕哕恶心，噫气吞酸，面色萎黄，肌体瘦弱，怠惰嗜卧，体重节痛，常多自利，平胃散主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f081",
@@ -4180,67 +4776,80 @@
         {
           "herb": "藿香",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "紫苏",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芷",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "大腹皮",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "陈皮",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "半夏曲",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "厚朴",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "姜制"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "大枣",
           "dosage": "3枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "解表化湿，理气和中",
@@ -4249,7 +4858,9 @@
       "usage": "散剂，每服6g，姜枣煎汤送下；或作汤剂",
       "source": "《太平惠民和剂局方》",
       "category": "祛湿剂-芳香化湿",
-      "pinyin_initials": "hxzqs"
+      "pinyin_initials": "hxzqs",
+      "classic_text": "治伤寒头疼，憎寒壮热，上喘咳嗽，五劳七伤，八般风痰，五般膈气，心腹冷痛，反胃呕恶，气泻霍乱，脏腑虚鸣，山岚瘴疟，遍身虚肿，妇人产前产后，血气刺痛，小儿疳伤，藿香正气散主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f082",
@@ -4260,42 +4871,50 @@
         {
           "herb": "车前子",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "包煎"
         },
         {
           "herb": "瞿麦",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "萹蓄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "滑石",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "包煎"
         },
         {
           "herb": "山栀子仁",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "木通",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "大黄",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         }
       ],
       "efficacy": "清热泻火，利水通淋",
@@ -4315,42 +4934,50 @@
         {
           "herb": "杏仁",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "去皮尖"
         },
         {
           "herb": "白蔻仁",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "后下"
         },
         {
           "herb": "薏苡仁",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "半夏",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "制"
         },
         {
           "herb": "厚朴",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "姜制"
         },
         {
           "herb": "通草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "滑石",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "包煎"
         },
         {
           "herb": "竹叶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "宣畅气机，清利湿热",
@@ -4370,52 +4997,62 @@
         {
           "herb": "金银花",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "连翘",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "薄荷",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "后下"
         },
         {
           "herb": "牛蒡子",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "荆芥",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "淡豆豉",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "竹叶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "芦根",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "辛凉透表，清热解毒",
@@ -4424,7 +5061,9 @@
       "usage": "散剂，每服18g，鲜苇根汤煎服；或作汤剂",
       "source": "《温病条辨》",
       "category": "解表剂-辛凉解表",
-      "pinyin_initials": "yqs"
+      "pinyin_initials": "yqs",
+      "classic_text": "治风温犯肺，咳嗽咽痛，发热口渴，微恶风寒，银翘散主之。",
+      "classic_source": "《温病条辨》"
     },
     {
       "id": "f085",
@@ -4435,42 +5074,50 @@
         {
           "herb": "桑叶",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "菊花",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "杏仁",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮尖"
         },
         {
           "herb": "连翘",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "薄荷",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "后下"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "芦根",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "疏风清热，宣肺止咳",
@@ -4479,7 +5126,9 @@
       "usage": "水煎服",
       "source": "《温病条辨》",
       "category": "解表剂-辛凉解表",
-      "pinyin_initials": "sjy"
+      "pinyin_initials": "sjy",
+      "classic_text": "治风温初起，咳嗽，身热不甚，口微渴，桑菊饮主之。",
+      "classic_source": "《温病条辨》"
     },
     {
       "id": "f086",
@@ -4492,57 +5141,68 @@
         {
           "herb": "羌活",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "独活",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "柴胡",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "前胡",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "枳壳",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "麸炒"
         },
         {
           "herb": "茯苓",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮"
         },
         {
           "herb": "人参",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去芦"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "薄荷",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "后下"
         }
       ],
       "efficacy": "散寒祛湿，益气解表",
@@ -4564,22 +5224,26 @@
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "去芦"
         },
         {
           "herb": "干姜",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炮"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "土炒"
         },
         {
           "herb": "甘草",
           "dosage": "9g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "温中祛寒，补气健脾",
@@ -4588,7 +5252,10 @@
       "usage": "蜜丸，每服9g，日2次；或作汤剂",
       "source": "《伤寒论》",
       "category": "温里剂-温中祛寒",
-      "pinyin_initials": "lzw"
+      "pinyin_initials": "lzw",
+      "classic_text": "霍乱，头痛发热，身疼痛，热多欲饮水者，五苓散主之；寒多不用水者，理中丸主之。",
+      "classic_source": "《伤寒论》第386条",
+      "classic_usage": "人参、干姜、甘草、白术各三两。上四味，捣筛，蜜和为丸，如鸡子黄许大。以沸汤数合，和一丸，研碎，温服之，日三四，夜二服。腹中未热，益至三四丸，然不及汤。汤法：以四物依两数切，用水八升，煮取三升，去滓，温服一升，日三服。"
     },
     {
       "id": "f088",
@@ -4599,22 +5266,26 @@
         {
           "herb": "吴茱萸",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "洗"
         },
         {
           "herb": "生姜",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "切"
         },
         {
           "herb": "人参",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去芦"
         },
         {
           "herb": "大枣",
           "dosage": "4枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "温中补虚，降逆止呕",
@@ -4642,22 +5313,26 @@
         {
           "herb": "黄连",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒炒"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "生地黄",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "镇心安神，清热养血",
@@ -4677,67 +5352,80 @@
         {
           "herb": "生地黄",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "天冬",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "麦冬",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "玄参",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "人参",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去芦"
         },
         {
           "herb": "丹参",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "茯苓",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "远志",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去心"
         },
         {
           "herb": "酸枣仁",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "柏子仁",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "五味子",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         },
         {
           "herb": "朱砂",
@@ -4763,77 +5451,92 @@
         {
           "herb": "苏合香",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "麝香",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "冰片",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "安息香",
           "dosage": "15g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "檀香",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "沉香",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "丁香",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "香附",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "醋炒"
         },
         {
           "herb": "木香",
           "dosage": "30g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "乳香",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "荜茇",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "土炒"
         },
         {
           "herb": "诃子",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "煨"
         },
         {
           "herb": "朱砂",
           "dosage": "30g",
-          "role": "佐"
+          "role": "佐",
+          "note": "水飞"
         },
         {
           "herb": "水牛角",
           "dosage": "60g",
-          "role": "佐"
+          "role": "佐",
+          "note": "浓缩粉"
         }
       ],
       "efficacy": "芳香开窍，行气止痛",
@@ -4853,32 +5556,38 @@
         {
           "herb": "肉豆蔻",
           "dosage": "6g",
-          "role": "君"
+          "role": "君",
+          "note": "煨"
         },
         {
           "herb": "补骨脂",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "盐炒"
         },
         {
           "herb": "五味子",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "吴茱萸",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炒"
         },
         {
           "herb": "生姜",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "切"
         },
         {
           "herb": "大枣",
           "dosage": "10枚",
-          "role": "使"
+          "role": "使",
+          "note": "擘"
         }
       ],
       "efficacy": "温肾暖脾，涩肠止泻",
@@ -4898,52 +5607,62 @@
         {
           "herb": "白术",
           "dosage": "30g",
-          "role": "君"
+          "role": "君",
+          "note": "土炒"
         },
         {
           "herb": "黄芪",
           "dosage": "18g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "龙骨",
           "dosage": "24g",
-          "role": "臣"
+          "role": "臣",
+          "note": "煅"
         },
         {
           "herb": "牡蛎",
           "dosage": "24g",
-          "role": "臣"
+          "role": "臣",
+          "note": "煅"
         },
         {
           "herb": "山茱萸",
           "dosage": "24g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白芍",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "海螵蛸",
           "dosage": "12g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去甲"
         },
         {
           "herb": "茜草",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "棕榈炭",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "五倍子",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "益气健脾，固冲摄血",
@@ -4963,57 +5682,68 @@
         {
           "herb": "桃仁",
           "dosage": "12g",
-          "role": "君"
+          "role": "君",
+          "note": "去皮尖"
         },
         {
           "herb": "红花",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "生地黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "赤芍",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "牛膝",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "桔梗",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "柴胡",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "枳壳",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "麸炒"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "活血化瘀，行气止痛",
@@ -5033,37 +5763,44 @@
         {
           "herb": "黄芪",
           "dosage": "120g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "赤芍",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "地龙",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "桃仁",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         },
         {
           "herb": "红花",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         }
       ],
       "efficacy": "补气，活血，通络",
@@ -5083,27 +5820,32 @@
         {
           "herb": "当归",
           "dosage": "24g",
-          "role": "君"
+          "role": "君",
+          "note": "酒洗"
         },
         {
           "herb": "川芎",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "桃仁",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "去皮尖"
         },
         {
           "herb": "炮姜",
           "dosage": "2g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "2g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "养血祛瘀，温经止痛",
@@ -5123,52 +5865,62 @@
         {
           "herb": "小蓟",
           "dosage": "15g",
-          "role": "君"
+          "role": "君",
+          "note": "生用"
         },
         {
           "herb": "藕节",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "蒲黄",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炒"
         },
         {
           "herb": "生地黄",
           "dosage": "12g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "滑石",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "包煎"
         },
         {
           "herb": "木通",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "淡竹叶",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "栀子",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "当归",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "酒洗"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "生用"
         }
       ],
       "efficacy": "凉血止血，利水通淋",
@@ -5188,37 +5940,44 @@
         {
           "herb": "灶心黄土",
           "dosage": "30g",
-          "role": "君"
+          "role": "君",
+          "note": "包煎"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "附子",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "炮去皮"
         },
         {
           "herb": "阿胶",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "烊化"
         },
         {
           "herb": "干地黄",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "黄芩",
           "dosage": "9g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "温阳健脾，养血止血",
@@ -5238,42 +5997,50 @@
         {
           "herb": "柴胡",
           "dosage": "9g",
-          "role": "君"
+          "role": "君",
+          "note": "醋炒"
         },
         {
           "herb": "当归",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "酒洗"
         },
         {
           "herb": "白芍",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "白术",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "土炒"
         },
         {
           "herb": "茯苓",
           "dosage": "9g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "甘草",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "炙"
         },
         {
           "herb": "薄荷",
           "dosage": "3g",
-          "role": "佐"
+          "role": "佐",
+          "note": "后下"
         },
         {
           "herb": "生姜",
           "dosage": "3片",
-          "role": "佐"
+          "role": "佐",
+          "note": "切"
         }
       ],
       "efficacy": "疏肝解郁，养血健脾",
@@ -5282,7 +6049,9 @@
       "usage": "水煎服，薄荷后下",
       "source": "《太平惠民和剂局方》",
       "category": "和解剂-调和肝脾",
-      "pinyin_initials": "xys"
+      "pinyin_initials": "xys",
+      "classic_text": "治血虚劳倦，五心烦热，肢体疼痛，头目昏重，心忪颊赤，口燥咽干，发热盗汗，减食嗜卧，及血热相搏，月水不调，脐腹胀痛，寒热如疟，及室女血弱阴虚，营卫不和，痰嗽潮热，肌体羸瘦，渐成骨蒸，逍遥散主之。",
+      "classic_source": "《太平惠民和剂局方》"
     },
     {
       "id": "f100",
@@ -5293,27 +6062,32 @@
         {
           "herb": "酸枣仁",
           "dosage": "18g",
-          "role": "君"
+          "role": "君",
+          "note": "炒"
         },
         {
           "herb": "茯苓",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "去皮"
         },
         {
           "herb": "知母",
           "dosage": "6g",
-          "role": "臣"
+          "role": "臣",
+          "note": "生用"
         },
         {
           "herb": "川芎",
           "dosage": "6g",
-          "role": "佐"
+          "role": "佐",
+          "note": "生用"
         },
         {
           "herb": "甘草",
           "dosage": "3g",
-          "role": "使"
+          "role": "使",
+          "note": "炙"
         }
       ],
       "efficacy": "养血安神，清热除烦",
@@ -5322,7 +6096,9 @@
       "usage": "水煎服，酸枣仁先煎",
       "source": "《金匮要略》",
       "category": "安神剂-滋养安神",
-      "pinyin_initials": "szrt"
+      "pinyin_initials": "szrt",
+      "classic_text": "虚劳虚烦不得眠，酸枣仁汤主之。",
+      "classic_source": "《金匮要略·血痹虚劳病脉证并治》"
     }
   ]
 }

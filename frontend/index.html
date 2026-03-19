@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中医学习助手 - TCM Learning Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="nav-brand" onclick="showPage('home')">
+                <span class="nav-logo">本草</span>
+                <span class="nav-title">中医学习助手</span>
+            </div>
+            <div class="nav-links">
+                <button class="nav-btn active" onclick="showPage('home')" data-page="home">首页</button>
+                <button class="nav-btn" onclick="showPage('formulas')" data-page="formulas">方剂库</button>
+                <button class="nav-btn" onclick="showPage('herbs')" data-page="herbs">药材库</button>
+                <button class="nav-btn" onclick="showPage('diagnosis')" data-page="diagnosis">智能辨证 <span class="badge-dev">开发中</span></button>
+            </div>
+        </nav>
+
+        <!-- 首页 -->
+        <div id="page-home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">中医学习助手</h1>
+                    <p class="hero-subtitle">传统中医智慧 · 现代AI技术</p>
+                    <div class="hero-search">
+                        <input type="text" id="home-search" placeholder="搜索方剂、药材..." autocomplete="off">
+                        <button class="search-btn" onclick="handleHomeSearch()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-formulas">100</span>
+                            <span class="stat-label">首方剂</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-herbs">346</span>
+                            <span class="stat-label">味药材</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="stat-syndromes">30</span>
+                            <span class="stat-label">个证型</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card" onclick="showPage('formulas')">
+                    <div class="feature-icon">📚</div>
+                    <h3>方剂查询</h3>
+                    <p>100首经典方剂，包含组成、功效、主治等详细信息</p>
+                </div>
+                <div class="feature-card" onclick="showPage('herbs')">
+                    <div class="feature-icon">🌿</div>
+                    <h3>药材知识</h3>
+                    <p>346味药材，涵盖《神农本草经》及中国药典</p>
+                </div>
+                <div class="feature-card feature-dev" onclick="showPage('diagnosis')">
+                    <div class="feature-icon">🧠</div>
+                    <h3>智能辨证 <span class="badge-dev">期待项</span></h3>
+                    <p>AI辅助辨证分析，功能开发中，敬请期待</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 方剂库页面 -->
+        <div id="page-formulas" class="page">
+            <div class="page-header">
+                <h2>方剂库</h2>
+                <div class="search-bar">
+                    <input type="text" id="formula-search" placeholder="搜索方剂名称、功效、主治..." autocomplete="off">
+                    <button class="search-btn" onclick="searchFormulas()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="category-filter" id="category-filter"></div>
+            <div class="formula-grid" id="formula-list"></div>
+            <div class="loading" id="formula-loading" style="display: none;">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- 药材库页面 -->
+        <div id="page-herbs" class="page">
+            <div class="page-header">
+                <h2>药材库</h2>
+                <div class="search-bar">
+                    <input type="text" id="herb-search" placeholder="搜索药材名称、功效..." autocomplete="off">
+                    <button class="search-btn" onclick="searchHerbs()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="herb-grid" id="herb-list"></div>
+            <div class="loading" id="herb-loading" style="display: none;">
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- 辨证页面 -->
+        <div id="page-diagnosis" class="page">
+            <div class="page-header">
+                <h2>智能辨证 <span class="badge-dev">开发中</span></h2>
+                <p class="page-desc">输入症状，AI 辅助推荐适合的方剂</p>
+            </div>
+            <div class="diagnosis-container">
+                <div class="dev-notice-large">
+                    <div class="dev-notice-icon-large">🚧</div>
+                    <h3>功能开发中，敬请期待</h3>
+                    <p>智能辨证功能正在持续优化中，暂不开放使用。</p>
+                    <p class="dev-notice-tip">如有身体不适，请及时就医。</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 方剂详情弹窗 -->
+        <div class="modal" id="formula-modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <div id="formula-detail"></div>
+            </div>
+        </div>
+
+        <!-- 药材详情弹窗 -->
+        <div class="modal" id="herb-modal">
+            <div class="modal-content">
+                <button class="modal-close" onclick="closeHerbModal()">&times;</button>
+                <div id="herb-detail"></div>
+            </div>
+        </div>
+
+        <!-- 提示消息 -->
+        <div class="toast" id="toast"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

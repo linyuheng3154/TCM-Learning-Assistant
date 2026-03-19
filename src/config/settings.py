@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     
     # 应用配置
     app_name: str = "TCM Learning Assistant"
-    version: str = "0.1.0"
+    version: str = "0.4.1"
     debug: bool = True
     
     # 服务器配置

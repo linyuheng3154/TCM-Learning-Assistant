@@ -97,6 +97,9 @@ class FormulaModel(BaseModel):
     usage: Optional[str] = Field(None, description="用法用量")
     source: Optional[str] = Field(None, description="来源")
     category: Optional[str] = Field(None, description="方剂分类")
+    classic_text: Optional[str] = Field(None, description="经典原文")
+    classic_source: Optional[str] = Field(None, description="原文出处")
+    classic_usage: Optional[str] = Field(None, description="经典煎服法原文")
     
     # 中成药特有字段
     is_prescription: Optional[bool] = Field(None, description="是否为处方药")

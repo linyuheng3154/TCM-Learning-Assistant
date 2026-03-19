@@ -26,14 +26,24 @@ AI协作说明：
 
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 import uvicorn
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
+import os
 
 from src.config.settings import get_settings
-from src.api import formulas, diagnosis, herbs, compatibility
+from src.api import formulas, herbs, compatibility
+
+# 智能辨证模块（开发中，可选导入）
+try:
+    from src.api import diagnosis
+    DIAGNOSIS_AVAILABLE = True
+except ImportError:
+    diagnosis = None
+    DIAGNOSIS_AVAILABLE = False
 
 # 获取配置
 settings = get_settings()
@@ -86,9 +96,35 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 # ============================================================
 
 app.include_router(formulas.router)
-app.include_router(diagnosis.router)
 app.include_router(herbs.router)
 app.include_router(compatibility.router)
+
+# 智能辨证模块（开发中，可选）
+if DIAGNOSIS_AVAILABLE and diagnosis:
+    app.include_router(diagnosis.router)
+
+# 挂载静态文件服务（前端界面）
+frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
+if os.path.exists(frontend_path):
+    app.mount("/static", StaticFiles(directory=frontend_path), name="static")
+
+
+# ============================================================
+# 前端界面路由
+# ============================================================
+
+@app.get("/ui", response_class=HTMLResponse, summary="前端界面入口")
+async def frontend_ui():
+    """
+    前端界面入口
+    
+    返回中医学习助手的前端界面 HTML 页面。
+    """
+    index_path = os.path.join(frontend_path, "index.html")
+    if os.path.exists(index_path):
+        with open(index_path, "r", encoding="utf-8") as f:
+            return HTMLResponse(content=f.read())
+    return HTMLResponse(content="<h1>前端界面未找到</h1>", status_code=404)
 
 
 # ============================================================
@@ -105,20 +141,24 @@ async def root():
     
     返回API的基本信息，包括名称、版本、状态等。
     """
+    endpoints = {
+        "formulas": "/formulas",
+        "herbs": "/herbs",
+        "search_formulas": "/formulas/search?keyword=桂枝",
+        "search_herbs": "/herbs/search?keyword=人参",
+        "compatibility": "/compatibility/check/herbs",
+        "health": "/health"
+    }
+    if DIAGNOSIS_AVAILABLE:
+        endpoints["diagnosis"] = "/diagnosis/recommend"
+    
     return {
         "message": "TCM Learning Assistant API",
         "version": settings.version,
         "status": "running",
+        "ui": "/ui",
         "docs": "/docs",
-        "endpoints": {
-            "formulas": "/formulas",
-            "herbs": "/herbs",
-            "search_formulas": "/formulas/search?keyword=桂枝",
-            "search_herbs": "/herbs/search?keyword=人参",
-            "diagnosis": "/diagnosis/recommend",
-            "compatibility": "/compatibility/check/herbs",
-            "health": "/health"
-        }
+        "endpoints": endpoints
     }
 
 

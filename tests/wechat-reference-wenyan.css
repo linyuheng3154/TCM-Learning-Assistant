@@ -1,0 +1,291 @@
+/*
+ * WeChat Reference -> Wenyan Theme
+ * Source: https://mp.weixin.qq.com/s/qcETsPMlmLlQonnKszbNkg
+ * Extracted from browser light-mode computed styles.
+ *
+ * Semantic mapping:
+ *   ##  -> dark chapter label
+ *   ### -> gray subheading with top rule
+ *   **bold** -> dark bold emphasis
+ *   *emphasis* -> orange-red emphasis
+ *   `inline code` -> orange-red monospace emphasis
+ *   > quote -> gray quote block
+ */
+
+:root {
+  --wy-font-sans: "PingFang SC", "PingFangSC-Regular", -apple-system,
+    BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans GB",
+    "Microsoft YaHei UI", "Microsoft YaHei", Arial, sans-serif;
+
+  --wy-font-mono: "Operator Mono", Consolas, Monaco, Menlo, monospace;
+
+  --wy-text: #000000;
+  --wy-strong: #121111;
+  --wy-subtitle: #595959;
+  --wy-accent: #ef7060;
+  --wy-link: #ab1942;
+  --wy-chapter-bg: #212122;
+
+  --wy-quote-text: rgba(0, 0, 0, 0.55);
+  --wy-quote-bg: rgba(0, 0, 0, 0.05);
+  --wy-quote-border: rgba(0, 0, 0, 0.40);
+}
+
+/* ===== Global ===== */
+#wenyan {
+  box-sizing: border-box;
+  padding: 0 10px;
+  font-family: var(--wy-font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--wy-text);
+  background: transparent;
+}
+
+/* ===== Paragraph ===== */
+#wenyan p {
+  margin: 0;
+  padding: 8px 0;
+  font-family: var(--wy-font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--wy-text);
+}
+
+/* ===== H1: fallback only; the source body did not expose an H1 style ===== */
+#wenyan h1 {
+  margin: 0;
+  padding: 10px 0;
+  border: 0;
+  font-family: var(--wy-font-sans);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--wy-strong);
+}
+
+/* ===== H2: chapter label ===== */
+#wenyan h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 43.2px;
+}
+
+#wenyan h2::before,
+#wenyan h2::after {
+  content: none;
+}
+
+#wenyan h2 span {
+  display: inline-block;
+  margin: 0;
+  padding: 0 30px 0 15px;
+  border: 0;
+  border-radius: 0 0 40px 0;
+  font-family: var(--wy-font-sans);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 43.2px;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: var(--wy-chapter-bg);
+}
+
+
+/* ===== H3: subheading with short top rule ===== */
+#wenyan h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 30.6px;
+}
+
+#wenyan h3::before,
+#wenyan h3::after {
+  content: none;
+}
+
+#wenyan h3 span {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 6px 0 6px;
+  border: 0;
+  border-top: 2px solid var(--wy-subtitle);
+  font-family: var(--wy-font-sans);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30.6px;
+  letter-spacing: normal;
+  color: var(--wy-subtitle);
+  background: transparent;
+}
+
+
+/* ===== Lower headings: neutral fallback ===== */
+#wenyan h4,
+#wenyan h5,
+#wenyan h6 {
+  margin: 0;
+  padding: 8px 0;
+  border: 0;
+  font-family: var(--wy-font-sans);
+  font-weight: 700;
+  color: var(--wy-strong);
+}
+
+#wenyan h4 { font-size: 16px; line-height: 28px; }
+#wenyan h5,
+#wenyan h6 { font-size: 15px; line-height: 27px; }
+
+/* ===== Strong ===== */
+#wenyan strong {
+  padding: 0 2px;
+  font-weight: 700;
+  color: var(--wy-strong);
+}
+
+/* ===== Orange-red emphasis ===== */
+#wenyan em {
+  font-style: normal;
+  font-weight: 400;
+  color: var(--wy-accent);
+}
+
+#wenyan em strong,
+#wenyan strong em {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--wy-accent);
+}
+
+/* ===== Inline-code style used by several accent phrases in the source ===== */
+#wenyan p code {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-family: var(--wy-font-mono);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 27px;
+  color: var(--wy-accent);
+  background: transparent;
+}
+
+/* ===== Quote ===== */
+#wenyan blockquote {
+  margin: 20px 0;
+  padding: 10px 10px 10px 20px;
+  border: 0;
+  border-left: 3px solid var(--wy-quote-border);
+  border-radius: 0;
+  font-family: var(--wy-font-sans);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--wy-quote-text);
+  background-color: var(--wy-quote-bg);
+}
+
+#wenyan blockquote::before,
+#wenyan blockquote::after {
+  content: none;
+}
+
+#wenyan blockquote p {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: inherit;
+}
+
+/* ===== Lists ===== */
+#wenyan ul,
+#wenyan ol {
+  margin: 8px 0;
+  padding: 0 0 0 25px;
+  font-family: var(--wy-font-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--wy-text);
+}
+
+#wenyan li {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--wy-text);
+}
+
+/* ===== Images ===== */
+#wenyan img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+/* ===== Links ===== */
+#wenyan a {
+  color: var(--wy-link);
+  text-decoration: none;
+}
+
+/* ===== Horizontal rule: neutral fallback ===== */
+#wenyan hr {
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Tables: neutral fallback ===== */
+#wenyan table {
+  width: 100%;
+  margin: 12px 0;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--wy-text);
+}
+
+#wenyan table th,
+#wenyan table td {
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  text-align: left;
+}
+
+#wenyan table th {
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ===== Code block: neutral fallback ===== */
+#wenyan pre {
+  margin: 12px 0;
+  padding: 12px;
+  overflow-x: auto;
+  border: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#wenyan pre code {
+  font-family: var(--wy-font-mono);
+  font-size: 13px;
+  line-height: 1.7;
+}
